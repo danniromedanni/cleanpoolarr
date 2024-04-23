@@ -53,13 +53,27 @@ nav ul li a:hover {
     color: #555; /* Cambia el color al pasar el ratón */
 }
 
+
+
 .contenedor-1 {
-    background-color: #F2F3F4;
+    background-color: #F2F3F4; /* Color de fondo por defecto en caso de que la imagen no cargue */
+    background-image: url('./asset/IMAGENES CLEANPOOL/casa de campo3.jpg'); /* Ruta a la imagen de fondo */
     background-size: cover; /* Asegura que la imagen cubra todo el div */
     background-position: center; /* Centra la imagen dentro del div */
     background-repeat: no-repeat; /* Evita que la imagen se repita */
-
 }
+
+
+.div1-contenedor-1, .div2-contenedor-1 {
+    width: 100%; /* Asegura que ambas secciones ocupen todo el ancho disponible */
+    display: block; /* Esto garantiza que se comporten como bloques, aunque <section> ya lo hace por defecto */
+    margin: 30px 0; /* Añade un espacio vertical entre las secciones */
+}
+
+
+
+
+
 
 button {
     background-color: #00bfff; /* Color celeste */
@@ -128,15 +142,17 @@ button:hover {
     line-height: 1.5; /* Espaciado de línea para mejorar la legibilidad */
 }
 
-.contenedor-1, .contenedor-2, .contenedor-3, .contenedor-4, .contenedor-5 {
+.contenedor-1, .contenedor-2, .contenedor-3, .contenedor-4, .contenedor-5, .contenedor-6, .contenedor-7 {
+    
     background-color: #F2F3F4;
     margin-top: 20px; /* Espacio en la parte superior */
     margin-bottom: 20px; /* Espacio en la parte inferior */
+    padding: 20px; /* Espacio alrededor del contenido */
 }
 
-.contenedor-4 {
+.contenedor-7 {
     background-image: url(./asset/niños.png);
-    ;
+    
     background-color: #F2F3F4;
     display: flex;
     flex-wrap: wrap;
