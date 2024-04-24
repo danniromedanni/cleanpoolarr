@@ -1,189 +1,259 @@
-
 /* Establece el color de fondo de todo el cuerpo de la página a blanco */
 body {
-    background-color: white;
-    margin: 0; /* Elimina el margen por defecto */
-    font-family: Arial, sans-serif; /* Establece la fuente predeterminada */
+  background-color: white;
+  margin: 0; /* Elimina el margen por defecto */
+  font-family: Arial, sans-serif; /* Establece la fuente predeterminada */
 }
 
 /* Estilo general del div contenedor */
 .contenedor-nav {
-    width: 100%; /* Ocupa el ancho completo de la ventana */
-    background-color: white; /* Un ligero gris para distinguir la barra de navegación */
-    box-shadow: 0 2px 5px rgba(0,0,0,0.1); /* Sombra sutil para dar profundidad */
-    padding: 10px 0; /* Espacio superior e inferior dentro del div */
+  width: 100%; /* Ocupa el ancho completo de la ventana */
+  background-color: white; /* Un ligero gris para distinguir la barra de navegación */
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Sombra sutil para dar profundidad */
+  padding: 10px 0; /* Espacio superior e inferior dentro del div */
 }
 
 /* Estilo del logo y la barra de navegación */
 nav {
-    display: flex; /* Utiliza flexbox para alinear elementos horizontalmente */
-    align-items: center; /* Centra los elementos verticalmente dentro del nav */
-    justify-content: center; /* Centra los elementos horizontalmente dentro del nav */
-    padding: 0 20px; /* Espacio a los lados dentro del nav */
+  display: flex; /* Utiliza flexbox para alinear elementos horizontalmente */
+  align-items: center; /* Centra los elementos verticalmente dentro del nav */
+  justify-content: center; /* Centra los elementos horizontalmente dentro del nav */
+  padding: 0 20px; /* Espacio a los lados dentro del nav */
 }
 
 /* Estilo del logo */
 nav img {
-    height: 50px; /* Altura del logo */
-    margin-right: 20px; /* Espacio a la derecha del logo */
+  height: 50px; /* Altura del logo */
+  margin-right: 20px; /* Espacio a la derecha del logo */
 }
 
 /* Estilo de la lista de navegación */
 nav ul {
-    list-style-type: none; /* Elimina los bullets de la lista */
-    padding: 0; /* Elimina el padding predeterminado */
-    margin: 0; /* Elimina el margen predeterminado */
-    display: flex; /* Utiliza flexbox para la lista */
+  list-style-type: none; /* Elimina los bullets de la lista */
+  padding: 0; /* Elimina el padding predeterminado */
+  margin: 0; /* Elimina el margen predeterminado */
+  display: flex; /* Utiliza flexbox para la lista */
 }
 
 /* Estilo de los items de la lista */
 nav ul li {
-    margin-right: 20px; /* Espacio entre los ítems */
+  margin-right: 20px; /* Espacio entre los ítems */
 }
 
 /* Estilo de los enlaces de la lista */
 nav ul li a {
-    text-decoration: none; /* Elimina el subrayado de los enlaces */
-    color: black; /* Color del texto de los enlaces */
-    font-weight: bold; /* Negrita para los textos de los enlaces */
+  text-decoration: none; /* Elimina el subrayado de los enlaces */
+  color: black; /* Color del texto de los enlaces */
+  font-weight: bold; /* Negrita para los textos de los enlaces */
 }
 
 /* Añade un efecto al pasar el ratón sobre los enlaces */
 nav ul li a:hover {
-    color: #555; /* Cambia el color al pasar el ratón */
+  color: #555; /* Cambia el color al pasar el ratón */
 }
-
-
 
 .contenedor-1 {
-    background-color: #F2F3F4; /* Color de fondo por defecto en caso de que la imagen no cargue */
-    background-image: url('./asset/IMAGENES CLEANPOOL/casa de campo3.jpg'); /* Ruta a la imagen de fondo */
-    background-size: cover; /* Asegura que la imagen cubra todo el div */
-    background-position: center; /* Centra la imagen dentro del div */
-    background-repeat: no-repeat; /* Evita que la imagen se repita */
+  background-color: #f2f3f4; /* Color de fondo por defecto en caso de que la imagen no cargue */
+  background-image: url("./asset/IMAGENES CLEANPOOL/casa de campo3.jpg"); /* Ruta a la imagen de fondo */
+  background-size: cover; /* Asegura que la imagen cubra todo el div */
+  background-position: center; /* Centra la imagen dentro del div */
+  background-repeat: no-repeat; /* Evita que la imagen se repita */
 }
 
-
-.div1-contenedor-1, .div2-contenedor-1 {
-    width: 100%; /* Asegura que ambas secciones ocupen todo el ancho disponible */
-    display: block; /* Esto garantiza que se comporten como bloques, aunque <section> ya lo hace por defecto */
-    margin: 30px 0; /* Añade un espacio vertical entre las secciones */
+.contenedor-a {
+  background-color: #f2f3f4; /* Color de fondo por defecto en caso de que la imagen no cargue */
+  background-image: url("./asset/IMAGENES CLEANPOOL/fondo-3.jpg"); /* Corrige la ruta si es necesario */
+  background-size: cover; /* Asegura que la imagen cubra todo el div */
+  background-position: center; /* Centra la imagen dentro del div */
+  background-repeat: no-repeat; /* Evita que la imagen se repita */
+  min-height: 400px; /* Altura mínima para asegurar que la imagen se muestre adecuadamente */
+  display: flex;
+  align-items: center; /* Centra el contenido verticalmente */
+  justify-content: center; /* Centra el contenido horizontalmente */
 }
 
+.div1-contenedor-a {
+  color: white; /* Cambia el color del texto para mejorar contraste */
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); /* Sombra de texto para hacerlo más legible sobre fondos claros */
+  padding: 20px; /* Espaciado interno para no pegar el texto a los bordes */
+  font-size: 2em; /* Ajusta el tamaño del texto según necesites */
+  text-align: center; /* Alinea el texto al centro */
+}
 
+.div1-contenedor-1,
+.div2-contenedor-1 {
+  width: 100%; /* Asegura que ambas secciones ocupen todo el ancho disponible */
+  display: block; /* Esto garantiza que se comporten como bloques, aunque <section> ya lo hace por defecto */
+  margin: 30px 0; /* Añade un espacio vertical entre las secciones */
+}
 
+.div1-contenedor-a {
+  width: 100%; /* Asegura que ambas secciones ocupen todo el ancho disponible */
+  display: block; /* Esto garantiza que se comporten como bloques, aunque <section> ya lo hace por defecto */
+  margin: 30px 0; /* Añade un espacio vertical entre las secciones */
+}
 
+.contenedor-b > div {
+  text-align: center;
+  padding: 20px;
+}
 
+.contenedor-b img {
+  max-width: 50%;
+  height: auto;
+  display: block;
+  margin: auto;
+}
 
 button {
-    background-color: #00bfff; /* Color celeste */
-    border: none;              /* No border */
-    color: white;              /* Texto blanco */
-    padding: 10px 20px;        /* Padding alrededor del texto */
-    text-align: center;        /* Texto centrado */
-    text-decoration: none;     /* Sin decoración de texto */
-    display: inline-block;     /* Tipo de display */
-    font-size: 16px;           /* Tamaño del texto */
-    margin: 4px 2px;           /* Margen alrededor del botón */
-    cursor: pointer;           /* Cursor de mano al pasar el mouse */
-    border-radius: 12px;       /* Bordes redondeados */
-    transition: all 0.3s ease; /* Transición suave para hover */
+  background-color: #00bfff; /* Color celeste */
+  border: none; /* No border */
+  color: white; /* Texto blanco */
+  padding: 10px 20px; /* Padding alrededor del texto */
+  text-align: center; /* Texto centrado */
+  text-decoration: none; /* Sin decoración de texto */
+  display: inline-block; /* Tipo de display */
+  font-size: 16px; /* Tamaño del texto */
+  margin: 4px 2px; /* Margen alrededor del botón */
+  cursor: pointer; /* Cursor de mano al pasar el mouse */
+  border-radius: 12px; /* Bordes redondeados */
+  transition: all 0.3s ease; /* Transición suave para hover */
 }
 
 button:hover {
-    background-color: #0094cc; /* Un celeste un poco más oscuro al hacer hover */
+  background-color: #0094cc; /* Un celeste un poco más oscuro al hacer hover */
 }
 
 .contenedor-2 {
-    background-color: #F2F3F4;
-    display: flex;
-    flex-wrap: wrap;
-    gap: 20px; /* Espacio entre las cards */
-    justify-content: center; /* Centra las cards en el contenedor si no ocupan todo el ancho */
-    padding: 20px; /* Espacio alrededor del contenido dentro del contenedor-2 */
+  background-color: #f2f3f4;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px; /* Espacio entre las cards */
+  justify-content: center; /* Centra las cards en el contenedor si no ocupan todo el ancho */
+  padding: 20px; /* Espacio alrededor del contenido dentro del contenedor-2 */
 }
 
-.contenedor-3{
-    background-color: #F2F3F4;
-    display: flex;
-    flex-wrap: wrap;
-    gap: 20px; /* Espacio entre las cards */
-    justify-content: center; /* Centra las cards en el contenedor si no ocupan todo el ancho */
-    padding: 20px; /* Espacio alrededor del contenido dentro del contenedor-2 */
+.contenedor-3 {
+  background-color: #f2f3f4;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px; /* Espacio entre las cards */
+  justify-content: center; /* Centra las cards en el contenedor si no ocupan todo el ancho */
+  padding: 20px; /* Espacio alrededor del contenido dentro del contenedor-2 */
 }
 .card {
-    flex: 1 1 300px; /* Cada card puede crecer y encogerse pero base es 300px */
-    border: 1px solid #ccc; /* Borde ligero para las cards */
-    border-radius: 8px; /* Bordes redondeados */
-    overflow: hidden; /* Asegura que todo dentro de la card se quede dentro de los bordes redondeados */
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Sombra ligera para 3D efecto */
-    background-color: white; /* Fondo blanco para las cards */
+  flex: 1 1 300px; /* Cada card puede crecer y encogerse pero base es 300px */
+  border: 1px solid #ccc; /* Borde ligero para las cards */
+  border-radius: 8px; /* Bordes redondeados */
+  overflow: hidden; /* Asegura que todo dentro de la card se quede dentro de los bordes redondeados */
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Sombra ligera para 3D efecto */
+  background-color: white; /* Fondo blanco para las cards */
 }
 
 .card img {
-    width: 100%; /* La imagen ocupa todo el ancho de la card */
-    height: 200px; /* Altura fija para las imágenes */
-    object-fit: cover; /* Asegura que la imagen cubra el espacio sin deformarse */
+  width: 100%; /* La imagen ocupa todo el ancho de la card */
+  height: 200px; /* Altura fija para las imágenes */
+  object-fit: cover; /* Asegura que la imagen cubra el espacio sin deformarse */
 }
 
 .card-info {
-    padding: 15px; /* Espacio interior alrededor del texto dentro de la card-info */
-    text-align: center; /* Centra el texto horizontalmente */
+  padding: 15px; /* Espacio interior alrededor del texto dentro de la card-info */
+  text-align: center; /* Centra el texto horizontalmente */
 }
 
 .card h3 {
-    margin: 10px 0; /* Espacio vertical arriba y abajo del título */
-    color: #333; /* Color oscuro para el texto del título */
+  margin: 10px 0; /* Espacio vertical arriba y abajo del título */
+  color: #333; /* Color oscuro para el texto del título */
 }
 
 .card p {
-    font-size: 14px; /* Tamaño de fuente para la descripción */
-    color: #666; /* Color gris para el texto descriptivo */
-    line-height: 1.5; /* Espaciado de línea para mejorar la legibilidad */
+  font-size: 14px; /* Tamaño de fuente para la descripción */
+  color: #666; /* Color gris para el texto descriptivo */
+  line-height: 1.5; /* Espaciado de línea para mejorar la legibilidad */
 }
 
-.contenedor-1, .contenedor-2, .contenedor-3, .contenedor-4, .contenedor-5, .contenedor-6, .contenedor-7 {
-    
-    background-color: #F2F3F4;
-    margin-top: 20px; /* Espacio en la parte superior */
-    margin-bottom: 20px; /* Espacio en la parte inferior */
-    padding: 20px; /* Espacio alrededor del contenido */
+.contenedor-1,
+.contenedor-2,
+.contenedor-3,
+.contenedor-4,
+.contenedor-5,
+.contenedor-6,
+.contenedor-7,
+.contenedor-a,
+.contenedor-b,
+.contenedor-c {
+  background-color: #f2f3f4;
+  margin-top: 20px; /* Espacio en la parte superior */
+  margin-bottom: 20px; /* Espacio en la parte inferior */
+  padding: 20px; /* Espacio alrededor del contenido */
 }
 
 .contenedor-7 {
-    background-image: url(./asset/niños.png);
-    
-    background-color: #F2F3F4;
-    display: flex;
-    flex-wrap: wrap;
-    gap: 20px; /* Espacio entre las cards */
-    justify-content: center; /* Centra las cards en el contenedor si no ocupan todo el ancho */
-    padding: 20px; /* Espacio alrededor del contenido dentro del contenedor-2 */
+  background-image: url(./asset/niños.png);
+
+  background-color: #f2f3f4;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px; /* Espacio entre las cards */
+  justify-content: center; /* Centra las cards en el contenedor si no ocupan todo el ancho */
+  padding: 20px; /* Espacio alrededor del contenido dentro del contenedor-2 */
 }
 
 .contenedor-4-bis {
-    justify-content: left;
+  justify-content: left;
 }
 .parrafo-contenedor-4 {
-    justify-content: left;
-
+  justify-content: left;
 }
 
 .titulo-contenedor-4 {
-    justify-content: left;
-    font-size: 25px;
+  justify-content: left;
+  font-size: 25px;
 }
 
 .btn-contenedor-4 {
-    justify-content: left;
+  justify-content: left;
 }
 
 .contenedor-5 {
-    background-color: #F2F3F4;
-    display: flex;
-    flex-wrap: wrap;
-    gap: 20px; /* Espacio entre las cards */
-    justify-content: center; /* Centra las cards en el contenedor si no ocupan todo el ancho */
-    padding: 20px; /* Espacio alrededor del contenido dentro del contenedor-2 */
+  background-color: #f2f3f4;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px; /* Espacio entre las cards */
+  justify-content: center; /* Centra las cards en el contenedor si no ocupan todo el ancho */
+  padding: 20px; /* Espacio alrededor del contenido dentro del contenedor-2 */
+}
 
+.cabecera-div2-contenedor-d {
+    display: flex;
+    align-items: center;
+    padding: 10px;
+}
+.img-cabecera-div2-contenedor-d img {
+    width: 100px;
+    height: auto;
+    margin-right: 20px;
+}
+.texto-cabecera-div2-contenedor-d h1,
+.texto-cabecera-div2-contenedor-d h2 {
+    margin: 0;
+    padding: 0;
+}
+
+.carrousel-contenedor-d {
+  width: 50%;  /* Asegura que el contenedor ocupe todo el ancho disponible */
+  height: 100%; /* Puede definir una altura específica si es necesario */
+  overflow: hidden; /* Oculta cualquier parte de la imagen que sobresalga */
+}
+
+.carrousel-contenedor-d img {
+  width: 100%;  /* Hace que la imagen sea tan ancha como el contenedor */
+  height: 100%; /* Hace que la imagen sea tan alta como el contenedor */
+  object-fit: cover; /* Asegura que la imagen cubra todo el espacio sin deformarse */
+}
+
+.loguito-div1-contenedor-d img {
+  width: 100px;
+  height: auto;
+  margin-right: 20px;
 }
