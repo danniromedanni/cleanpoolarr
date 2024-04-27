@@ -23,8 +23,8 @@ nav {
 
 /* Estilo del logo */
 nav img {
-  height: 50px; /* Altura del logo */
-  margin-right: 20px; /* Espacio a la derecha del logo */
+  height: 55px; /* Altura del logo */
+  margin-right: 25px; /* Espacio a la derecha del logo */
 }
 
 /* Estilo de la lista de navegación */
@@ -37,27 +37,30 @@ nav ul {
 
 /* Estilo de los items de la lista */
 nav ul li {
-  margin-right: 20px; /* Espacio entre los ítems */
+  margin-right: 40px; /* Espacio entre los ítems */
 }
+
 
 /* Estilo de los enlaces de la lista */
 nav ul li a {
   text-decoration: none; /* Elimina el subrayado de los enlaces */
-  color: black; /* Color del texto de los enlaces */
+  color: #8d99ae; /* Color del texto de los enlaces */
   font-weight: bold; /* Negrita para los textos de los enlaces */
 }
 
 /* Añade un efecto al pasar el ratón sobre los enlaces */
 nav ul li a:hover {
-  color: #555; /* Cambia el color al pasar el ratón */
+  color: #5ab3df; /* Cambia el color al pasar el ratón */
 }
 
 .contenedor-1 {
+  display: flex;
   background-color: #f2f3f4; /* Color de fondo por defecto en caso de que la imagen no cargue */
   background-image: url("./asset/IMAGENES CLEANPOOL/casa de campo3.jpg"); /* Ruta a la imagen de fondo */
   background-size: cover; /* Asegura que la imagen cubra todo el div */
   background-position: center; /* Centra la imagen dentro del div */
   background-repeat: no-repeat; /* Evita que la imagen se repita */
+  
 }
 
 .contenedor-a {
@@ -80,12 +83,21 @@ nav ul li a:hover {
   text-align: center; /* Alinea el texto al centro */
 }
 
-.div1-contenedor-1,
+.div1-contenedor-1{
+  width: 100%; /* Asegura que ambas secciones ocupen todo el ancho disponible */
+  display: flex; /* Esto garantiza que se comporten como bloques, aunque <section> ya lo hace por defecto */
+  margin: 20px 0; /* Añade un espacio vertical entre las secciones */
+  font-family: "Noto Sans JP", sans-serif
+}
 .div2-contenedor-1 {
+  color: #f2f3f4;
   width: 100%; /* Asegura que ambas secciones ocupen todo el ancho disponible */
   display: block; /* Esto garantiza que se comporten como bloques, aunque <section> ya lo hace por defecto */
-  margin: 30px 0; /* Añade un espacio vertical entre las secciones */
-}
+  margin-top: 5%; 
+  margin-left: 5%;
+  margin-right: 10%;
+  text-shadow: 3px 3px 5px rgba(0, 0, 0, 1);
+ }
 
 .div1-contenedor-a {
   width: 100%; /* Asegura que ambas secciones ocupen todo el ancho disponible */
@@ -105,32 +117,45 @@ nav ul li a:hover {
   margin: auto;
 }
 
+
 button {
-  background-color: #00bfff; /* Color celeste */
+  background-color: #168AAD; /* Color celeste */
   border: none; /* No border */
   color: white; /* Texto blanco */
   padding: 10px 20px; /* Padding alrededor del texto */
   text-align: center; /* Texto centrado */
   text-decoration: none; /* Sin decoración de texto */
-  display: inline-block; /* Tipo de display */
-  font-size: 16px; /* Tamaño del texto */
+  font-size: 26px; /* Tamaño del texto */
   margin: 4px 2px; /* Margen alrededor del botón */
   cursor: pointer; /* Cursor de mano al pasar el mouse */
   border-radius: 12px; /* Bordes redondeados */
   transition: all 0.3s ease; /* Transición suave para hover */
 }
 
+
+
+.button-CentradoV{
+  position: absolute;
+  top: 83%;
+  transform: translateX(213%);
+}
+
 button:hover {
-  background-color: #0094cc; /* Un celeste un poco más oscuro al hacer hover */
+  background-color: #52B69A; /* Un celeste un poco más oscuro al hacer hover */
 }
 
 .contenedor-2 {
-  background-color: #f2f3f4;
   display: flex;
-  flex-wrap: wrap;
   gap: 20px; /* Espacio entre las cards */
   justify-content: center; /* Centra las cards en el contenedor si no ocupan todo el ancho */
-  padding: 20px; /* Espacio alrededor del contenido dentro del contenedor-2 */
+  padding: 20px; 
+  margin-inline: 20%;
+  font-size: 30px;
+  text-align: center;
+  color: #037971;
+  opacity: 80%;
+  background-color: aliceblue;
+
 }
 
 .contenedor-3 {
@@ -140,25 +165,42 @@ button:hover {
   gap: 20px; /* Espacio entre las cards */
   justify-content: center; /* Centra las cards en el contenedor si no ocupan todo el ancho */
   padding: 20px; /* Espacio alrededor del contenido dentro del contenedor-2 */
+  margin-inline: 100px;
 }
-.card {
-  flex: 1 1 300px; /* Cada card puede crecer y encogerse pero base es 300px */
-  border: 1px solid #ccc; /* Borde ligero para las cards */
-  border-radius: 8px; /* Bordes redondeados */
-  overflow: hidden; /* Asegura que todo dentro de la card se quede dentro de los bordes redondeados */
-  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Sombra ligera para 3D efecto */
-  background-color: white; /* Fondo blanco para las cards */
+.loguitos-cards {
+  width: 50px;
+  transform: translateX(250%);
+  margin-top: 20px;
+  
 }
 
-.card img {
-  width: 100%; /* La imagen ocupa todo el ancho de la card */
-  height: 200px; /* Altura fija para las imágenes */
-  object-fit: cover; /* Asegura que la imagen cubra el espacio sin deformarse */
+
+.card {
+  flex: 1 1 180px; /* Cada card puede crecer y encogerse pero base es 300px */
+  display: flexbox;
+  justify-content: center;
+  border-radius: 8px; /* Bordes redondeados */
+  overflow: hidden; /* Asegura que todo dentro de la card se quede dentro de los bordes redondeados */
+  box-shadow: 0 6px 8px rgba(0, 0, 0, 0.1); /* Sombra ligera para 3D efecto */
+  background-color: #f2f3f2; /* Fondo blanco para las cards */
+
+  font-family: "Nunito Sans", sans-serif;
+  font-optical-sizing: auto;
+  transition: transform 0.5s ease;  
+  
 }
+
+.card:hover{
+  transform: scale(1.1);
+  box-shadow: 0 0px 8px #99D98C;
+}
+
+
 
 .card-info {
   padding: 15px; /* Espacio interior alrededor del texto dentro de la card-info */
   text-align: center; /* Centra el texto horizontalmente */
+  
 }
 
 .card h3 {
@@ -175,17 +217,72 @@ button:hover {
 .contenedor-1,
 .contenedor-2,
 .contenedor-3,
-.contenedor-4,
-.contenedor-5,
-.contenedor-6,
-.contenedor-7,
 .contenedor-a,
 .contenedor-b,
 .contenedor-c {
-  background-color: #f2f3f4;
+  background-color: #f8f9fa;
   margin-top: 20px; /* Espacio en la parte superior */
   margin-bottom: 20px; /* Espacio en la parte inferior */
   padding: 20px; /* Espacio alrededor del contenido */
+}
+
+.contenedor-4{
+  display: flex;
+  justify-content: center;
+  color: #1E6091;
+
+}
+.contenedor-5{
+display: flex;
+justify-content: center; /* Centra las cards en el contenedor si no ocupan todo el ancho */
+padding: 20px; 
+margin-inline: 20%;
+font-size: 30px;
+text-align: center;
+opacity: 80%;
+color: #037971;
+background-color: rgb(251, 253, 255);}
+
+.contenedor-6{
+  margin-top: 100px;
+  display: flex;
+  justify-content: center;
+  position: relative; 
+  }
+
+.card2{
+  width: 300px;
+  text-align: center;
+  margin-top: 20px;
+  box-shadow: 0 6px 8px rgba(0, 0, 0, 0.1); /* Sombra ligera para 3D efecto */
+  border-radius: 5%;
+  margin-left: 3%;
+}
+.card2 img {
+  width: 100%; /* La imagen ocupará el 100% del ancho del contenedor */
+  border-radius: 5%;
+}
+.card-info2{
+  position: absolute;
+  margin-left: 3%;
+}
+
+.card-info2:hover{
+  position: absolute;
+  display: block;
+  justify-content: center;
+}
+.card2:hover{
+    transform-style: preserve-3d;
+    box-shadow: 0 0px 8px #99D98C;
+
+  }
+  .btn2{
+    margin-left: 5%;
+  }
+.contenedor-7{
+  background-color: #f8f9fa;
+
 }
 
 .contenedor-7 {
@@ -257,3 +354,35 @@ button:hover {
   height: auto;
   margin-right: 20px;
 }
+
+.contenedor-nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.contenedor-nav nav ul {
+ list-style-type: none;
+ margin-left: 450px;
+}
+
+.contenedor-nav nav ul li {
+  display: inline;
+  margin-left: 20px; /
+  
+}
+
+.div1-contenedor-1 img{
+  width: 600px;
+  margin-top: 10%;
+  margin-left: 20px;
+  
+}
+
+.div2-contenedor-1{
+  display: flexbox;
+  align-items: center;
+}
+
+
+
