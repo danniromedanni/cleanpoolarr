@@ -272,11 +272,7 @@ background-color: rgb(251, 253, 255);}
   display: block;
   justify-content: center;
 }
-.card2:hover{
-    transform-style: preserve-3d;
-    box-shadow: 0 0px 8px #99D98C;
 
-  }
   .btn2{
     margin-left: 5%;
   }
