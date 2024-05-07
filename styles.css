@@ -60,7 +60,7 @@ nav ul li a:hover {
   background-size: cover; /* Asegura que la imagen cubra todo el div */
   background-position: center; /* Centra la imagen dentro del div */
   background-repeat: no-repeat; /* Evita que la imagen se repita */
-  
+  background-size: 99%;
 }
 
 .contenedor-a {
@@ -257,40 +257,69 @@ background-color: rgb(251, 253, 255);}
   box-shadow: 0 6px 8px rgba(0, 0, 0, 0.1); /* Sombra ligera para 3D efecto */
   border-radius: 5%;
   margin-left: 3%;
+  transition: transform 0.3s; /* Agrega una transición suave al cambio de escala */
 }
+.card2:hover {
+  transform: scale(1.05); /* Agrandar al 105% del tamaño original */
+}
+
 .card2 img {
   width: 100%; /* La imagen ocupará el 100% del ancho del contenedor */
   border-radius: 5%;
 }
+
+
 .card-info2{
-  position: absolute;
-  margin-left: 3%;
+ margin-left: 3%;
 }
-
 .card-info2:hover{
-  position: absolute;
-  display: block;
-  justify-content: center;
+  transform: scale(1.05); /* Agrandar al 105% del tamaño original */
+  text-align: center;
 }
 
-  .btn2{
+.card-info2 h3 {
+  color: #0c837b;
+  font-family: "Noto Sans JP", sans-serif;
+}
+
+
+.btn2{
     margin-left: 5%;
   }
-.contenedor-7{
-  background-color: #f8f9fa;
-
-}
 
 .contenedor-7 {
-  background-image: url(./asset/niños.png);
-
-  background-color: #f2f3f4;
-  display: flex;
-  flex-wrap: wrap;
-  gap: 20px; /* Espacio entre las cards */
-  justify-content: center; /* Centra las cards en el contenedor si no ocupan todo el ancho */
-  padding: 20px; /* Espacio alrededor del contenido dentro del contenedor-2 */
+ display: flex;
+ background-color: #f2f3f2;
+ width: 100%;
 }
+.texto-niños{
+  justify-content: center;
+  margin-top: 7%;
+ }
+ 
+ .img-niños{
+  width: 91%;
+ }
+
+ .parrafo-contenedor-7 pre{
+  font-family: "Noto Sans JP", sans-serif;
+  font-size: large;
+ }
+
+ .titulo-contenedor-7{
+  font-family: "Noto Sans JP", sans-serif;
+  font-size: 25px;
+  text-align: center;
+  color: #1E6091;
+  margin-left: -20%;
+  
+ }
+
+ .btn-contenedor-7{
+  margin-left: 11%;
+ }
+
+ 
 
 .contenedor-4-bis {
   justify-content: left;
@@ -380,5 +409,32 @@ background-color: rgb(251, 253, 255);}
   align-items: center;
 }
 
+
+.footer{
+  background-color: #001524;
+ width: 100%;
+ height: 90px;
+}
+
+.footer-conteiner{
+  display: flex;
+  justify-content: space-between;
+}
+.logosFC {
+  display: flex; /* Utiliza flexbox para los logos */
+  align-items: center; /* Centra verticalmente los logos */
+  margin-left: 5%;
+}
+
+.loguitosF {
+  margin-right: 20px; /* Ajusta el espacio entre los logos */
+}
+
+.footer-izquierdo pre {
+  color: #f2f3f2;
+  font-family: "Nunito Sans", sans-serif;
+  margin-left: 9%; 
+  align-self: center; /* Centra verticalmente el texto izquierdo */
+}
 
 
