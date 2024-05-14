@@ -16,12 +16,14 @@ body {
     align-items: center; /* Centra los elementos verticalmente dentro del nav */
     justify-content: center; /* Centra los elementos horizontalmente dentro del nav */
     padding: 0 20px; /* Espacio a los lados dentro del nav */
+    box-shadow:0px 4px 8px rgba(0, 0, 0, 0.2) ;
   }
 
   /* Estilo del logo */
 nav img {
     height: 55px; /* Altura del logo */
     margin-right: 25px; /* Espacio a la derecha del logo */
+    margin-bottom: 10px;
   }
 
   /* Estilo de la lista de navegación */
@@ -217,6 +219,20 @@ button:hover {
   margin-right: 25px; /* Espacio a la derecha del logo */
 }
 
+.contenedor-a {
+  position: relative;
+  width: 100%;
+  height: 100%;
+}
+
+.imagenGigante {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  text-align: center; 
+  display: block;
+}
+
 .div1-contenedor-a {
   background-image: url("./asset/fSobreNos.jpg");
   height: 500px;
@@ -224,9 +240,9 @@ button:hover {
   position: relative;
   background-attachment: fixed;
   z-index: 1;
-  display: flex; /* Usa flexbox para centrar el contenido */
-  justify-content: center; /* Centra horizontalmente */
-  align-items: center; /* Centra verticalmente */
+  display: flex; 
+  justify-content: center; 
+  align-items: center; 
 }
 
 .div1-contenedor-a h1 {
@@ -234,8 +250,161 @@ button:hover {
   font-size: 5em;
   text-align: center;
 }
-.contenedor-a img{
-  height: 40px; /* Altura del logo */
- 
-  
+
+.logoF {
+  position: absolute;
+  top: 92%;
+  left: 50%;
+  transform: translate(-50%,50%);
+  z-index: 2;
+  height: 40px; 
+  filter: drop-shadow( -3px  5px  4px #4b4a48);
+  }
+
+  #bidones2{
+    width: 30%;
+  }
+
+  .contenedor-c {
+    display: flex;
+    justify-content: center; /* Center the contents horizontally */
+    align-items: center; /* Center the contents vertically */
+    width: 100%;
+}
+
+.div1-contenedor-c {
+    display: flex;
+    justify-content: space-between; /* Space out the text and image */
+    align-items: center; /* Align items vertically centered */
+    width: 100%;
+    max-width: 1200px; /* Optional: limit the maximum width */
+}
+
+.textoQue {
+    display: flex;
+    flex-direction: column; /* Align inner divs vertically */
+    justify-content: center; /* Center the text content vertically */
+    flex: 1; /* Allow the text content to take up available space */
+    margin-right: 20px; /* Space between text and image */
+}
+
+.imagen {
+    flex: 1; /* Allow the image to take up available space */
+    display: flex;
+    justify-content: center; /* Center the image horizontally within its container */
+}
+
+.imagen img {
+    max-width: 100%;
+    height: auto; /* Maintain aspect ratio */
+}
+
+.titulo-div1-contenedor-c h2 {
+    margin: 0; /* Remove default margin */
+    padding-bottom: 10px; /* Optional: space below the title */
+}
+
+.texto-div1-contenedor-c p {
+    margin: 0; /* Remove default margin */
+    line-height: 1.5; /* Optional: improve readability */
+}
+
+/*div1 de cards dentro de span*/
+.div1-contenedor-d {
+  display: flex;
+  flex-direction: column; /* Arrange children in a vertical stack */
+  align-items: center; /* Center items horizontally */
+  width: 100%;
+  max-width: 800px; /* Optional: Limit the maximum width */
+  margin: 0 auto; /* Center the container within its parent */
+  padding: 20px; /* Optional: Add padding for spacing */
+  box-sizing: border-box; /* Include padding in the width and height */
+  text-align: center; /* Center text horizontally */
+}
+
+.div1-contenedor-d{
+  display: flex;
+  flex-direction: column; /* Arrange children in a vertical stack */
+  align-items: center; /* Center items horizontally */
+  margin-bottom: 20px; /* Optional: Space below the header */
+}
+
+.carrousel-contenedor-d img {
+  max-width: 100%;
+  height: auto; /* Maintain aspect ratio */
+  margin-bottom: 10px; /* Optional: Space below the image */
+}
+
+.texto-contenedor-d p {
+  margin: 5px 0; /* Space above and below the titles */
+}
+
+.titulo-div2-contenedor-d h1 {
+  margin: 20px 0; /* Space above and below the title */
+}
+
+.texto-div2-contenedor-d p {
+  margin: 20px 0; /* Space above and below the paragraph */
+  line-height: 1.5; /* Improve readability */
+}
+
+.loguito-div1-contenedor-d {
+  margin-top: 20px; /* Space above the button */
+}
+
+
+
+
+/* div2 de cards dentro de span*/
+.div2-contenedor-d {
+  display: flex;
+  flex-direction: column; /* Arrange children in a vertical stack */
+  align-items: center; /* Center items horizontally */
+  width: 100%;
+  max-width: 800px; /* Optional: Limit the maximum width */
+  margin: 0 auto; /* Center the container within its parent */
+  padding: 20px; /* Optional: Add padding for spacing */
+  box-sizing: border-box; /* Include padding in the width and height */
+  text-align: center; /* Center text horizontally */
+}
+
+.cabecera-div2-contenedor-d {
+  display: flex;
+  flex-direction: column; /* Arrange children in a vertical stack */
+  align-items: center; /* Center items horizontally */
+  margin-bottom: 20px; /* Optional: Space below the header */
+}
+
+.img-cabecera-div2-contenedor-d img {
+  max-width: 100%;
+  height: auto; /* Maintain aspect ratio */
+  margin-bottom: 10px; /* Optional: Space below the image */
+}
+
+.texto-cabecera-div2-contenedor-d h1,
+.texto-cabecera-div2-contenedor-d h2 {
+  margin: 5px 0; /* Space above and below the titles */
+}
+
+.titulo-div2-contenedor-d h1 {
+  margin: 20px 0; /* Space above and below the title */
+}
+
+.texto-div2-contenedor-d p {
+  margin: 20px 0; /* Space above and below the paragraph */
+  line-height: 1.5; /* Improve readability */
+}
+
+.button {
+  margin-top: 20px; /* Space above the button */
+}
+
+.button button {
+  padding: 10px 20px; /* Button padding */
+  font-size: 16px; /* Button font size */
+  cursor: pointer; /* Change cursor on hover */
+}
+
+.contenedor-d-span {
+  display: inline-flex;
 }
