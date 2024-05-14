@@ -66,12 +66,176 @@ nav ul li a {
      
    }
 
-   .contenedor-a {
+   .contenedor-4{
     display: flex;
-    background-color: #f2f3f4; /* Color de fondo por defecto en caso de que la imagen no cargue */
-    background-image: url("./asset/IMAGENES CLEANPOOL/casa de campo3.jpg"); /* Ruta a la imagen de fondo */
-    background-size: cover; /* Asegura que la imagen cubra todo el div */
-    background-position: center; /* Centra la imagen dentro del div */
-    background-repeat: no-repeat; /* Evita que la imagen se repita */
-    background-size: 99%;
+    justify-content: center;
+    color: #1E6091;
+  
   }
+
+  
+.contenedor-7 {
+  display: flex;
+  background-color: #f2f3f2;
+  width: 100%;
+ }
+ .texto-niños{
+   justify-content: center;
+   margin-top: 7%;
+  }
+  
+  .img-niños{
+   width: 91%;
+  }
+ 
+  .parrafo-contenedor-7 pre{
+   font-family: "Noto Sans JP", sans-serif;
+   font-size: large;
+  }
+ 
+  .titulo-contenedor-7{
+   font-family: "Noto Sans JP", sans-serif;
+   font-size: 25px;
+   text-align: center;
+   color: #1E6091;
+   margin-left: -20%;
+   
+  }
+ 
+  button {
+    background-color: #168AAD; /* Color celeste */
+    border: none; /* No border */
+    color: white; /* Texto blanco */
+    padding: 10px 20px; /* Padding alrededor del texto */
+    text-align: center; /* Texto centrado */
+    text-decoration: none; /* Sin decoración de texto */
+    font-size: 26px; /* Tamaño del texto */
+    margin: 4px 2px; /* Margen alrededor del botón */
+    cursor: pointer; /* Cursor de mano al pasar el mouse */
+    border-radius: 12px; /* Bordes redondeados */
+    transition: all 0.3s ease; /* Transición suave para hover */
+  }
+  
+button:hover {
+  background-color: #52B69A; /* Un celeste un poco más oscuro al hacer hover */
+}
+
+  .btn-contenedor-7{
+   margin-left: 11%;
+  }
+ 
+  
+ 
+ .contenedor-4-bis {
+   justify-content: left;
+ }
+ .parrafo-contenedor-4 {
+   justify-content: left;
+ }
+ 
+ .titulo-contenedor-4 {
+   justify-content: left;
+   font-size: 25px;
+ }
+ 
+ .btn-contenedor-4 {
+   justify-content: left;
+ }
+
+ .footer{
+  background-color: #001524;
+ width: 100%;
+ height: 90px;
+}
+
+.footer-conteiner{
+  display: flex;
+  justify-content: space-between;
+}
+.logosFC {
+  display: flex; /* Utiliza flexbox para los logos */
+  align-items: center; /* Centra verticalmente los logos */
+  margin-left: 5%;
+}
+
+.loguitosF {
+  margin-right: 20px; /* Ajusta el espacio entre los logos */
+}
+
+.footer-izquierdo pre {
+  color: #f2f3f2;
+  font-family: "Nunito Sans", sans-serif;
+  margin-left: 9%; 
+  align-self: center; /* Centra verticalmente el texto izquierdo */
+}
+
+.contenedor-6{
+  margin-top: 100px;
+  display: flex;
+  justify-content: center;
+  position: relative; 
+  }
+
+.card2{
+  width: 300px;
+  text-align: center;
+  margin-top: 20px;
+  box-shadow: 0 6px 8px rgba(0, 0, 0, 0.1); /* Sombra ligera para 3D efecto */
+  border-radius: 5%;
+  margin-left: 3%;
+  transition: transform 0.3s; /* Agrega una transición suave al cambio de escala */
+}
+.card2:hover {
+  transform: scale(1.05); /* Agrandar al 105% del tamaño original */
+}
+
+.card2 img {
+  width: 100%; /* La imagen ocupará el 100% del ancho del contenedor */
+  border-radius: 5%;
+}
+
+
+.card-info2{
+ margin-left: 3%;
+}
+.card-info2:hover{
+  transform: scale(1.05); /* Agrandar al 105% del tamaño original */
+  text-align: center;
+}
+
+.card-info2 h3 {
+  color: #0c837b;
+  font-family: "Noto Sans JP", sans-serif;
+}
+
+.loguito-div1-contenedor-d img{
+  width: 100px; 
+  margin-right: 25px; /* Espacio a la derecha del logo */
+}
+.img-cabecera-div2-contenedor-d img{
+  width: 100px; 
+  margin-right: 25px; /* Espacio a la derecha del logo */
+}
+
+.div1-contenedor-a {
+  background-image: url("./asset/fSobreNos.jpg");
+  height: 500px;
+  background-size: cover;
+  position: relative;
+  background-attachment: fixed;
+  z-index: 1;
+  display: flex; /* Usa flexbox para centrar el contenido */
+  justify-content: center; /* Centra horizontalmente */
+  align-items: center; /* Centra verticalmente */
+}
+
+.div1-contenedor-a h1 {
+  color: #f2f3f2;
+  font-size: 5em;
+  text-align: center;
+}
+.contenedor-a img{
+  height: 40px; /* Altura del logo */
+ 
+  
+}
