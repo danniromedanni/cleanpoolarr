@@ -12,31 +12,33 @@ body {
   }
   
   nav {
-    display: flex; /* Utiliza flexbox para alinear elementos horizontalmente */
-    align-items: center; /* Centra los elementos verticalmente dentro del nav */
-    justify-content: center; /* Centra los elementos horizontalmente dentro del nav */
-    padding: 0 20px; /* Espacio a los lados dentro del nav */
-    box-shadow:0px 4px 8px rgba(0, 0, 0, 0.2) ;
+  
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0; /* Elimina padding */
+    margin: 0; /* Elimina margin */
   }
+  
 
   /* Estilo del logo */
-nav img {
+  nav img {
     height: 55px; /* Altura del logo */
-    margin-right: 25px; /* Espacio a la derecha del logo */
-    margin-bottom: 10px;
+    margin-right: -5px; /* Espacio a la derecha del logo */
+    margin-left: 10px;
   }
-
   /* Estilo de la lista de navegación */
-nav ul {
-    list-style-type: none; /* Elimina los bullets de la lista */
-    padding: 0; /* Elimina el padding predeterminado */
-    margin: 0; /* Elimina el margen predeterminado */
-    display: flex; /* Utiliza flexbox para la lista */
+  nav ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: center; /* Ajusta según sea necesario */
   }
   
   /* Estilo de los items de la lista */
   nav ul li {
-    margin-right: 40px; /* Espacio entre los ítems */
+    margin-right: 23px; /* Espacio entre los ítems */
   }
 
   /* Estilo de los enlaces de la lista */
@@ -51,6 +53,11 @@ nav ul li a {
     color: #5ab3df; /* Cambia el color al pasar el ratón */
   }
   
+  nav ul li {
+    margin-right: 23px; /* Espacio entre los ítems */
+  }
+ 
+   
   .contenedor-nav {
     display: flex;
     justify-content: space-between;
@@ -61,13 +68,12 @@ nav ul li a {
     list-style-type: none;
     margin-left: 450px;
    }
-   
-   .contenedor-nav nav ul li {
-     display: inline;
-     margin-left: 20px; /
-     
-   }
 
+   .contenedor-nav nav ul li {
+    display: inline;
+    margin-left: 20px; /
+    
+  }
    .contenedor-4{
     display: flex;
     justify-content: center;
@@ -86,8 +92,9 @@ nav ul li a {
    margin-top: 7%;
   }
   
-  .img-niños{
-   width: 91%;
+  .img-niños img {
+    margin-left: 10%;
+   width: 85%;
   }
  
   .parrafo-contenedor-7 pre{
@@ -281,32 +288,62 @@ button:hover {
 }
 
 .textoQue {
-    display: flex;
-    flex-direction: column; /* Align inner divs vertically */
-    justify-content: center; /* Center the text content vertically */
-    flex: 1; /* Allow the text content to take up available space */
-    margin-right: 20px; /* Space between text and image */
+  display: flex;
+  flex-direction: column; /* Align inner divs vertically */
+  justify-content: center; /* Center the text content vertically */
+  flex: 1; /* Allow the text content to take up available space */
+  margin-right: 20px; /* Space between text and image */
+  
+  font-family: "Montserrat", sans-serif;
+  font-optical-sizing: auto;
+  font-style: normal;
 }
 
-.imagen {
+.textoQue .titulo-div1-contenedor-c h2 {
+ color: #035e59;
+ font-family: "Montserrat", sans-serif;
+ font-optical-sizing: auto;
+ font-style: normal;
+ font-size: 2em;
+}
+
+.textoQue .texto-div1-contenedor-c p {
+   font-family: "Montserrat", sans-serif;
+  font-optical-sizing: auto;
+  font-style: normal;
+  font-size: 1.2em;
+  text-align: justify;
+}
+
+
+.imagen{
     flex: 1; /* Allow the image to take up available space */
     display: flex;
-    justify-content: center; /* Center the image horizontally within its container */
+    justify-content: center; 
 }
 
-.imagen img {
-    max-width: 100%;
-    height: auto; /* Maintain aspect ratio */
+#bidones2{
+  width: 30em;
+  border-radius: 2%;
 }
+
+
 
 .titulo-div1-contenedor-c h2 {
     margin: 0; /* Remove default margin */
     padding-bottom: 10px; /* Optional: space below the title */
+    text-align: center;
 }
 
 .texto-div1-contenedor-c p {
     margin: 0; /* Remove default margin */
     line-height: 1.5; /* Optional: improve readability */
+}
+
+.contenedor-d{
+  width: 80%;
+  margin: 5% 5% 5% 10%;
+  box-shadow: 1px 6px 8px rgba(0, 0, 0, 0.3);
 }
 
 /*div1 de cards dentro de span*/
@@ -322,21 +359,36 @@ button:hover {
   text-align: center; /* Center text horizontally */
 }
 
+.estrellas-contenedor-d{
+font-size: 20px;
+color: rgb(231, 202, 34);
+}
+
 .div1-contenedor-d{
   display: flex;
   flex-direction: column; /* Arrange children in a vertical stack */
   align-items: center; /* Center items horizontally */
-  margin-bottom: 20px; /* Optional: Space below the header */
+  background-color: #dde2e7;
 }
 
 .carrousel-contenedor-d img {
-  max-width: 100%;
+  max-width: 50%;
   height: auto; /* Maintain aspect ratio */
   margin-bottom: 10px; /* Optional: Space below the image */
 }
 
 .texto-contenedor-d p {
-  margin: 5px 0; /* Space above and below the titles */
+  margin-top: -10px;
+  margin-inline: 8em;
+  font-size: 15px;
+  text-align:justify;
+  color: #284153;
+  
+}
+
+.nombreDiego2{
+  margin-left: -2px;
+  text-align:left;
 }
 
 .titulo-div2-contenedor-d h1 {
@@ -348,11 +400,18 @@ button:hover {
   line-height: 1.5; /* Improve readability */
 }
 
-.loguito-div1-contenedor-d {
-  margin-top: 20px; /* Space above the button */
+.nombreDiego{
+  display: flex;
+  font-size: 10px;
 }
 
+.loguito-div1-contenedor-d {
+  margin-top: 14px; /* Space above the button */
+}
 
+.loguito-div1-contenedor-d img{
+  width: 40px;
+}
 
 
 /* div2 de cards dentro de span*/
@@ -379,6 +438,7 @@ button:hover {
   max-width: 100%;
   height: auto; /* Maintain aspect ratio */
   margin-bottom: 10px; /* Optional: Space below the image */
+  margin-left: 5px;
 }
 
 .texto-cabecera-div2-contenedor-d h1,

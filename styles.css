@@ -7,37 +7,40 @@ body {
 
 /* Estilo general del div contenedor */
 .contenedor-nav {
-  width: 100%; /* Ocupa el ancho completo de la ventana */
+  width: 100%;
   background-color: white; /* Un ligero gris para distinguir la barra de navegación */
   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Sombra sutil para dar profundidad */
   padding: 10px 0; /* Espacio superior e inferior dentro del div */
 }
 
-/* Estilo del logo y la barra de navegación */
 nav {
-  display: flex; /* Utiliza flexbox para alinear elementos horizontalmente */
-  align-items: center; /* Centra los elementos verticalmente dentro del nav */
-  justify-content: center; /* Centra los elementos horizontalmente dentro del nav */
-  padding: 0 20px; /* Espacio a los lados dentro del nav */
+  
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0; /* Elimina padding */
+  margin: 0; /* Elimina margin */
 }
+
 
 /* Estilo del logo */
 nav img {
   height: 55px; /* Altura del logo */
-  margin-right: 25px; /* Espacio a la derecha del logo */
+  margin-right: -5px; /* Espacio a la derecha del logo */
+  margin-left: 10px;
 }
 
-/* Estilo de la lista de navegación */
 nav ul {
-  list-style-type: none; /* Elimina los bullets de la lista */
-  padding: 0; /* Elimina el padding predeterminado */
-  margin: 0; /* Elimina el margen predeterminado */
-  display: flex; /* Utiliza flexbox para la lista */
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  justify-content: center; /* Ajusta según sea necesario */
 }
 
 /* Estilo de los items de la lista */
 nav ul li {
-  margin-right: 40px; /* Espacio entre los ítems */
+  margin-right: 23px; /* Espacio entre los ítems */
 }
 
 
@@ -87,7 +90,7 @@ nav ul li a:hover {
   width: 100%; /* Asegura que ambas secciones ocupen todo el ancho disponible */
   display: flex; /* Esto garantiza que se comporten como bloques, aunque <section> ya lo hace por defecto */
   margin: 20px 0; /* Añade un espacio vertical entre las secciones */
-  font-family: "Noto Sans JP", sans-serif
+  font-family: "Noto Sans JP", sans-serif;
 }
 .div2-contenedor-1 {
   color: #f2f3f4;
@@ -190,8 +193,8 @@ button:hover {
   
 }
 
-.card:hover{
-  transform: scale(1.1);
+.card:hover {
+  transform: scale(1.05); /* Ajusta la escala si es necesario */
   box-shadow: 0 0px 8px #99D98C;
 }
 
@@ -297,8 +300,9 @@ background-color: rgb(251, 253, 255);}
   margin-top: 7%;
  }
  
- .img-niños{
-  width: 91%;
+ .img-niños img{
+  margin-left: 10%;
+  width: 85%;
  }
 
  .parrafo-contenedor-7 pre{
