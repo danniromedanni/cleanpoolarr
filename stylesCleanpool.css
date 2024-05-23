@@ -183,7 +183,16 @@ button:hover {
   display: flex;
   justify-content: center;
   position: relative; 
+  margin-left: -4%;
+  
   }
+  
+.contenedor-4{
+  display: flex;
+  justify-content: center;
+  color: #1E6091;
+
+}
 
 .card2{
   width: 300px;
