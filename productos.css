@@ -1,0 +1,217 @@
+/* Establece el color de fondo de todo el cuerpo de la página a blanco */
+body {
+    background-color: white;
+    margin: 0; /* Elimina el margen por defecto */
+    font-family: Arial, sans-serif; /* Establece la fuente predeterminada */
+  }
+  
+  /* Estilo general del div contenedor */
+  .contenedor-nav {
+    width: 100%;
+    background-color: white; /* Un ligero gris para distinguir la barra de navegación */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Sombra sutil para dar profundidad */
+    padding: 10px 0; /* Espacio superior e inferior dentro del div */
+  }
+  
+  nav {
+    
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0; /* Elimina padding */
+    margin: 0; /* Elimina margin */
+  }
+  
+  
+  /* Estilo del logo */
+  nav img {
+    height: 55px; /* Altura del logo */
+    margin-right: -5px; /* Espacio a la derecha del logo */
+    margin-left: 10px;
+  }
+  
+  nav ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: center; /* Ajusta según sea necesario */
+  }
+  
+  /* Estilo de los items de la lista */
+  nav ul li {
+    margin-right: 23px; /* Espacio entre los ítems */
+  }
+  
+  
+  /* Estilo de los enlaces de la lista */
+  nav ul li a {
+    text-decoration: none; /* Elimina el subrayado de los enlaces */
+    color: #8d99ae; /* Color del texto de los enlaces */
+    font-weight: bold; /* Negrita para los textos de los enlaces */
+  }
+  
+  /* Añade un efecto al pasar el ratón sobre los enlaces */
+  nav ul li a:hover {
+    color: #5ab3df; /* Cambia el color al pasar el ratón */
+  }
+
+
+
+.contenedor-3 {
+    background-color: #f2f3f4;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px; /* Espacio entre las cards */
+    justify-content: center; /* Centra las cards en el contenedor si no ocupan todo el ancho */
+    padding: 20px; /* Espacio alrededor del contenido dentro del contenedor-2 */
+    margin-inline: 100px;
+  }
+  .loguitos-cards {
+    width: 50px;
+    transform: translateX(250%);
+    margin-top: 20px;
+    
+  }
+  
+  
+  .card {
+    flex: 1 1 180px; /* Cada card puede crecer y encogerse pero base es 300px */
+    display: flexbox;
+    justify-content: center;
+    border-radius: 8px; /* Bordes redondeados */
+    overflow: hidden; /* Asegura que todo dentro de la card se quede dentro de los bordes redondeados */
+    box-shadow: 0 6px 8px rgba(0, 0, 0, 0.1); /* Sombra ligera para 3D efecto */
+    background-color: #f2f3f2; /* Fondo blanco para las cards */
+  
+    font-family: "Nunito Sans", sans-serif;
+    font-optical-sizing: auto;
+    transition: transform 0.5s ease;  
+    
+  }
+  
+  .card:hover {
+    transform: scale(1.05); /* Ajusta la escala si es necesario */
+    box-shadow: 0 0px 8px #99D98C;
+  }
+  
+  
+  
+  .card-info {
+    padding: 15px; /* Espacio interior alrededor del texto dentro de la card-info */
+    text-align: center; /* Centra el texto horizontalmente */
+    
+  }
+  
+  .card h3 {
+    margin: 10px 0; /* Espacio vertical arriba y abajo del título */
+    color: #333; /* Color oscuro para el texto del título */
+  }
+  
+  .card p {
+    font-size: 14px; /* Tamaño de fuente para la descripción */
+    color: #666; /* Color gris para el texto descriptivo */
+    line-height: 1.5; /* Espaciado de línea para mejorar la legibilidad */
+  }
+  
+  
+.contenedor-1,
+.contenedor-2,
+.contenedor-3,
+.contenedor-a,
+.contenedor-b,
+.contenedor-c {
+  background-color: #f8f9fa;
+  margin-top: 20px; /* Espacio en la parte superior */
+  margin-bottom: 20px; /* Espacio en la parte inferior */
+  padding: 20px; /* Espacio alrededor del contenido */
+}
+
+.card2{
+    width: 300px;
+    text-align: center;
+    margin-top: 20px;
+    box-shadow: 0 6px 8px rgba(0, 0, 0, 0.1); /* Sombra ligera para 3D efecto */
+    border-radius: 5%;
+    margin-left: 3%;
+    transition: transform 0.3s; /* Agrega una transición suave al cambio de escala */
+  }
+  .card2:hover {
+    transform: scale(1.05); /* Agrandar al 105% del tamaño original */
+  }
+  
+  .card2 img {
+    width: 100%; /* La imagen ocupará el 100% del ancho del contenedor */
+    border-radius: 5%;
+  }
+  
+  
+  .card-info2{
+   margin-left: 3%;
+  }
+  .card-info2:hover{
+    transform: scale(1.05); /* Agrandar al 105% del tamaño original */
+    text-align: center;
+  }
+  
+  .card-info2 h3 {
+    color: #0c837b;
+    font-family: "Noto Sans JP", sans-serif;
+  }
+
+  .contenedor-nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .contenedor-nav nav ul {
+   list-style-type: none;
+   margin-left: 450px;
+  }
+  
+  .contenedor-nav nav ul li {
+    display: inline;
+    margin-left: 20px; /
+    
+  }
+  .footer{
+    background-color: #001524;
+     width: 100%;
+     height: 90px;
+    }
+    
+    .footer-conteiner{
+      display: flex;
+      justify-content: space-between;
+    }
+    .logosFC {
+      display: flex; /* Utiliza flexbox para los logos */
+      align-items: center; /* Centra verticalmente los logos */
+      margin-left: 5%;
+    }
+    
+    .loguitosF {
+      margin-right: 20px; /* Ajusta el espacio entre los logos */
+    }
+    
+    .footer-izquierdo pre {
+      color: #f2f3f2;
+      font-family: "Nunito Sans", sans-serif;
+      margin-left: 9%; 
+      align-self: center; /* Centra verticalmente el texto izquierdo */
+    }
+    
+    button {
+        background-color: #168AAD; /* Color celeste */
+        border: none; /* No border */
+        color: white; /* Texto blanco */
+        padding: 10px 20px; /* Padding alrededor del texto */
+        text-align: center; /* Texto centrado */
+        text-decoration: none; /* Sin decoración de texto */
+        font-size: 26px; /* Tamaño del texto */
+        margin: 4px 2px; /* Margen alrededor del botón */
+        cursor: pointer; /* Cursor de mano al pasar el mouse */
+        border-radius: 12px; /* Bordes redondeados */
+        transition: all 0.3s ease; /* Transición suave para hover */
+      }

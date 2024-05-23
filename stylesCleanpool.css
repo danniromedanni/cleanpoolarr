@@ -220,6 +220,7 @@ button:hover {
 .loguito-div1-contenedor-d img{
   width: 100px; 
   margin-right: 25px; /* Espacio a la derecha del logo */
+  
 }
 .img-cabecera-div2-contenedor-d img{
   width: 100px; 
@@ -389,7 +390,9 @@ color: rgb(231, 202, 34);
 .nombreDiego2{
   margin-left: -2px;
   text-align:left;
+  
 }
+
 
 .titulo-div2-contenedor-d h1 {
   margin: 20px 0; /* Space above and below the title */
@@ -403,10 +406,13 @@ color: rgb(231, 202, 34);
 .nombreDiego{
   display: flex;
   font-size: 10px;
+  font-family: "Montserrat", sans-serif;
+  color: #001524;
 }
 
 .loguito-div1-contenedor-d {
   margin-top: 14px; /* Space above the button */
+  filter: drop-shadow( -3px  5px  4px #4b4a48);
 }
 
 .loguito-div1-contenedor-d img{
@@ -438,21 +444,25 @@ color: rgb(231, 202, 34);
   max-width: 100%;
   height: auto; /* Maintain aspect ratio */
   margin-bottom: 10px; /* Optional: Space below the image */
-  margin-left: 5px;
+  
 }
 
 .texto-cabecera-div2-contenedor-d h1,
 .texto-cabecera-div2-contenedor-d h2 {
   margin: 5px 0; /* Space above and below the titles */
+  font-family: "Montserrat", sans-serif;
 }
 
 .titulo-div2-contenedor-d h1 {
-  margin: 20px 0; /* Space above and below the title */
+  margin: 10px 0; /* Space above and below the title */
+  font-family: "Montserrat", sans-serif;
 }
 
+
 .texto-div2-contenedor-d p {
-  margin: 20px 0; /* Space above and below the paragraph */
+  margin: 10px 0; /* Space above and below the paragraph */
   line-height: 1.5; /* Improve readability */
+  font-family: "Montserrat", sans-serif;
 }
 
 .button {
