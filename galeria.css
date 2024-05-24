@@ -1,0 +1,285 @@
+/* Establece el color de fondo de todo el cuerpo de la página a blanco */
+body {
+    background-color: white;
+    margin: 0; /* Elimina el margen por defecto */
+    font-family: Arial, sans-serif; /* Establece la fuente predeterminada */
+  }
+  
+  /* Estilo general del div contenedor */
+  .contenedor-nav {
+    width: 100%;
+    background-color: white; /* Un ligero gris para distinguir la barra de navegación */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Sombra sutil para dar profundidad */
+    padding: 10px 0; /* Espacio superior e inferior dentro del div */
+  }
+  
+  nav {
+    
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0; /* Elimina padding */
+    margin: 0; /* Elimina margin */
+  }
+  
+  
+  /* Estilo del logo */
+  nav img {
+    height: 55px; /* Altura del logo */
+    margin-right: -5px; /* Espacio a la derecha del logo */
+    margin-left: 10px;
+  }
+  
+  nav ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: center; /* Ajusta según sea necesario */
+  }
+  
+  /* Estilo de los items de la lista */
+  nav ul li {
+    margin-right: 23px; /* Espacio entre los ítems */
+  }
+  
+  
+  /* Estilo de los enlaces de la lista */
+  nav ul li a {
+    text-decoration: none; /* Elimina el subrayado de los enlaces */
+    color: #8d99ae; /* Color del texto de los enlaces */
+    font-weight: bold; /* Negrita para los textos de los enlaces */
+  }
+  
+  /* Añade un efecto al pasar el ratón sobre los enlaces */
+  nav ul li a:hover {
+    color: #5ab3df; /* Cambia el color al pasar el ratón */
+  }
+
+
+  .contenedor-nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .contenedor-nav nav ul {
+   list-style-type: none;
+   margin-left: 450px;
+  }
+  
+  .contenedor-nav nav ul li {
+    display: inline;
+    margin-left: 20px; /
+    
+  }
+
+  
+  .footer{
+    background-color: #001524;
+     width: 100%;
+     height: 90px;
+    }
+    
+    .footer-conteiner{
+      display: flex;
+      justify-content: space-between;
+    }
+    .logosFC {
+      display: flex; /* Utiliza flexbox para los logos */
+      align-items: center; /* Centra verticalmente los logos */
+      margin-left: 5%;
+    }
+    
+    .loguitosF {
+      margin-right: 20px; /* Ajusta el espacio entre los logos */
+    }
+    
+    .footer-izquierdo pre {
+      color: #f2f3f2;
+      font-family: "Nunito Sans", sans-serif;
+      margin-left: 9%; 
+      align-self: center; /* Centra verticalmente el texto izquierdo */
+    }
+    
+    button {
+        background-color: #168AAD; /* Color celeste */
+        border: none; /* No border */
+        color: white; /* Texto blanco */
+        padding: 10px 20px; /* Padding alrededor del texto */
+        text-align: center; /* Texto centrado */
+        text-decoration: none; /* Sin decoración de texto */
+        font-size: 26px; /* Tamaño del texto */
+        margin: 4px 2px; /* Margen alrededor del botón */
+        cursor: pointer; /* Cursor de mano al pasar el mouse */
+        border-radius: 12px; /* Bordes redondeados */
+        transition: all 0.3s ease; /* Transición suave para hover */
+      }
+      .contenedor-6{
+        margin-top: 100px;
+        display: flex;
+        justify-content: center;
+        position: relative; 
+       margin-left: -3%;
+        }
+
+        .contenedor-1,
+.contenedor-2,
+.contenedor-3,
+.contenedor-a,
+.contenedor-b,
+.contenedor-c,
+.contenedor-7 {
+  background-color: #f8f9fa;
+  margin-top: 20px; /* Espacio en la parte superior */
+  margin-bottom: 20px; /* Espacio en la parte inferior */
+  padding: 20px; /* Espacio alrededor del contenido */
+}
+
+.card2{
+    width: 300px;
+    text-align: center;
+    margin-top: 20px;
+    box-shadow: 0 6px 8px rgba(0, 0, 0, 0.1); /* Sombra ligera para 3D efecto */
+    border-radius: 5%;
+    margin-left: 3%;
+    transition: transform 0.3s; /* Agrega una transición suave al cambio de escala */
+  }
+  .card2:hover {
+    transform: scale(1.05); /* Agrandar al 105% del tamaño original */
+  }
+  
+  .card2 img {
+    width: 100%; /* La imagen ocupará el 100% del ancho del contenedor */
+    border-radius: 5%;
+  }
+  
+  
+  .card-info2{
+   margin-left: 3%;
+  }
+  .card-info2:hover{
+    transform: scale(1.05); /* Agrandar al 105% del tamaño original */
+    text-align: center;
+  }
+  .contenedor-7{
+    display: block;
+    margin-bottom: 3%;
+  }
+  .titulo-contenedor-7{
+   display: flex;
+   justify-content: center;
+   color: #001524;
+   font-size: 120%;
+   
+  }
+
+  .parrafo-contenedor-7 p {
+    margin-top: -1%;
+    display: flex;
+   justify-content: center;
+   font-size: 20px;
+  }
+
+  .btn-contenedor-7{
+    display: flex;
+   margin-left: 67%;
+  }
+
+  .contenedor-4{
+    display: flex;
+    justify-content: center;
+    color: #1E6091;
+  
+  }
+
+  .contenedor-a {
+    position: relative;
+    width: 100%;
+    height: 100%;
+  }
+  
+  .imagenGigante {
+    position: relative;
+    height: 400px;
+    text-align: center; 
+    display: block;
+  }
+  
+  .div1-contenedor-a {
+    background-image: url("./asset/galeriaGigante.jpg");
+    height: 100%;
+    background-size: cover;
+    position: relative;
+    background-attachment: fixed;
+    z-index: 1;
+    display: flex; 
+    justify-content: center; 
+    align-items: center; 
+  }
+  
+  .div1-contenedor-a h1 {
+    color: #f2f3f2;
+    font-size: 5em;
+    text-align: center;
+  }
+  
+  .logoF {
+    position: absolute;
+    top: 92%;
+    left: 50%;
+    transform: translate(-50%,50%);
+    z-index: 2;
+    height: 40px; 
+    filter: drop-shadow( -3px  5px  4px #4b4a48);
+    }
+
+    /* Estilos para la sección contenedor-c */
+
+.titulo-div1-contenedor-c {
+   display: flex;
+   justify-content: center;
+   color: #1E6091;
+   font-size: 25px;
+}
+
+
+
+
+.texto-div1-contenedor-c p {
+    text-align: justify;
+    font-size: 20px;
+    color: #001524;
+}
+
+
+/* Estilos para la sección listado-clientes-galeria */
+.listado-clientes-galeria {
+    /* Agrega tus estilos aquí */
+    display:inline-flex;
+}
+
+
+.listado-clientes h2 {
+    font-size: 30px;
+    text-align: center;
+    color: #001524;
+
+}
+
+.listado-clientes ul {
+    font-size: 20px;
+    color: #4b4a48;
+    display:block;
+    
+}
+
+
+/* Estilos para la sección contenedor-galeria-imagenes-clientes */
+.contenedor-galeria-imagenes-clientes {
+  display: flex;
+  justify-content: end;
+  display: flex;
+}
+
+

@@ -221,7 +221,7 @@ body {
         display: flex;
         justify-content: center;
         position: relative; 
-       
+       margin-left: -3%;
         }
 
         .contenedor-7{
@@ -255,12 +255,7 @@ body {
         
         }
 
-        /* Estilos generales */
-body {
-  background-color: white;
-  margin: 0;
-  font-family: Arial, sans-serif;
-}
+
 
 /* Contenedor principal de las tarjetas de productos */
 .contenedor-cards-productos {
