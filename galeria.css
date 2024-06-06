@@ -110,11 +110,12 @@ body {
         text-align: center; /* Texto centrado */
         text-decoration: none; /* Sin decoración de texto */
         font-size: 26px; /* Tamaño del texto */
-        margin: 4px 2px; /* Margen alrededor del botón */
+        margin: 4px 20px; /* Margen alrededor del botón */
         cursor: pointer; /* Cursor de mano al pasar el mouse */
         border-radius: 12px; /* Bordes redondeados */
         transition: all 0.3s ease; /* Transición suave para hover */
       }
+
       .contenedor-6{
         margin-top: 100px;
         display: flex;
@@ -235,6 +236,7 @@ body {
     color: #f2f3f2;
     font-size: 5em;
     text-align: center;
+    
   }
   
   .logoF {

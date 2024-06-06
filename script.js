@@ -43,4 +43,24 @@ document.addEventListener("DOMContentLoaded", function() {
     });
 });
 
+//Ju
+function concatenar(valor) {
+    document.getElementById("display").value += valor;
+}
 
+function operar(operador) {
+    document.getElementById("display").value += operador;
+}
+
+function limpiar() {
+    document.getElementById("display").value = "";
+}
+
+function calcular() {
+    try {
+        var resultado = eval(document.getElementById("display").value);
+        document.getElementById("display").value = resultado;
+    } catch (error) {
+        document.getElementById("display").value = "Error";
+    }
+}
