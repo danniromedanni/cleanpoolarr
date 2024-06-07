@@ -266,6 +266,7 @@ button:hover {
   color: #f2f3f2;
   font-size: 5em;
   text-align: center;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); 
 }
 
 .logoF {

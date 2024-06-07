@@ -271,7 +271,7 @@ body {
 .contenedor-cards-productos {
   background-color: #f2f3f4;
   padding: 20px;
-  display: flex;
+  display:flex;
   flex-direction: column;
   align-items: center;
 }
@@ -289,16 +289,16 @@ body {
 .fondo-card-producto {
   display: flex;
   flex-direction: column;
-  gap: 20px; /* Espacio entre las tarjetas */
-  width: 100%;
-  max-width: 800px;
+  gap: 5em; /* Espacio entre las tarjetas */
+  width: 90%;
+  max-width: 110em;
+  
 }
 
 /* Estilos de cada tarjeta de producto */
 .card-producto {
   display: flex;
-  flex-direction: column;
-  border: 3px solid #013052; /* Borde sólido de 2px */
+  
   border-radius: 8px;
   overflow: hidden;
   background-color: #fff;
@@ -339,4 +339,13 @@ body {
   color: #666;
 }
 
- 
+ .filasCards{
+  display: flex;
+  flex-direction: row;
+  gap: 2em; /* Espacio entre las cards en la fila */
+  justify-content: center; /* Centra las cards en la fila */
+   /* Permite que las cards envuelvan a la siguiente línea si es necesario */
+}
+  ;
+
+  

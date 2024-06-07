@@ -64,3 +64,17 @@ function calcular() {
         document.getElementById("display").value = "Error";
     }
 }
+
+
+document.addEventListener("DOMContentLoaded", function() {
+    let imagenes = document.querySelectorAll('.galeria img');
+    let indiceActual = 0;
+
+    function cambiarImagen() {
+        imagenes[indiceActual].classList.remove('active');
+        indiceActual = (indiceActual + 1) % imagenes.length; // Vuelve a 0 después de la última imagen
+        imagenes[indiceActual].classList.add('active');
+    }
+
+    setInterval(cambiarImagen, 3000); // Cambia cada 3000 milisegundos (3 segundos)
+});

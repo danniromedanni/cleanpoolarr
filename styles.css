@@ -76,6 +76,7 @@ nav ul li a:hover {
   display: flex;
   align-items: center; /* Centra el contenido verticalmente */
   justify-content: center; /* Centra el contenido horizontalmente */
+  
 }
 
 .div1-contenedor-a {
@@ -86,11 +87,14 @@ nav ul li a:hover {
   text-align: center; /* Alinea el texto al centro */
 }
 
+
+
 .div1-contenedor-1{
   width: 100%; /* Asegura que ambas secciones ocupen todo el ancho disponible */
   display: flex; /* Esto garantiza que se comporten como bloques, aunque <section> ya lo hace por defecto */
   margin: 20px 0; /* Añade un espacio vertical entre las secciones */
   font-family: "Noto Sans JP", sans-serif;
+  text-shadow: 2px 2px 4px #001524;
 }
 .div2-contenedor-1 {
   color: #f2f3f4;
@@ -99,6 +103,13 @@ nav ul li a:hover {
   margin-top: 5%; 
   margin-left: 5%;
   margin-right: 10%;
+  text-shadow: 3px 3px 5px rgba(0, 0, 0, 1);
+ }
+
+
+
+
+ .titulo-div1-contenedor-c{
   text-shadow: 3px 3px 5px rgba(0, 0, 0, 1);
  }
 
@@ -137,10 +148,13 @@ button {
 
 
 
-.button-CentradoV{
-  position: absolute;
-  top: 83%;
-  transform: translateX(213%);
+
+  .button-CentradoV {
+    display: flex;
+    justify-content: center; /* Centra el contenido horizontalmente */
+    align-items: center;     /* Centra el contenido verticalmente si es necesario */
+    height: 10%;    
+    margin-left: 17em;
 }
 
 button:hover {
@@ -361,8 +375,7 @@ background-color: rgb(251, 253, 255);}
     height: auto;
     margin-right: 20px;
 }
-.texto-cabecera-div2-contenedor-d h1,
-.texto-cabecera-div2-contenedor-d h2 {
+.texto-cabecera-div2-contenedor-d h1 {
     margin: 0;
     padding: 0;
 }
