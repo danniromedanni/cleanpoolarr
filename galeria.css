@@ -263,7 +263,7 @@ body {
 
 .texto-div1-contenedor-c p {
     text-align: justify;
-    font-size: 20px;
+    font-size: 25px;
     color: #001524;
 }
 
@@ -275,10 +275,11 @@ body {
 }
 
 
-.listado-clientes h2 {
-    font-size: 30px;
+.listado-clientes-galeria h2 {
+    font-size: 35px;
     text-align: center;
     color: #001524;
+   
 
 }
 
@@ -297,4 +298,6 @@ body {
   display: flex;
 }
 
-
+.listadoYCarousel{
+  display: flex;
+}

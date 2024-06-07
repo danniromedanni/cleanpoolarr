@@ -274,6 +274,7 @@ body {
   display:flex;
   flex-direction: column;
   align-items: center;
+  
 }
 
 /* Título del contenedor de las tarjetas de productos */
@@ -298,7 +299,7 @@ body {
 /* Estilos de cada tarjeta de producto */
 .card-producto {
   display: flex;
-  
+  box-shadow: 0 6px 8px rgba(0, 0, 0, 0.1);
   border-radius: 8px;
   overflow: hidden;
   background-color: #fff;

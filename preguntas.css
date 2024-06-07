@@ -1,0 +1,265 @@
+body {
+    background-color: white;
+    margin: 0; /* Elimina el margen por defecto */
+    font-family: Arial, sans-serif; /* Establece la fuente predeterminada */
+  }
+
+  .contenedor-nav {
+    width: 100%; /* Ocupa el ancho completo de la ventana */
+    background-color: white; /* Un ligero gris para distinguir la barra de navegación */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Sombra sutil para dar profundidad */
+    padding: 10px 0; /* Espacio superior e inferior dentro del div */
+  }
+  
+  nav {
+  
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0; /* Elimina padding */
+    margin: 0; /* Elimina margin */
+  }
+  
+
+  /* Estilo del logo */
+  nav img {
+    height: 55px; /* Altura del logo */
+    margin-right: -5px; /* Espacio a la derecha del logo */
+    margin-left: 10px;
+  }
+  /* Estilo de la lista de navegación */
+  nav ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: center; /* Ajusta según sea necesario */
+  }
+  
+  /* Estilo de los items de la lista */
+  nav ul li {
+    margin-right: 23px; /* Espacio entre los ítems */
+  }
+
+  /* Estilo de los enlaces de la lista */
+nav ul li a {
+    text-decoration: none; /* Elimina el subrayado de los enlaces */
+    color: #8d99ae; /* Color del texto de los enlaces */
+    font-weight: bold; /* Negrita para los textos de los enlaces */
+  }
+  
+  /* Añade un efecto al pasar el ratón sobre los enlaces */
+  nav ul li a:hover {
+    color: #5ab3df; /* Cambia el color al pasar el ratón */
+  }
+  
+  nav ul li {
+    margin-right: 23px; /* Espacio entre los ítems */
+  }
+ 
+   
+  .contenedor-nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .contenedor-nav nav ul {
+    list-style-type: none;
+    margin-left: 450px;
+   }
+
+   .contenedor-nav nav ul li {
+    display: inline;
+    margin-left: 20px; /
+    
+  }
+
+  button {
+    background-color: #168AAD; /* Color celeste */
+    border: none; /* No border */
+    color: white; /* Texto blanco */
+    padding: 10px 20px; /* Padding alrededor del texto */
+    text-align: center; /* Texto centrado */
+    text-decoration: none; /* Sin decoración de texto */
+    font-size: 26px; /* Tamaño del texto */
+    margin: 4px 2px; /* Margen alrededor del botón */
+    cursor: pointer; /* Cursor de mano al pasar el mouse */
+    border-radius: 12px; /* Bordes redondeados */
+    transition: all 0.3s ease; /* Transición suave para hover */
+  }
+  
+button:hover {
+  background-color: #52B69A; /* Un celeste un poco más oscuro al hacer hover */
+}
+
+
+.footer{
+    background-color: #001524;
+   width: 100%;
+   height: 90px;
+  }
+  
+  .footer-conteiner{
+    display: flex;
+    justify-content: space-between;
+  }
+  .logosFC {
+    display: flex; /* Utiliza flexbox para los logos */
+    align-items: center; /* Centra verticalmente los logos */
+    margin-left: 5%;
+  }
+  
+  .loguitosF {
+    margin-right: 20px; /* Ajusta el espacio entre los logos */
+  }
+  
+  .footer-izquierdo pre {
+    color: #f2f3f2;
+    font-family: "Nunito Sans", sans-serif;
+    margin-left: 9%; 
+    align-self: center; /* Centra verticalmente el texto izquierdo */
+  }
+
+  
+.contenedor-a {
+    position: relative;
+    width: 100%;
+    height: 100%;
+  }
+  
+  .imagenGigante {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    text-align: center; 
+    display: block;
+  }
+  
+  .div1-contenedor-a {
+    background-image: url("./asset/chicos-pileta.jpg ");
+    height: 500px;
+    background-size: cover;
+    position: relative;
+    background-attachment: fixed;
+    z-index: 1;
+    display: flex; 
+    justify-content: center; 
+    align-items: center; 
+  }
+  
+  .div1-contenedor-a h1 {
+    color: #f2f3f2;
+    font-size: 5em;
+    text-align: center;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); 
+  }
+  
+  .logoF {
+    position: absolute;
+    top: 92%;
+    left: 50%;
+    transform: translate(-50%,50%);
+    z-index: 2;
+    height: 40px; 
+    filter: drop-shadow( -3px  5px  4px #4b4a48);
+    }
+
+
+    .contenedor-6{
+        margin-top: 100px;
+        display: flex;
+        justify-content: center;
+        position: relative; 
+        margin-left: -4%;
+        
+        }
+  
+        .card2{
+            width: 300px;
+            text-align: center;
+            margin-top: 20px;
+            box-shadow: 0 6px 8px rgba(0, 0, 0, 0.1); /* Sombra ligera para 3D efecto */
+            border-radius: 5%;
+            margin-left: 3%;
+            transition: transform 0.3s; /* Agrega una transición suave al cambio de escala */
+          }
+          .card2:hover {
+            transform: scale(1.05); /* Agrandar al 105% del tamaño original */
+          }
+    
+.card2 img {
+    width: 100%; /* La imagen ocupará el 100% del ancho del contenedor */
+    border-radius: 5%;
+  }
+  
+  
+  .card-info2{
+   margin-left: 3%;
+  }
+  .card-info2:hover{
+    transform: scale(1.05); /* Agrandar al 105% del tamaño original */
+    text-align: center;
+  }
+  
+  .card-info2 h3 {
+    color: #0c837b;
+    font-family: "Noto Sans JP", sans-serif;
+  }
+  
+  .contenedor-4{
+    display: flex;
+    justify-content: center;
+    color: #1E6091;
+  
+  }
+
+    
+.contenedor-7 {
+    display: flex;
+    background-color: #f2f3f2;
+    width: 100%;
+   }
+   .texto-niños{
+     justify-content: center;
+     margin-top: 7%;
+    }
+    
+    .img-niños img {
+      margin-left: 10%;
+     width: 85%;
+    }
+   
+    .parrafo-contenedor-7 pre{
+     font-family: "Noto Sans JP", sans-serif;
+     font-size: large;
+    }
+   
+    .titulo-contenedor-7{
+     font-family: "Noto Sans JP", sans-serif;
+     font-size: 25px;
+     text-align: center;
+     color: #1E6091;
+     margin-left: -20%;
+     
+    }
+
+    .btn-contenedor-7{
+        margin-left: 11%;
+       }
+ 
+    .titulo-listado-preguntas{
+        text-align: center;
+        font-size: 27px;
+        color: #001524;
+        text-shadow: 2px 2px 4px rgba(54, 54, 54, 0.5);
+        
+        
+    }
+
+.listado2{
+    display: block;
+    width: 50%;
+}
+
+    
