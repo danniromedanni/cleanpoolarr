@@ -1,303 +1,588 @@
 /* Establece el color de fondo de todo el cuerpo de la página a blanco */
 body {
-    background-color: white;
-    margin: 0; /* Elimina el margen por defecto */
-    font-family: Arial, sans-serif; /* Establece la fuente predeterminada */
-  }
+  background-color: white;
+  margin: 0; /* Elimina el margen por defecto */
+  font-family: Arial, sans-serif; /* Establece la fuente predeterminada */
+}
+
+/* Estilo general del div contenedor */
+.contenedor-nav {
+  width: 100%;
+  background-color: white; /* Un ligero gris para distinguir la barra de navegación */
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Sombra sutil para dar profundidad */
+  padding: 10px 0; /* Espacio superior e inferior dentro del div */
+}
+
+nav {
   
-  /* Estilo general del div contenedor */
-  .contenedor-nav {
-    width: 100%;
-    background-color: white; /* Un ligero gris para distinguir la barra de navegación */
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Sombra sutil para dar profundidad */
-    padding: 10px 0; /* Espacio superior e inferior dentro del div */
-  }
-  
-  nav {
-    
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    padding: 0; /* Elimina padding */
-    margin: 0; /* Elimina margin */
-  }
-  
-  
-  /* Estilo del logo */
-  nav img {
-    height: 55px; /* Altura del logo */
-    margin-right: -5px; /* Espacio a la derecha del logo */
-    margin-left: 10px;
-  }
-  
-  nav ul {
-    list-style-type: none;
-    padding: 0;
-    margin: 0;
-    display: flex;
-    justify-content: center; /* Ajusta según sea necesario */
-  }
-  
-  /* Estilo de los items de la lista */
-  nav ul li {
-    margin-right: 23px; /* Espacio entre los ítems */
-  }
-  
-  
-  /* Estilo de los enlaces de la lista */
-  nav ul li a {
-    text-decoration: none; /* Elimina el subrayado de los enlaces */
-    color: #8d99ae; /* Color del texto de los enlaces */
-    font-weight: bold; /* Negrita para los textos de los enlaces */
-  }
-  
-  /* Añade un efecto al pasar el ratón sobre los enlaces */
-  nav ul li a:hover {
-    color: #5ab3df; /* Cambia el color al pasar el ratón */
-  }
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0; /* Elimina padding */
+  margin: 0; /* Elimina margin */
+}
 
 
-  .contenedor-nav {
+/* Estilo del logo */
+nav img {
+  height: 55px; /* Altura del logo */
+  margin-right: -5px; /* Espacio a la derecha del logo */
+  margin-left: 10px;
+}
+
+nav ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  justify-content: center; /* Ajusta según sea necesario */
+}
+
+/* Estilo de los items de la lista */
+nav ul li {
+  margin-right: 23px; /* Espacio entre los ítems */
+}
+
+
+/* Estilo de los enlaces de la lista */
+nav ul li a {
+  text-decoration: none; /* Elimina el subrayado de los enlaces */
+  color: #8d99ae; /* Color del texto de los enlaces */
+  font-weight: bold; /* Negrita para los textos de los enlaces */
+}
+
+/* Añade un efecto al pasar el ratón sobre los enlaces */
+nav ul li a:hover {
+  color: #5ab3df; /* Cambia el color al pasar el ratón */
+}
+
+
+.contenedor-nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.contenedor-nav nav ul {
+ list-style-type: none;
+ margin-left: 450px;
+}
+
+.contenedor-nav nav ul li {
+  display: inline;
+  margin-left: 20px; /
+  
+}
+
+
+.footer{
+  background-color: #001524;
+   width: 100%;
+   height: 90px;
+  }
+  
+  .footer-conteiner{
     display: flex;
     justify-content: space-between;
-    align-items: center;
+  }
+  .logosFC {
+    display: flex; /* Utiliza flexbox para los logos */
+    align-items: center; /* Centra verticalmente los logos */
+    margin-left: 5%;
   }
   
-  .contenedor-nav nav ul {
-   list-style-type: none;
-   margin-left: 450px;
+  .loguitosF {
+    margin-right: 20px; /* Ajusta el espacio entre los logos */
   }
   
-  .contenedor-nav nav ul li {
-    display: inline;
-    margin-left: 20px; /
-    
+  .footer-izquierdo pre {
+    color: #f2f3f2;
+    font-family: "Nunito Sans", sans-serif;
+    margin-left: 9%; 
+    align-self: center; /* Centra verticalmente el texto izquierdo */
   }
+  
+  button {
+      background-color: #168AAD; /* Color celeste */
+      border: none; /* No border */
+      color: white; /* Texto blanco */
+      padding: 10px 20px; /* Padding alrededor del texto */
+      text-align: center; /* Texto centrado */
+      text-decoration: none; /* Sin decoración de texto */
+      font-size: 26px; /* Tamaño del texto */
+      margin: 4px 20px; /* Margen alrededor del botón */
+      cursor: pointer; /* Cursor de mano al pasar el mouse */
+      border-radius: 12px; /* Bordes redondeados */
+      transition: all 0.3s ease; /* Transición suave para hover */
+    }
 
-  
-  .footer{
-    background-color: #001524;
-     width: 100%;
-     height: 90px;
-    }
-    
-    .footer-conteiner{
+    .contenedor-6{
+      margin-top: 100px;
       display: flex;
-      justify-content: space-between;
-    }
-    .logosFC {
-      display: flex; /* Utiliza flexbox para los logos */
-      align-items: center; /* Centra verticalmente los logos */
-      margin-left: 5%;
-    }
-    
-    .loguitosF {
-      margin-right: 20px; /* Ajusta el espacio entre los logos */
-    }
-    
-    .footer-izquierdo pre {
-      color: #f2f3f2;
-      font-family: "Nunito Sans", sans-serif;
-      margin-left: 9%; 
-      align-self: center; /* Centra verticalmente el texto izquierdo */
-    }
-    
-    button {
-        background-color: #168AAD; /* Color celeste */
-        border: none; /* No border */
-        color: white; /* Texto blanco */
-        padding: 10px 20px; /* Padding alrededor del texto */
-        text-align: center; /* Texto centrado */
-        text-decoration: none; /* Sin decoración de texto */
-        font-size: 26px; /* Tamaño del texto */
-        margin: 4px 20px; /* Margen alrededor del botón */
-        cursor: pointer; /* Cursor de mano al pasar el mouse */
-        border-radius: 12px; /* Bordes redondeados */
-        transition: all 0.3s ease; /* Transición suave para hover */
+      justify-content: center;
+      position: relative; 
+     margin-left: -3%;
       }
 
-      .contenedor-6{
-        margin-top: 100px;
-        display: flex;
-        justify-content: center;
-        position: relative; 
-       margin-left: -3%;
-        }
-
-        .contenedor-1,
+.contenedor-1,
 .contenedor-2,
 .contenedor-3,
-.contenedor-a,
 .contenedor-b,
 .contenedor-c,
 .contenedor-7 {
-  background-color: #f8f9fa;
-  margin-top: 20px; /* Espacio en la parte superior */
-  margin-bottom: 20px; /* Espacio en la parte inferior */
-  padding: 20px; /* Espacio alrededor del contenido */
+background-color: #f8f9fa;
+margin-top: 20px; /* Espacio en la parte superior */
+margin-bottom: 20px; /* Espacio en la parte inferior */
+padding: 20px; /* Espacio alrededor del contenido */
 }
 
 .card2{
-    width: 300px;
-    text-align: center;
-    margin-top: 20px;
-    box-shadow: 0 6px 8px rgba(0, 0, 0, 0.1); /* Sombra ligera para 3D efecto */
-    border-radius: 5%;
-    margin-left: 3%;
-    transition: transform 0.3s; /* Agrega una transición suave al cambio de escala */
-  }
-  .card2:hover {
-    transform: scale(1.05); /* Agrandar al 105% del tamaño original */
-  }
-  
-  .card2 img {
-    width: 100%; /* La imagen ocupará el 100% del ancho del contenedor */
-    border-radius: 5%;
-  }
-  
-  
-  .card-info2{
-   margin-left: 3%;
-  }
-  .card-info2:hover{
-    transform: scale(1.05); /* Agrandar al 105% del tamaño original */
-    text-align: center;
-  }
+  width: 300px;
+  text-align: center;
+  margin-top: 20px;
+  box-shadow: 0 6px 8px rgba(0, 0, 0, 0.1); /* Sombra ligera para 3D efecto */
+  border-radius: 5%;
+  margin-left: 3%;
+  transition: transform 0.3s; /* Agrega una transición suave al cambio de escala */
+}
+.card2:hover {
+  transform: scale(1.05); /* Agrandar al 105% del tamaño original */
+}
+
+.card2 img {
+  width: 100%; /* La imagen ocupará el 100% del ancho del contenedor */
+  border-radius: 5%;
+}
 
 
-  .contenedor-7 {
- display: flex;
- background-color: #f2f3f2;
- width: 97%;
+.card-info2{
+ margin-left: 3%;
+}
+.card-info2:hover{
+  transform: scale(1.05); /* Agrandar al 105% del tamaño original */
+  text-align: center;
+}
+
+
+.contenedor-7 {
+display: flex;
+background-color: #f2f3f2;
+width: 97%;
 }
 .texto-niños{
+justify-content: center;
+margin-top: 7%;
+}
+
+.img-niños img{
+margin-left: 10%;
+width: 85%;
+}
+
+.parrafo-contenedor-7 pre{
+font-family: "Noto Sans JP", sans-serif;
+font-size: large;
+}
+
+.titulo-contenedor-7{
+font-family: "Noto Sans JP", sans-serif;
+font-size: 25px;
+text-align: center;
+color: #1E6091;
+margin-left: -20%;
+
+}
+
+.btn-contenedor-7{
+margin-left: 11%;
+}
+
+
+
+.contenedor-4{
+  display: flex;
   justify-content: center;
-  margin-top: 7%;
- }
- 
- .img-niños img{
-  margin-left: 10%;
-  width: 85%;
- }
-
- .parrafo-contenedor-7 pre{
-  font-family: "Noto Sans JP", sans-serif;
-  font-size: large;
- }
-
- .titulo-contenedor-7{
-  font-family: "Noto Sans JP", sans-serif;
-  font-size: 25px;
-  text-align: center;
   color: #1E6091;
-  margin-left: -20%;
+
+}
+
+.contenedor-a {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  margin: 0%;
+}
+
+.algClientes{
+  display: flex;
+  justify-content: center;
+  font-size: 35px;
+  color:#1E6091;
+}
+
+.imagenGigante {
+  position: relative;
+  height: 400px;
+  text-align: center; 
+  display: block;
+}
+
+.div1-contenedor-a {
+  background-image: url("./asset/galeriaGigante.jpg");
+  height: 100%;
+  background-size: cover;
+  position: relative;
+  background-attachment: fixed;
+  z-index: 1;
+  display: flex; 
+  justify-content: center; 
+  align-items: center; 
+}
+
+.div1-contenedor-a h1 {
+  color: #f2f3f2;
+  font-size: 5em;
+  text-align: center;
   
- }
+}
 
- .btn-contenedor-7{
-  margin-left: 11%;
- }
-
- 
-
-  .contenedor-4{
-    display: flex;
-    justify-content: center;
-    color: #1E6091;
-  
+.logoF {
+  position: absolute;
+  top: 92%;
+  left: 50%;
+  transform: translate(-50%,50%);
+  z-index: 2;
+  height: 40px; 
+  filter: drop-shadow( -3px  5px  4px #4b4a48);
   }
 
-  .contenedor-a {
-    position: relative;
-    width: 100%;
-    height: 100%;
-  }
-  
-  .imagenGigante {
-    position: relative;
-    height: 400px;
-    text-align: center; 
-    display: block;
-  }
-  
-  .div1-contenedor-a {
-    background-image: url("./asset/galeriaGigante.jpg");
-    height: 100%;
-    background-size: cover;
-    position: relative;
-    background-attachment: fixed;
-    z-index: 1;
-    display: flex; 
-    justify-content: center; 
-    align-items: center; 
-  }
-  
-  .div1-contenedor-a h1 {
-    color: #f2f3f2;
-    font-size: 5em;
-    text-align: center;
-    
-  }
-  
-  .logoF {
-    position: absolute;
-    top: 92%;
-    left: 50%;
-    transform: translate(-50%,50%);
-    z-index: 2;
-    height: 40px; 
-    filter: drop-shadow( -3px  5px  4px #4b4a48);
-    }
-
-    /* Estilos para la sección contenedor-c */
+  /* Estilos para la sección contenedor-c */
 
 .titulo-div1-contenedor-c {
-   display: flex;
-   justify-content: center;
-   color: #1E6091;
-   font-size: 25px;
+ display: flex;
+ justify-content: center;
+ color: #1E6091;
+ font-size: 25px;
 }
 
 
 
 
 .texto-div1-contenedor-c p {
-    text-align: justify;
-    font-size: 25px;
-    color: #001524;
+  text-align: justify;
+  font-size: 25px;
+  color:#1E6091;
 }
 
 
 /* Estilos para la sección listado-clientes-galeria */
-.listado-clientes-galeria {
-    /* Agrega tus estilos aquí */
-    display:inline-flex;
+/* Contenedor principal del listado y las imágenes */
+.listadoYCarousel {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 20px;
 }
 
-
-.listado-clientes-galeria h2 {
-    font-size: 35px;
-    text-align: center;
-    color: #001524;
-   
-
+/* Estilos para la lista de clientes */
+.listado-clientes {
+  flex: 1;
+  padding: 20px;
 }
 
 .listado-clientes ul {
-    font-size: 20px;
-    color: #4b4a48;
-    display:block;
-    
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+  column-count: 1; /* Divide la lista en 3 columnas */
+  column-gap: 20px; /* Espacio entre columnas */
+  font-size: 20px;
 }
+
+.listado-clientes ul li {
+  margin-bottom: 10px;
+  color:#001524;
+}
+
+/* Estilos para la galería de imágenes */
+.contenedor-galeria-imagenes-clientes {
+  flex: 1;
+  display: flex; /* Corrigiendo "flexbox" por "flex" */
+  flex-direction: column;
+  gap: 20px;
+  align-items: center;
+}
+
+.contenedor-galeria-imagenes-clientes img {
+  width: 90%;
+  height: auto;
+  max-width: 250px; /* Para limitar el tamaño máximo de las imágenes */
+  border-radius: 5px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  margin-right: 15px; /* Añade margen a la derecha */
+}
+
+/* Intercalado de imágenes en pantallas más grandes */
+.galeria {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+
+/* Estilo responsive para pantallas pequeñas */
+@media (max-width: 900px) {
+  .listadoYCarousel {
+      flex-direction: column;
+  }
+
+  .listado-clientes ul {
+      column-count: 2; /* Cambia a 2 columnas en pantallas pequeñas */
+  }
+
+  .contenedor-galeria-imagenes-clientes img {
+      max-width: 100%; /* Asegura que las imágenes no superen el ancho de la pantalla */
+  }
+}
+
+@media (max-width: 600px) {
+  .listado-clientes ul {
+      column-count: 1; /* Cambia a 1 columna en pantallas más pequeñas */
+  }
+}
+
+
+
+
 
 
 /* Estilos para la sección contenedor-galeria-imagenes-clientes */
+/* Estilos para el contenedor del carrusel */
 .contenedor-galeria-imagenes-clientes {
-  display: flex;
-  justify-content: end;
-  display: flex;
+  position: relative;
+  width: 100%;
+  max-width: 600px; /* Ajusta esto según tus necesidades */
+  overflow: hidden;
+  margin: 0 auto; /* Centrar el carrusel */
 }
 
-.listadoYCarousel{
+/* Estilos para el carrusel */
+.carrusel {
   display: flex;
+  transition: transform 0.5s ease-in-out; /* Suaviza el movimiento */
 }
+
+/* Asegura que las imágenes ocupen el 100% del contenedor */
+.carrusel img {
+  width: 100%;
+  max-width: 100%;
+  flex-shrink: 0; /* Esto es importante para que las imágenes no colapsen */
+}
+
+
+
+
+
+#check{
+  display: none;
+}
+
+
+.active{
+  color:#52B69A;
+}
+.checkbtn{
+  display: none;
+}
+
+
+.img2{
+  display: none;
+}
+
+/*INICIO DE MEDIA QUERYS*/
+
+/* Media Query para pantallas pequeñas */
+/* Media Query para pantallas pequeñas */
+
+@media (max-width: 730px) {
+   /* Mostrar el botón de hamburguesa en pantallas pequeñas */
+   .checkbtn {
+    display: block;
+    position: absolute;
+    right: 20px;
+    
+    color:#001524;
+  }
+
+  /* Esconder el menú inicialmente (movido hacia arriba) */
+  nav ul {
+    position: absolute;
+    width: 50%;
+    height: auto;
+    background: #168AAD;
+    top: -100%; /* Menú está oculto fuera de la vista, en la parte superior */
+    right: 0; /* Mover el menú al lado derecho */
+    text-align: center;
+    display:flex;
+    transition: all 0.5s ease; /* Animación suave */
+    z-index: 10; /* Coloca el menú por encima de la imagen */
+    flex-direction: column; /* Asegura que los li se alineen en columna */
+}
+
+/* Mostrar el menú cuando el checkbox está activado (se despliega hacia abajo desde la derecha) */
+#check:checked ~ ul {
+  top: 80px; /* Menú visible, desplegándose desde arriba */
+  right: 0; /* Mantenerlo en el lado derecho */
+}
+
+  /* Los enlaces en formato de bloque */
+  nav ul li {
+    margin: 20px 0;
+    flex-direction: column;
+  }
+
+  /* Ajustar el tamaño de los enlaces en pantallas pequeñas */
+  nav ul li a {
+    font-size: 20px;
+    color: #f2f3f2;
+  }
+  .active{
+    color: #c7e4f3;
+  }
+  /*ahi termina el bendito menu hamburguesa*/
+ 
+  .div2-contenedor-1 {
+    color: #f2f3f4;
+    width: 100%; /* Asegura que ambas secciones ocupen todo el ancho disponible */
+    display: block; /* Esto garantiza que se comporten como bloques, aunque <section> ya lo hace por defecto */
+    margin-top: 5%; 
+    
+    text-shadow: 3px 3px 5px rgba(0, 0, 0, 1);
+   }
+
+  .div1-contenedor-1 div img{
+    width: 90%;  /* Ajusta el ancho de la imagen al 100% del contenedor o pantalla */
+    height: auto; /* Mantiene la proporción original de la imagen */
+    object-fit: contain; /* Asegura que toda la imagen sea visible dentro del contenedor */
+    margin-left: 10%;
+  }
+
+  .div1-contenedor-1 div{
+    margin-top: -2em;
+      max-height: 200px;  /* Ajusta este valor según tu diseño */
+      overflow: hidden;   /* Oculta cualquier parte de la imagen que sobresalga */
+    
+  }
+  .div2-contenedor-1{
+  display: block;
+  align-items: center;
+  }
+
+
+
+
+
+
+
+.contenedor-2{
+  background-color: white;
+  
+}
+.contenedor-2 div p{
+  font-size: 70%;
+}
+
+.div1-contenedor-a {
+  font-size: 60%;
+}
+
+.titulo-div1-contenedor-c{
+  text-align: center;
+}
+
+.texto-div1-contenedor-c{
+  padding: 1em;
+}
+
+.algClientes{
+  text-align: center;
+}
+
+.img2{
+  display: block;
+  width: 100%;
+}
+
+.listado-clientes ul li{
+  text-align: center;
+}
+
+/*calculadoras*/
+.contenedor-6{
+
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+
+.card-info2 h3{
+  font-size: 140%;
+}
+
+.card2 img {
+  width: 70%;
+}
+
+.contenedor-7{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content:center;
+  width: auto;
+}
+
+.titulo-contenedor-7{
+  font-size: 100%;
+  margin-left: -1%;
+}
+.parrafo-contenedor-7 pre { 
+  font-size: 90%; /* Reduce un poco el tamaño de la fuente en pantallas pequeñas */
+    padding: 10px; /* Ajusta el padding para que el texto tenga más espacio */
+    line-height: 1.4; /* Ajusta el espacio entre líneas para mejorar la legibilidad */
+    white-space: normal; /* Asegura que el texto se ajuste dentro del contenedor */
+    text-align: center;
+}
+
+.btn-contenedor-7{
+  transform: scale(0.9); /* Reduce el tamaño del botón un 20% */
+  margin-left: 13%;
+}
+
+.img-niños img{
+  margin-left: 3%;
+}
+
+.footer-izquierdo{
+  margin-top: 5%;
+  font-size: 50%;
+ 
+}
+.logosFC{
+  transform: scale(0.8);
+}
+
+.div1-contenedor-a{
+  height: 26em;
+  width: auto;
+  margin-top: 3.5em;
+  margin-bottom: 0px;
+}
+
+.logoF{
+  margin-top: -9em;
+}
+
+
+  
+  }
+

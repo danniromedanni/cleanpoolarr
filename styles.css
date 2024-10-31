@@ -44,6 +44,7 @@ nav ul li {
 }
 
 
+
 /* Estilo de los enlaces de la lista */
 nav ul li a {
   text-decoration: none; /* Elimina el subrayado de los enlaces */
@@ -54,6 +55,22 @@ nav ul li a {
 /* Añade un efecto al pasar el ratón sobre los enlaces */
 nav ul li a:hover {
   color: #5ab3df; /* Cambia el color al pasar el ratón */
+}
+.contenedor-nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.contenedor-nav nav ul {
+ list-style-type: none;
+ margin-left: 450px;
+}
+
+.contenedor-nav nav ul li {
+  display: inline;
+  margin-left: 20px; /
+  
 }
 
 .contenedor-1 {
@@ -66,18 +83,7 @@ nav ul li a:hover {
   background-size: 99%;
 }
 
-.contenedor-a {
-  background-color: #f2f3f4; /* Color de fondo por defecto en caso de que la imagen no cargue */
-  background-image: url("./asset/IMAGENES CLEANPOOL/fondo-3.jpg"); /* Corrige la ruta si es necesario */
-  background-size: cover; /* Asegura que la imagen cubra todo el div */
-  background-position: center; /* Centra la imagen dentro del div */
-  background-repeat: no-repeat; /* Evita que la imagen se repita */
-  min-height: 400px; /* Altura mínima para asegurar que la imagen se muestre adecuadamente */
-  display: flex;
-  align-items: center; /* Centra el contenido verticalmente */
-  justify-content: center; /* Centra el contenido horizontalmente */
-  
-}
+
 
 .div1-contenedor-a {
   color: white; /* Cambia el color del texto para mejorar contraste */
@@ -92,7 +98,7 @@ nav ul li a:hover {
 .div1-contenedor-1{
   width: 100%; /* Asegura que ambas secciones ocupen todo el ancho disponible */
   display: flex; /* Esto garantiza que se comporten como bloques, aunque <section> ya lo hace por defecto */
-  margin: 20px 0; /* Añade un espacio vertical entre las secciones */
+  margin: 5rem 0; /* Añade un espacio vertical entre las secciones */
   font-family: "Noto Sans JP", sans-serif;
   text-shadow: 2px 2px 4px #001524;
 }
@@ -100,10 +106,20 @@ nav ul li a:hover {
   color: #f2f3f4;
   width: 100%; /* Asegura que ambas secciones ocupen todo el ancho disponible */
   display: block; /* Esto garantiza que se comporten como bloques, aunque <section> ya lo hace por defecto */
-  margin-top: 5%; 
   margin-left: 5%;
   margin-right: 10%;
   text-shadow: 3px 3px 5px rgba(0, 0, 0, 1);
+ }
+ .div2-contenedor-1 h3{
+  
+  font-size: 2rem;
+ }
+ .div2-contenedor-1 h2{
+  font-size: 3rem;
+ }
+
+ .div2-contenedor-1 p{
+  font-size: 1rem;
  }
 
 
@@ -113,11 +129,7 @@ nav ul li a:hover {
   text-shadow: 3px 3px 5px rgba(0, 0, 0, 1);
  }
 
-.div1-contenedor-a {
-  width: 100%; /* Asegura que ambas secciones ocupen todo el ancho disponible */
-  display: block; /* Esto garantiza que se comporten como bloques, aunque <section> ya lo hace por defecto */
-  margin: 30px 0; /* Añade un espacio vertical entre las secciones */
-}
+
 
 .contenedor-b > div {
   text-align: center;
@@ -149,7 +161,7 @@ button {
 
 
 
-  .button-CentradoV {
+  .button-CentradoV  {
     display: flex;
     justify-content: center; /* Centra el contenido horizontalmente */
     align-items: center;     /* Centra el contenido verticalmente si es necesario */
@@ -163,15 +175,13 @@ button:hover {
 
 .contenedor-2 {
   display: flex;
-  gap: 20px; /* Espacio entre las cards */
-  justify-content: center; /* Centra las cards en el contenedor si no ocupan todo el ancho */
   padding: 20px; 
   margin-inline: 20%;
   font-size: 30px;
   text-align: center;
   color: #037971;
   opacity: 80%;
-  background-color: aliceblue;
+margin-top: 1em;
 
 }
 
@@ -231,8 +241,8 @@ button:hover {
   line-height: 1.5; /* Espaciado de línea para mejorar la legibilidad */
 }
 
-.contenedor-1,
-.contenedor-2,
+
+
 .contenedor-3,
 .contenedor-a,
 .contenedor-b,
@@ -301,9 +311,6 @@ background-color: rgb(251, 253, 255);}
 }
 
 
-.btn2{
-    margin-left: 5%;
-  }
 
 .contenedor-7 {
  display: flex;
@@ -398,26 +405,11 @@ background-color: rgb(251, 253, 255);}
   margin-right: 20px;
 }
 
-.contenedor-nav {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-}
 
-.contenedor-nav nav ul {
- list-style-type: none;
- margin-left: 450px;
-}
-
-.contenedor-nav nav ul li {
-  display: inline;
-  margin-left: 20px; /
-  
-}
 
 .div1-contenedor-1 img{
   width: 600px;
-  margin-top: 10%;
+ 
   margin-left: 20px;
   
 }
@@ -454,5 +446,251 @@ background-color: #001524;
   margin-left: 9%; 
   align-self: center; /* Centra verticalmente el texto izquierdo */
 }
+
+
+
+
+#check{
+  display: none;
+}
+
+
+.active{
+  color:#52B69A;
+}
+.checkbtn{
+  display: none;
+}
+
+.button-CentradoV2{
+  display: none;
+}
+
+.contenedor-1{
+  margin-top: 1em;
+}
+
+
+nav ul li {
+  margin-right: 23px; /* Espacio entre los ítems */
+}
+
+nav ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  justify-content: center; /* Ajusta según sea necesario */
+}
+
+/*ACA EMPIEZAN LAS MEDIAQUERYS
+VOY A ESCRIBIR MUCHO
+PARA QUE SE ENCUENTRE MAS FACIL 
+DESPUES*/
+
+@media (max-width: 730px) {
+   /* Mostrar el botón de hamburguesa en pantallas pequeñas */
+   .checkbtn {
+    display: block;
+    position: absolute;
+    right: 20px;
+    color:#001524;
+  }
+
+  /* Esconder el menú inicialmente (movido hacia arriba) */
+  nav ul {
+    position: absolute;
+    width: 50%;
+    height: auto;
+    background: #168AAD;
+    top: -100%; /* Menú está oculto fuera de la vista, en la parte superior */
+    right: 0; /* Mover el menú al lado derecho */
+    text-align: center;
+    display:flex;
+    transition: all 0.5s ease; /* Animación suave */
+    z-index: 2; /* Coloca el menú por encima de la imagen */
+    flex-direction: column; /* Asegura que los li se alineen en columna */
+}
+
+/* Mostrar el menú cuando el checkbox está activado (se despliega hacia abajo desde la derecha) */
+#check:checked ~ ul {
+  top: 80px; /* Menú visible, desplegándose desde arriba */
+  right: 0; /* Mantenerlo en el lado derecho */
+}
+
+  /* Los enlaces en formato de bloque */
+  nav ul li {
+    margin: 20px 0;
+    flex-direction: column;
+  }
+
+  /* Ajustar el tamaño de los enlaces en pantallas pequeñas */
+  nav ul li a {
+    font-size: 20px;
+    color: #f2f3f2;
+  }
+  .active{
+    color: #c7e4f3;
+  }
+
+  /*ahi termina el bendito menu hamburguesa*/
+ 
+  .div2-contenedor-1 {
+    color: #f2f3f4;
+    width: 100%; /* Asegura que ambas secciones ocupen todo el ancho disponible */
+    display: block; /* Esto garantiza que se comporten como bloques, aunque <section> ya lo hace por defecto */
+     
+    text-shadow: 3px 3px 5px rgba(0, 0, 0, 1);
+   }
+
+  .div1-contenedor-1 img{
+    width: 80%;  /* Ajusta el ancho de la imagen al 100% del contenedor o pantalla */
+    height: auto; /* Mantiene la proporción original de la imagen */
+    object-fit: contain; /* Asegura que toda la imagen sea visible dentro del contenedor */
+    margin-left: 10%;
+    margin-top: 3em;
+  }
+
+.div2-contenedor-1{
+  margin-block: -4em;
+}
+
+  .div1-contenedor-1 div{
+    margin-top: -3em;
+    max-height: 20em;  /* Ajusta este valor según tu diseño */
+     
+  }
+
+  .div2-contenedor-1{
+  display: block;
+  align-items: center;
+  }
+
+  .div2-contenedor-1 h3 {
+   
+    font-size: 85%;
+  }
+  .div2-contenedor-1 h2 {
+
+    font-size: 130%;
+   }
+   .div2-contenedor-1 p {
+    display: none;
+   }
+
+   .button-CentradoV  {
+   display: none;
+}
+
+.button-CentradoV2{
+  display: flex;
+    justify-content: center; /* Centra el div horizontalmente */
+    align-items: center; /* (Opcional) Si también deseas centrar verticalmente */
+  
+}
+
+
+
+.contenedor-2{
+  background-color: white;
+  margin-inline: 0%;
+  
+  
+}
+.contenedor-2 div p{
+  font-size: 70%;
+}
+
+/*loguitos raros*/
+.contenedor-3 {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  width: 65%;
+  margin-left: 12%;
+}
+
+.card {
+  background-color: #d5dff1;
+  margin-bottom: 20px;
+  padding: 2px; /* Ajusta el espacio interno para hacerlo más compacto */
+}
+
+.loguitos-cards {
+  width: 19%; /* Ajusta el tamaño de las imágenes */
+  height: 16%; /* Asegúrate de que las imágenes sean cuadradas */
+}
+
+.card-info h3 {
+  font-size: 1.2rem; /* Ajusta el tamaño del texto del título */
+}
+
+.card-info p {
+  font-size: 1rem; /* Ajusta el tamaño del texto del párrafo */
+}
+
+.titulo-cards{
+  font-size: 60%;
+  margin-bottom: -7%;
+}
+
+
+.contenedor-5{
+  margin-top: 5%;
+}
+ 
+/*calculadoras*/
+.contenedor-6{
+
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+
+.card-info2 h3{
+  font-size: 140%;
+}
+
+.card2 img {
+  width: 70%;
+}
+
+.contenedor-7{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content:center;
+}
+
+.titulo-contenedor-7{
+  font-size: 100%;
+  margin-left: -1%;
+}
+.parrafo-contenedor-7 pre { 
+  font-size: 90%; /* Reduce un poco el tamaño de la fuente en pantallas pequeñas */
+    padding: 10px; /* Ajusta el padding para que el texto tenga más espacio */
+    line-height: 1.4; /* Ajusta el espacio entre líneas para mejorar la legibilidad */
+    white-space: normal; /* Asegura que el texto se ajuste dentro del contenedor */
+    text-align: center;
+}
+
+.btn-contenedor-7{
+  transform: scale(0.9); /* Reduce el tamaño del botón un 20% */
+  margin-left: 13%;
+}
+
+.img-niños img{
+  margin-left: 3%;
+}
+
+.footer-izquierdo{
+  margin-top: 5%;
+  font-size: 50%;
+ 
+}
+.logosFC{
+  transform: scale(0.8);
+}
+  
+  }
 
 

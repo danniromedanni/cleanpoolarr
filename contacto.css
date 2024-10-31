@@ -1,0 +1,444 @@
+body {
+    background-color: white;
+    margin: 0; /* Elimina el margen por defecto */
+    font-family: Arial, sans-serif; /* Establece la fuente predeterminada */
+}
+
+.contenedor-nav {
+    width: 100%; /* Ocupa el ancho completo de la ventana */
+    background-color: white; /* Un ligero gris para distinguir la barra de navegación */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Sombra sutil para dar profundidad */
+    padding: 10px 0; /* Espacio superior e inferior dentro del div */
+}
+
+nav {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0; /* Elimina padding */
+    margin: 0; /* Elimina margin */
+}
+
+/* Estilo del logo */
+nav img {
+    height: 55px; /* Altura del logo */
+    margin-right: -5px; /* Espacio a la derecha del logo */
+    margin-left: 10px;
+}
+
+/* Estilo de la lista de navegación */
+nav ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: center; /* Ajusta según sea necesario */
+}
+
+/* Estilo de los items de la lista */
+nav ul li {
+    margin-right: 23px; /* Espacio entre los ítems */
+}
+
+/* Estilo de los enlaces de la lista */
+nav ul li a {
+    text-decoration: none; /* Elimina el subrayado de los enlaces */
+    color: #8d99ae; /* Color del texto de los enlaces */
+    font-weight: bold; /* Negrita para los textos de los enlaces */
+}
+
+/* Añade un efecto al pasar el ratón sobre los enlaces */
+nav ul li a:hover {
+    color: #5ab3df; /* Cambia el color al pasar el ratón */
+}
+
+nav ul li {
+    margin-right: 23px; /* Espacio entre los ítems */
+}
+
+.contenedor-nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.contenedor-nav nav ul {
+    list-style-type: none;
+    margin-left: 450px;
+}
+
+.contenedor-nav nav ul li {
+    display: inline;
+    margin-left: 20px; 
+}
+
+button {
+    background-color: #168AAD; /* Color celeste */
+    border: none; /* No border */
+    color: white; /* Texto blanco */
+    padding: 10px 20px; /* Padding alrededor del texto */
+    text-align: center; /* Texto centrado */
+    text-decoration: none; /* Sin decoración de texto */
+    font-size: 26px; /* Tamaño del texto */
+    margin: 4px 2px; /* Margen alrededor del botón */
+    cursor: pointer; /* Cursor de mano al pasar el mouse */
+    border-radius: 12px; /* Bordes redondeados */
+    transition: all 0.3s ease; /* Transición suave para hover */
+}
+
+button:hover {
+    background-color: #52B69A; /* Un celeste un poco más oscuro al hacer hover */
+}
+
+.footer {
+    background-color: #001524;
+    width: 100%;
+    height: 90px;
+}
+
+.footer-conteiner {
+    display: flex;
+    justify-content: space-between;
+}
+
+.logosFC {
+    display: flex; /* Utiliza flexbox para los logos */
+    align-items: center; /* Centra verticalmente los logos */
+    margin-left: 5%;
+}
+
+.loguitosF {
+    margin-right: 20px; /* Ajusta el espacio entre los logos */
+}
+
+.footer-izquierdo pre {
+    color: #f2f3f2;
+    font-family: "Nunito Sans", sans-serif;
+    margin-left: 9%; 
+    align-self: center; /* Centra verticalmente el texto izquierdo */
+}
+
+.contenedor-a {
+    position: relative;
+    width: 100%;
+    height: 100%;
+}
+
+.imagenGigante {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    text-align: center; 
+    display: block;
+}
+
+.div1-contenedor-a {
+    background-image: url("./asset/three-male-swimmers-racing-against-each-other.jpg");
+    height: 500px;
+    background-size: cover;
+    position: relative;
+    background-attachment: fixed;
+    display:block; 
+    justify-content: center; 
+    align-items: center; 
+}
+
+.textoG {
+    color: #f2f3f2;
+    font-size: 4em;
+    text-align: center;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); 
+    margin-bottom: 3%;
+    margin-top: -5.5%;
+    
+}
+
+.logoF {
+    position: absolute;
+    top: 92%;
+    left: 50%;
+    transform: translate(-50%,50%);
+    z-index: 2;
+    height: 40px; 
+    filter: drop-shadow(-3px 5px 4px #4b4a48);
+}
+
+.contenedor-6 {
+    margin-top: 100px;
+    display: flex;
+    justify-content: center;
+    position: relative; 
+    margin-left: -4%;
+}
+
+.card2 {
+    width: 300px;
+    text-align: center;
+    margin-top: 20px;
+    box-shadow: 0 6px 8px rgba(0, 0, 0, 0.1); /* Sombra ligera para 3D efecto */
+    border-radius: 5%;
+    margin-left: 3%;
+    transition: transform 0.3s; /* Agrega una transición suave al cambio de escala */
+}
+
+.card2:hover {
+    transform: scale(1.05); /* Agrandar al 105% del tamaño original */
+}
+
+.card2 img {
+    width: 100%; /* La imagen ocupará el 100% del ancho del contenedor */
+    border-radius: 5%;
+}
+
+.card-info2 {
+    margin-left: 3%;
+}
+
+.card-info2:hover {
+    transform: scale(1.05); /* Agrandar al 105% del tamaño original */
+    text-align: center;
+}
+
+.card-info2 h3 {
+    color: #0c837b;
+    font-family: "Noto Sans JP", sans-serif;
+}
+
+.contenedor-4 {
+    display: flex;
+    justify-content: center;
+    color: #1E6091;
+}
+
+.contenedor-7 {
+    display: flex;
+    background-color: #f2f3f2;
+    width: 100%;
+}
+
+.texto-niños {
+    justify-content: center;
+    margin-top: 7%;
+}
+
+.img-niños img {
+    margin-left: 10%;
+    width: 85%;
+}
+
+.parrafo-contenedor-7 pre {
+    font-family: "Noto Sans JP", sans-serif;
+    font-size: large;
+}
+
+.titulo-contenedor-7 {
+    font-family: "Noto Sans JP", sans-serif;
+    font-size: 25px;
+    text-align: center;
+    color: #1E6091;
+    margin-left: -20%;
+}
+
+.btn-contenedor-7 {
+    margin-left: 11%;
+}
+
+.contenedor-contacto {
+    text-align: center;
+    padding: 50px 0;
+    background-color: #f2f3f2;
+}
+
+.titulo-contacto {
+    font-size: 3em;
+    margin-bottom: 20px;
+    color: #1E6091;
+}
+
+.botones-imgGigante {
+    display: flex;
+    justify-content:space-evenly;
+   
+    
+}
+
+.botones-imgGigante div img {
+    width: 20%;
+}
+
+.whassap-contacto{
+    background-color: #f2f3f2cc;
+    width:20%;
+    border-radius: 12px;
+    box-shadow: 0 6px 8px rgba(0, 0, 0, 0.1);
+    text-decoration: none;
+}
+
+.mail-contacto{
+    background-color: #f2f3f2cc;
+    width: 20%;
+    border-radius: 12px;
+    box-shadow: 0 6px 8px rgba(0, 0, 0, 0.1);
+    text-decoration: none;
+}
+
+.imgWyC{
+    margin-top: 10px;
+}
+
+ 
+
+#check{
+  display: none;
+}
+
+.active{
+  color:#52B69A;
+}
+.checkbtn{
+  display: none;
+}
+  
+  /*INICIO DE MEDIA QUERYS*/
+  
+  /* Media Query para pantallas pequeñas */
+  /* Media Query para pantallas pequeñas */
+
+@media (max-width: 730px) {
+
+  
+  nav ul li {
+    margin-right: 23px; /* Espacio entre los ítems */
+  }
+  
+  nav ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: center; /* Ajusta según sea necesario */
+  }
+  
+
+    /* Mostrar el botón de hamburguesa en pantallas pequeñas */
+  .checkbtn {
+    display: block;
+    position: absolute;
+    right: 20px;
+   
+    color:#001524;
+  }
+
+  /* Esconder el menú inicialmente (movido hacia arriba) */
+  nav ul {
+    position: absolute;
+    width: 50%;
+    height: auto;
+    background: #168AAD;
+    top: -100%; /* Menú está oculto fuera de la vista, en la parte superior */
+    right: 0; /* Mover el menú al lado derecho */
+    text-align: center;
+    display:flex;
+    transition: all 0.5s ease; /* Animación suave */
+    z-index: 2; /* Coloca el menú por encima de la imagen */
+    flex-direction: column; /* Asegura que los li se alineen en columna */
+}
+
+/* Mostrar el menú cuando el checkbox está activado (se despliega hacia abajo desde la derecha) */
+#check:checked ~ ul {
+  top: 80px; /* Menú visible, desplegándose desde arriba */
+  right: 0; /* Mantenerlo en el lado derecho */
+}
+
+  /* Los enlaces en formato de bloque */
+  nav ul li {
+    margin: 20px 0;
+    flex-direction: column;
+  }
+
+  /* Ajustar el tamaño de los enlaces en pantallas pequeñas */
+  nav ul li a {
+    font-size: 20px;
+    color: #f2f3f2;
+  }
+  .active{
+    color: #c7e4f3;
+  }
+  
+    /*ahi termina el bendito menu hamburguesa*/
+    .div1-contenedor-a {
+      font-size: 70%;
+    }
+  
+
+  
+    .botones-imgGigante {
+      flex-direction: column; /* Hace que los divs estén uno debajo del otro */
+      align-items: center; /* Centra el contenido */
+      margin-top: -3em;
+  }
+
+  .whassap-contacto, .mail-contacto {
+      width: 50%; /* Ocupa todo el ancho disponible */
+      margin-bottom: 20px; /* Espacio entre los divs */
+  }
+   
+  /*calculadoras*/
+  .contenedor-6{
+  
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+  }
+  
+  .card-info2 h3{
+    font-size: 140%;
+  }
+  
+  .card2 img {
+    width: 70%;
+  }
+  
+  .contenedor-7{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content:center;
+  }
+  
+  .titulo-contenedor-7{
+    font-size: 100%;
+    margin-left: -1%;
+  }
+  .parrafo-contenedor-7 pre { 
+    font-size: 90%; /* Reduce un poco el tamaño de la fuente en pantallas pequeñas */
+      padding: 10px; /* Ajusta el padding para que el texto tenga más espacio */
+      line-height: 1.4; /* Ajusta el espacio entre líneas para mejorar la legibilidad */
+      white-space: normal; /* Asegura que el texto se ajuste dentro del contenedor */
+      text-align: center;
+  }
+  
+  .btn-contenedor-7{
+    transform: scale(0.9); /* Reduce el tamaño del botón un 20% */
+    margin-left: 13%;
+  }
+  
+  .img-niños img{
+    margin-left: 3%;
+  }
+  
+  .footer-izquierdo{
+    margin-top: 5%;
+    font-size: 50%;
+   
+  }
+  .logosFC{
+    transform: scale(0.8);
+  }
+
+ .textoG{
+  font-size: 250%;
+ }
+
+    }
+  
+  

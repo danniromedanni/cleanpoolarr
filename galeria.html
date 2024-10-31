@@ -5,7 +5,7 @@
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link rel="icon" type="image/png" href="./asset/favicon.jpg">
-
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css">
         <link rel="stylesheet" href="./galeria.css">
         <title>CLEANPOOL - Galería</title>
     </head>
@@ -13,17 +13,23 @@
     <body>
         <header class="contenedor-nav">
             <nav>
-                <img src="./asset/cleanpool_original_color.jpg"
-                    alt="logo cleanpool">
+                <input type="checkbox" id="check">
+                <label for="check" class="checkbtn">
+                    <i class="fas fa-bars" ></i>
+                </label>
+                
+                <a href="index.html" class="enlace" >
+                    <img src="./asset/cleanpool_original_color.jpg" alt="logo cleanpool" class="logoCleanpoolNav">
+                </a>
                 <ul>
-                    <li><a href="index.html">Inicio</a></li>
+                    <li><a href="index.html" class="active" >Inicio</a></li>
                     <li><a href="cleanpool.html">Cleanpool</a></li>
                     <li><a href="productos.html">Productos</a></li>
                     <li><a href="galeria.html">Galería</a></li>
                     <li><a href="preguntas.html">Preguntas</a></li>
                     <li><a href="contacto.html">Contacto</a></li>
                 </ul>
-
+    
             </nav>
         </header>
 
@@ -66,13 +72,16 @@
             </div>
 
         </section>
-        <h2>Algunos de Nuestros Clientes:</h2>
+
+        <h2 class="algClientes" >Algunos de Nuestros Clientes:</h2>
+
         <section class="listado-clientes-galeria">
 
-            
+            <img  class="img2" src="./asset/IMAGENES CLEANPOOL/22-05-10 (19).JPG" alt="Imagen 2">
 
             <div class="listadoYCarousel" > 
                 <div class="listado-clientes">
+                   
                 
                 <ul>
                     <li>Aires del Llano Country Club</li>
@@ -92,12 +101,16 @@
                     <li>Servicios a piletas residenciales en la Ciudad de Santa Fe y alrededores</li>
                 </ul>
             </div>
-            <div class="contenedor-galeria-imagenes-clientes" >
-            <div class="galeria">
-                <img src="./asset/IMAGENES CLEANPOOL/cliente1.jpg" alt="Imagen 1">
-                <img src="./asset/IMAGENES CLEANPOOL/cliente2.jpg" alt="Imagen 2">
-                <img src="./asset/IMAGENES CLEANPOOL/foecyt2.jpg" alt="Imagen 3">
-            </div></div>
+            <div class="contenedor-galeria-imagenes-clientes">
+                <div class="galeria">
+                    <div class="carrusel">
+                        <img src="./asset/IMAGENES CLEANPOOL/18-3-06 041.jpg" alt="Imagen 1">
+
+                    </div>
+                </div>
+           
+            </div>
+            
 
 
         </div>
@@ -112,8 +125,9 @@
             <div class="card-info2">
                 <h3>Arranque</h3>
                 <p>Como empiezo la temporada</p>
-                <button class="btn2">calculadora</button>
-               
+                <a href="Calculadora.html">
+                <button class="btn2">Calculadora</button>
+                </a>
             </div>
             <img src="./asset/gota1.png" alt="Descripción Imagen 1">
         </div>
@@ -122,8 +136,9 @@
             <div class="card-info2">
                 <h3>Mantenimiento</h3>
                 <p>Cuanto me sale mantener</p>
-                <button class="btn2">calculadora</button>
-               
+                <a href="Calculadora.html">
+                <button class="btn2">Calculadora</button>
+                </a>
             </div>
             <img src="./asset/gota2.png" alt="Descripción Imagen 2">
         </div>
@@ -132,8 +147,9 @@
             <div class="card-info2">
                 <h3>Recuperación</h3>
                 <p>Como hago para recuperar</p>
-                <button class="btn2">calculadora</button>
-               
+                <a href="Calculadora.html">
+                <button class="btn2">Calculadora</button>
+                </a>
             </div>
             <img src="./asset/gota3.png" alt="Descripción Imagen 3">
         </div>
@@ -162,14 +178,16 @@
         </div>
 
         <div>
-            <button class="btn-contenedor-7">Dejanos tu mensaje</button>
+            <a href="contacto.html">
+                <button class="btn-contenedor-7">Dejanos tu mensaje</button>
+            </a>
 
         </div>
        
         </div>
    
         <div class="img-niños" style="margin-left: 5%;" >
-         <img src="./asset/niños.png" alt="niños en la pileta">
+         <img src="./asset/clean-villa-sport-outdoors-beautiful.jpg" alt="piscina">
         </div>
     </section>
 
@@ -178,21 +196,21 @@
                 <span class="footer-conteiner">
         
                     <span class="footer-izquierdo"  >
-                        <pre>Copyright © 2024 | cleanpoolsrl</pre>
+                        <pre>Copyright © 2024 | cleanpool</pre>
                     </span>
         
         
                     
                         <span class="logosFC">
-                            <a href="" class="loguitosF" >
+                            <a href="https://www.facebook.com/cleanpoolsrl/" target="_blank" class="loguitosF" >
                                 <img src="./asset/facebook.png" alt="Facebook" srcset="">
                             </a>
                                 
-                            <a href="" class="loguitosF" >
-                                <img src="./asset/twitter.png" alt="Twitter" srcset="">
+                            <a href="https://www.instagram.com/cleanpool.live/" target="_blank" class="loguitosF" >
+                                <img src="./asset/favicon111.png" alt="Instagram" srcset="">
                             </a>
         
-                            <a href="" class="loguitosF" >
+                            <a class="loguitosF" href="http://wa.me/5493425284902" target="_blank">
                                 <img src="./asset/whatsapp.png" alt="Whattsapp" srcset="">
                             </a>
                             
@@ -203,7 +221,8 @@
             </footer>
   
 
-<script src="script.js"></script>        
+<script src="script.js"></script>   
+     
     </body>
 
 </html>

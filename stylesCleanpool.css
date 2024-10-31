@@ -1,373 +1,369 @@
 body {
-    background-color: white;
-    margin: 0; /* Elimina el margen por defecto */
-    font-family: Arial, sans-serif; /* Establece la fuente predeterminada */
-  }
+  background-color: white;
+  margin: 0; /* Elimina el margen por defecto */
+  font-family: Arial, sans-serif; /* Establece la fuente predeterminada */
+}
 
-  .contenedor-nav {
-    width: 100%; /* Ocupa el ancho completo de la ventana */
-    background-color: white; /* Un ligero gris para distinguir la barra de navegación */
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Sombra sutil para dar profundidad */
-    padding: 10px 0; /* Espacio superior e inferior dentro del div */
-  }
-  
-  nav {
-  
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    padding: 0; /* Elimina padding */
-    margin: 0; /* Elimina margin */
-  }
-  
+.contenedor-nav {
+  width: 100%; /* Ocupa el ancho completo de la ventana */
+  background-color: white; /* Un ligero gris para distinguir la barra de navegación */
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Sombra sutil para dar profundidad */
+  padding: 10px 0; /* Espacio superior e inferior dentro del div */
+}
 
-  /* Estilo del logo */
-  nav img {
-    height: 55px; /* Altura del logo */
-    margin-right: -5px; /* Espacio a la derecha del logo */
-    margin-left: 10px;
-  }
-  /* Estilo de la lista de navegación */
-  nav ul {
-    list-style-type: none;
-    padding: 0;
-    margin: 0;
-    display: flex;
-    justify-content: center; /* Ajusta según sea necesario */
-  }
-  
-  /* Estilo de los items de la lista */
-  nav ul li {
-    margin-right: 23px; /* Espacio entre los ítems */
-  }
+nav {
 
-  /* Estilo de los enlaces de la lista */
-nav ul li a {
-    text-decoration: none; /* Elimina el subrayado de los enlaces */
-    color: #8d99ae; /* Color del texto de los enlaces */
-    font-weight: bold; /* Negrita para los textos de los enlaces */
-  }
-  
-  /* Añade un efecto al pasar el ratón sobre los enlaces */
-  nav ul li a:hover {
-    color: #5ab3df; /* Cambia el color al pasar el ratón */
-  }
-  
-  nav ul li {
-    margin-right: 23px; /* Espacio entre los ítems */
-  }
- 
-   
-  .contenedor-nav {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-  }
-
-  .contenedor-nav nav ul {
-    list-style-type: none;
-    margin-left: 450px;
-   }
-
-   .contenedor-nav nav ul li {
-    display: inline;
-    margin-left: 20px; /
-    
-  }
-   .contenedor-4{
-    display: flex;
-    justify-content: center;
-    color: #1E6091;
-  
-  }
-
-  
-.contenedor-7 {
   display: flex;
-  background-color: #f2f3f2;
-  width: 100%;
- }
- .texto-niños{
-   justify-content: center;
-   margin-top: 7%;
-  }
-  
-  .img-niños img {
-    margin-left: 10%;
-   width: 85%;
-  }
- 
-  .parrafo-contenedor-7 pre{
-   font-family: "Noto Sans JP", sans-serif;
-   font-size: large;
-  }
- 
-  .titulo-contenedor-7{
-   font-family: "Noto Sans JP", sans-serif;
-   font-size: 25px;
-   text-align: center;
-   color: #1E6091;
-   margin-left: -20%;
-   
-  }
- 
-  button {
-    background-color: #168AAD; /* Color celeste */
-    border: none; /* No border */
-    color: white; /* Texto blanco */
-    padding: 10px 20px; /* Padding alrededor del texto */
-    text-align: center; /* Texto centrado */
-    text-decoration: none; /* Sin decoración de texto */
-    font-size: 26px; /* Tamaño del texto */
-    margin: 4px 2px; /* Margen alrededor del botón */
-    cursor: pointer; /* Cursor de mano al pasar el mouse */
-    border-radius: 12px; /* Bordes redondeados */
-    transition: all 0.3s ease; /* Transición suave para hover */
-  }
-  
-button:hover {
-  background-color: #52B69A; /* Un celeste un poco más oscuro al hacer hover */
+  align-items: center;
+  justify-content: center;
+  padding: 0; /* Elimina padding */
+  margin: 0; /* Elimina margin */
 }
 
-  .btn-contenedor-7{
-   margin-left: 11%;
-  }
- 
-  
- 
- .contenedor-4-bis {
-   justify-content: left;
- }
- .parrafo-contenedor-4 {
-   justify-content: left;
- }
- 
- .titulo-contenedor-4 {
-   justify-content: left;
-   font-size: 25px;
- }
- 
- .btn-contenedor-4 {
-   justify-content: left;
- }
 
- .footer{
-  background-color: #001524;
- width: 100%;
- height: 90px;
+/* Estilo del logo */
+nav img {
+  height: 55px; /* Altura del logo */
+  margin-right: -5px; /* Espacio a la derecha del logo */
+  margin-left: 10px;
+}
+/* Estilo de la lista de navegación */
+nav ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  justify-content: center; /* Ajusta según sea necesario */
 }
 
-.footer-conteiner{
+/* Estilo de los items de la lista */
+nav ul li {
+  margin-right: 23px; /* Espacio entre los ítems */
+}
+
+/* Estilo de los enlaces de la lista */
+nav ul li a {
+  text-decoration: none; /* Elimina el subrayado de los enlaces */
+  color: #8d99ae; /* Color del texto de los enlaces */
+  font-weight: bold; /* Negrita para los textos de los enlaces */
+}
+
+/* Añade un efecto al pasar el ratón sobre los enlaces */
+nav ul li a:hover {
+  color: #5ab3df; /* Cambia el color al pasar el ratón */
+}
+
+ 
+.contenedor-nav {
   display: flex;
   justify-content: space-between;
-}
-.logosFC {
-  display: flex; /* Utiliza flexbox para los logos */
-  align-items: center; /* Centra verticalmente los logos */
-  margin-left: 5%;
+  align-items: center;
 }
 
-.loguitosF {
-  margin-right: 20px; /* Ajusta el espacio entre los logos */
-}
+.contenedor-nav nav ul {
+  list-style-type: none;
+  margin-left: 450px;
+ }
 
-.footer-izquierdo pre {
-  color: #f2f3f2;
-  font-family: "Nunito Sans", sans-serif;
-  margin-left: 9%; 
-  align-self: center; /* Centra verticalmente el texto izquierdo */
-}
-
-.contenedor-6{
-  margin-top: 100px;
-  display: flex;
-  justify-content: center;
-  position: relative; 
-  margin-left: -4%;
+ .contenedor-nav nav ul li {
+  display: inline;
+  margin-left: 20px; /
   
-  }
-  
-.contenedor-4{
+}
+ .contenedor-4{
   display: flex;
   justify-content: center;
   color: #1E6091;
 
 }
 
+
+.contenedor-7 {
+display: flex;
+background-color: #f2f3f2;
+width: 100%;
+}
+.texto-niños{
+ justify-content: center;
+ margin-top: 7%;
+}
+
+.img-niños img {
+  margin-left: 10%;
+ width: 85%;
+}
+
+.parrafo-contenedor-7 pre{
+ font-family: "Noto Sans JP", sans-serif;
+ font-size: large;
+}
+
+.titulo-contenedor-7{
+ font-family: "Noto Sans JP", sans-serif;
+ font-size: 25px;
+ text-align: center;
+ color: #1E6091;
+ margin-left: -20%;
+ 
+}
+
+button {
+  background-color: #168AAD; /* Color celeste */
+  border: none; /* No border */
+  color: white; /* Texto blanco */
+  padding: 10px 20px; /* Padding alrededor del texto */
+  text-align: center; /* Texto centrado */
+  text-decoration: none; /* Sin decoración de texto */
+  font-size: 26px; /* Tamaño del texto */
+  margin: 4px 2px; /* Margen alrededor del botón */
+  cursor: pointer; /* Cursor de mano al pasar el mouse */
+  border-radius: 12px; /* Bordes redondeados */
+  transition: all 0.3s ease; /* Transición suave para hover */
+}
+
+button:hover {
+background-color: #52B69A; /* Un celeste un poco más oscuro al hacer hover */
+}
+
+.btn-contenedor-7{
+ margin-left: 11%;
+}
+
+
+
+.contenedor-4-bis {
+ justify-content: left;
+}
+.parrafo-contenedor-4 {
+ justify-content: left;
+}
+
+.titulo-contenedor-4 {
+ justify-content: left;
+ font-size: 25px;
+}
+
+.btn-contenedor-4 {
+ justify-content: left;
+}
+
+.footer{
+background-color: #001524;
+width: 100%;
+height: 90px;
+}
+
+.footer-conteiner{
+display: flex;
+justify-content: space-between;
+}
+.logosFC {
+display: flex; /* Utiliza flexbox para los logos */
+align-items: center; /* Centra verticalmente los logos */
+margin-left: 5%;
+}
+
+.loguitosF {
+margin-right: 20px; /* Ajusta el espacio entre los logos */
+}
+
+.footer-izquierdo pre {
+color: #f2f3f2;
+font-family: "Nunito Sans", sans-serif;
+margin-left: 9%; 
+align-self: center; /* Centra verticalmente el texto izquierdo */
+}
+
+.contenedor-6{
+margin-top: 100px;
+display: flex;
+justify-content: center;
+position: relative; 
+margin-left: -4%;
+
+}
+
+.contenedor-4{
+display: flex;
+justify-content: center;
+color: #1E6091;
+
+}
+
 .card2{
-  width: 300px;
-  text-align: center;
-  margin-top: 20px;
-  box-shadow: 0 6px 8px rgba(0, 0, 0, 0.1); /* Sombra ligera para 3D efecto */
-  border-radius: 5%;
-  margin-left: 3%;
-  transition: transform 0.3s; /* Agrega una transición suave al cambio de escala */
+width: 300px;
+text-align: center;
+margin-top: 20px;
+box-shadow: 0 6px 8px rgba(0, 0, 0, 0.1); /* Sombra ligera para 3D efecto */
+border-radius: 5%;
+margin-left: 3%;
+transition: transform 0.3s; /* Agrega una transición suave al cambio de escala */
 }
 .card2:hover {
-  transform: scale(1.05); /* Agrandar al 105% del tamaño original */
+transform: scale(1.05); /* Agrandar al 105% del tamaño original */
 }
 
 .card2 img {
-  width: 100%; /* La imagen ocupará el 100% del ancho del contenedor */
-  border-radius: 5%;
+width: 100%; /* La imagen ocupará el 100% del ancho del contenedor */
+border-radius: 5%;
 }
 
 
 .card-info2{
- margin-left: 3%;
+margin-left: 3%;
 }
 .card-info2:hover{
-  transform: scale(1.05); /* Agrandar al 105% del tamaño original */
-  text-align: center;
+transform: scale(1.05); /* Agrandar al 105% del tamaño original */
+text-align: center;
 }
 
 .card-info2 h3 {
-  color: #0c837b;
-  font-family: "Noto Sans JP", sans-serif;
+color: #0c837b;
+font-family: "Noto Sans JP", sans-serif;
 }
 
 .loguito-div1-contenedor-d img{
-  width: 100px; 
-  margin-right: 25px; /* Espacio a la derecha del logo */
-  
+width: 100px; 
+margin-right: 25px; /* Espacio a la derecha del logo */
+
 }
 .img-cabecera-div2-contenedor-d img{
-  width: 100px; 
-  margin-right: 25px; /* Espacio a la derecha del logo */
+width: 100px; 
+margin-right: 25px; /* Espacio a la derecha del logo */
 }
 
 .contenedor-a {
-  position: relative;
-  width: 100%;
-  height: 100%;
+position: relative;
+width: 100%;
+height: 100%;
 }
 
 .imagenGigante {
-  position: relative;
-  width: 100%;
-  height: 100%;
-  text-align: center; 
-  display: block;
+position: relative;
+width: 100%;
+height: 100%;
+text-align: center; 
+display: block;
 }
 
 .div1-contenedor-a {
-  background-image: url("./asset/fSobreNos.jpg");
-  height: 500px;
-  background-size: cover;
-  position: relative;
-  background-attachment: fixed;
-  z-index: 1;
-  display: flex; 
-  justify-content: center; 
-  align-items: center; 
+background-image: url("./asset/fSobreNos.jpg");
+height: 500px;
+background-size: cover;
+position: relative;
+background-attachment: fixed;
+z-index: 1;
+display: flex; 
+justify-content: center; 
+align-items: center; 
 }
 
 .div1-contenedor-a h1 {
-  color: #f2f3f2;
-  font-size: 5em;
-  text-align: center;
-  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); 
+color: #f2f3f2;
+font-size: 5em;
+text-align: center;
+text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); 
 }
 
 .logoF {
-  position: absolute;
-  top: 92%;
-  left: 50%;
-  transform: translate(-50%,50%);
-  z-index: 2;
-  height: 40px; 
-  filter: drop-shadow( -3px  5px  4px #4b4a48);
-  }
+position: absolute;
+top: 92%;
+left: 50%;
+transform: translate(-50%,50%);
+z-index: 2;
+height: 40px; 
+filter: drop-shadow( -3px  5px  4px #4b4a48);
+}
 
-  #bidones2{
-    width: 30%;
-  }
+#bidones2{
+  width: 30%;
+}
 
-  .contenedor-c {
-    display: flex;
-    justify-content: center; /* Center the contents horizontally */
-    align-items: center; /* Center the contents vertically */
-    width: 100%;
+.contenedor-c {
+  display: flex;
+  justify-content: center; /* Center the contents horizontally */
+  align-items: center; /* Center the contents vertically */
+  width: 100%;
 }
 
 .div1-contenedor-c {
-    display: flex;
-    justify-content: space-between; /* Space out the text and image */
-    align-items: center; /* Align items vertically centered */
-    width: 100%;
-    max-width: 1200px; /* Optional: limit the maximum width */
+  display: flex;
+  justify-content: space-between; /* Space out the text and image */
+  align-items: center; /* Align items vertically centered */
+  width: 100%;
+  max-width: 1200px; /* Optional: limit the maximum width */
 }
 
 .textoQue {
-  display: flex;
-  flex-direction: column; /* Align inner divs vertically */
-  justify-content: center; /* Center the text content vertically */
-  flex: 1; /* Allow the text content to take up available space */
-  margin-right: 20px; /* Space between text and image */
-  
-  font-family: "Montserrat", sans-serif;
-  font-optical-sizing: auto;
-  font-style: normal;
+display: flex;
+flex-direction: column; /* Align inner divs vertically */
+justify-content: center; /* Center the text content vertically */
+flex: 1; /* Allow the text content to take up available space */
+margin-right: 20px; /* Space between text and image */
+
+font-family: "Montserrat", sans-serif;
+font-optical-sizing: auto;
+font-style: normal;
 }
 
 .textoQue .titulo-div1-contenedor-c h2 {
- color: #035e59;
- font-family: "Montserrat", sans-serif;
- font-optical-sizing: auto;
- font-style: normal;
- font-size: 2em;
+color: #035e59;
+font-family: "Montserrat", sans-serif;
+font-optical-sizing: auto;
+font-style: normal;
+font-size: 2em;
 }
 
 .textoQue .texto-div1-contenedor-c p {
-   font-family: "Montserrat", sans-serif;
-  font-optical-sizing: auto;
-  font-style: normal;
-  font-size: 1.2em;
-  text-align: justify;
+ font-family: "Montserrat", sans-serif;
+font-optical-sizing: auto;
+font-style: normal;
+font-size: 1.2em;
+text-align: justify;
 }
 
 
 .imagen{
-    flex: 1; /* Allow the image to take up available space */
-    display: flex;
-    justify-content: center; 
+  flex: 1; /* Allow the image to take up available space */
+  display: flex;
+  justify-content: center; 
 }
 
 #bidones2{
-  width: 30em;
-  border-radius: 2%;
+width: 30em;
+border-radius: 2%;
 }
 
 
 
 .titulo-div1-contenedor-c h2 {
-    margin: 0; /* Remove default margin */
-    padding-bottom: 10px; /* Optional: space below the title */
-    text-align: center;
+  margin: 0; /* Remove default margin */
+  padding-bottom: 10px; /* Optional: space below the title */
+  text-align: center;
 }
 
 .texto-div1-contenedor-c p {
-    margin: 0; /* Remove default margin */
-    line-height: 1.5; /* Optional: improve readability */
+  margin: 0; /* Remove default margin */
+  line-height: 1.5; /* Optional: improve readability */
 }
 
 .contenedor-d{
-  width: 80%;
-  margin: 5% 5% 5% 10%;
-  box-shadow: 1px 6px 8px rgba(0, 0, 0, 0.3);
+width: 80%;
+margin: 5% 5% 5% 10%;
+box-shadow: 1px 6px 8px rgba(0, 0, 0, 0.3);
 }
 
 /*div1 de cards dentro de span*/
 .div1-contenedor-d {
-  display: flex;
-  flex-direction: column; /* Arrange children in a vertical stack */
-  align-items: center; /* Center items horizontally */
-  width: 100%;
-  max-width: 800px; /* Optional: Limit the maximum width */
-  margin: 0 auto; /* Center the container within its parent */
-  padding: 20px; /* Optional: Add padding for spacing */
-  box-sizing: border-box; /* Include padding in the width and height */
-  text-align: center; /* Center text horizontally */
+display: flex;
+flex-direction: column; /* Arrange children in a vertical stack */
+align-items: center; /* Center items horizontally */
+width: 100%;
+max-width: 800px; /* Optional: Limit the maximum width */
+margin: 0 auto; /* Center the container within its parent */
+padding: 20px; /* Optional: Add padding for spacing */
+box-sizing: border-box; /* Include padding in the width and height */
+text-align: center; /* Center text horizontally */
 }
 
 .estrellas-contenedor-d{
@@ -376,115 +372,292 @@ color: rgb(231, 202, 34);
 }
 
 .div1-contenedor-d{
-  display: flex;
-  flex-direction: column; /* Arrange children in a vertical stack */
-  align-items: center; /* Center items horizontally */
-  background-color: #dde2e7;
+display: flex;
+flex-direction: column; /* Arrange children in a vertical stack */
+align-items: center; /* Center items horizontally */
+background-color: #dde2e7;
 }
 
 .carrousel-contenedor-d img {
-  max-width: 50%;
-  height: auto; /* Maintain aspect ratio */
-  margin-bottom: 10px; /* Optional: Space below the image */
+max-width: 50%;
+height: auto; /* Maintain aspect ratio */
+margin-bottom: 10px; /* Optional: Space below the image */
 }
 
 .texto-contenedor-d p {
-  margin-top: -10px;
-  margin-inline: 8em;
-  font-size: 15px;
-  text-align:justify;
-  color: #284153;
-  
+margin-top: -10px;
+margin-inline: 8em;
+font-size: 15px;
+text-align:justify;
+color: #284153;
+
 }
 
 .nombreDiego2{
-  margin-left: -2px;
-  text-align:left;
-  
+margin-left: -2px;
+text-align:left;
+
 }
 
 
 .titulo-div2-contenedor-d h1 {
-  margin: 20px 0; /* Space above and below the title */
+margin: 20px 0; /* Space above and below the title */
 }
 
 .texto-div2-contenedor-d p {
-  margin: 20px 0; /* Space above and below the paragraph */
-  line-height: 1.5; /* Improve readability */
+margin: 20px 0; /* Space above and below the paragraph */
+line-height: 1.5; /* Improve readability */
 }
 
 .nombreDiego{
-  display: flex;
-  font-size: 10px;
-  font-family: "Montserrat", sans-serif;
-  color: #001524;
+display: flex;
+font-size: 10px;
+font-family: "Montserrat", sans-serif;
+color: #001524;
 }
 
 .loguito-div1-contenedor-d {
-  margin-top: 14px; /* Space above the button */
-  filter: drop-shadow( -3px  5px  4px #4b4a48);
+margin-top: 14px; /* Space above the button */
+filter: drop-shadow( -3px  5px  4px #4b4a48);
 }
 
 .loguito-div1-contenedor-d img{
-  width: 40px;
+width: 40px;
 }
 
 
 /* div2 de cards dentro de span*/
 .div2-contenedor-d {
-  display: flex;
-  flex-direction: column; /* Arrange children in a vertical stack */
-  align-items: center; /* Center items horizontally */
-  width: 100%;
-  max-width: 800px; /* Optional: Limit the maximum width */
-  margin: 0 auto; /* Center the container within its parent */
-  padding: 20px; /* Optional: Add padding for spacing */
-  box-sizing: border-box; /* Include padding in the width and height */
-  text-align: center; /* Center text horizontally */
+display: flex;
+flex-direction: column; /* Arrange children in a vertical stack */
+align-items: center; /* Center items horizontally */
+width: 100%;
+max-width: 800px; /* Optional: Limit the maximum width */
+margin: 0 auto; /* Center the container within its parent */
+padding: 20px; /* Optional: Add padding for spacing */
+box-sizing: border-box; /* Include padding in the width and height */
+text-align: center; /* Center text horizontally */
 }
 
 .cabecera-div2-contenedor-d {
-  display: flex;
-  flex-direction: column; /* Arrange children in a vertical stack */
-  align-items: center; /* Center items horizontally */
-  margin-bottom: 20px; /* Optional: Space below the header */
+display: flex;
+flex-direction: column; /* Arrange children in a vertical stack */
+align-items: center; /* Center items horizontally */
+margin-bottom: 20px; /* Optional: Space below the header */
 }
 
 .img-cabecera-div2-contenedor-d img {
-  max-width: 100%;
-  height: auto; /* Maintain aspect ratio */
-  margin-bottom: 10px; /* Optional: Space below the image */
-  
+max-width: 100%;
+height: auto; /* Maintain aspect ratio */
+margin-bottom: 10px; /* Optional: Space below the image */
+margin-left: 2em;
+ 
 }
 
 .texto-cabecera-div2-contenedor-d h1,
 .texto-cabecera-div2-contenedor-d h2 {
-  margin: 5px 0; /* Space above and below the titles */
-  font-family: "Montserrat", sans-serif;
+margin: 5px 0; /* Space above and below the titles */
+font-family: "Montserrat", sans-serif;
 }
 
 .titulo-div2-contenedor-d h1 {
-  margin: 10px 0; /* Space above and below the title */
-  font-family: "Montserrat", sans-serif;
+margin: 10px 0; /* Space above and below the title */
+font-family: "Montserrat", sans-serif;
 }
 
 
 .texto-div2-contenedor-d p {
-  margin: 10px 0; /* Space above and below the paragraph */
-  line-height: 1.5; /* Improve readability */
-  font-family: "Montserrat", sans-serif;
+margin: 10px 0; /* Space above and below the paragraph */
+line-height: 1.5; /* Improve readability */
+font-family: "Montserrat", sans-serif;
 }
 
 .button {
-  margin-top: 20px; /* Space above the button */
+margin-top: 20px; /* Space above the button */
 }
 
 .button button {
-  padding: 10px 20px; /* Button padding */
-  font-size: 16px; /* Button font size */
-  cursor: pointer; /* Change cursor on hover */
+padding: 10px 20px; /* Button padding */
+font-size: 16px; /* Button font size */
+cursor: pointer; /* Change cursor on hover */
 }
 
 .contenedor-d-span {
-  display: inline-flex;
+display: inline-flex;
 }
+
+
+
+#check{
+  display: none;
+}
+
+
+.active{
+  color:#52B69A;
+}
+.checkbtn{
+  display: none;
+}
+
+/*INICIO DE MEDIA QUERYS*/
+/* Media Query para pantallas pequeñas */
+
+@media (max-width: 730px) {
+
+  nav ul li {
+    margin-right: 23px; /* Espacio entre los ítems */
+  }
+  
+  nav ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: center; /* Ajusta según sea necesario */
+  }
+  
+
+  /* Mostrar el botón de hamburguesa en pantallas pequeñas */
+  .checkbtn {
+    display: block;
+    position: absolute;
+    right: 20px;
+   
+    color:#001524;
+  }
+
+  /* Esconder el menú inicialmente (movido hacia arriba) */
+  nav ul {
+    position: absolute;
+    width: 50%;
+    height: auto;
+    background: #168AAD;
+    top: -100%; /* Menú está oculto fuera de la vista, en la parte superior */
+    right: 0; /* Mover el menú al lado derecho */
+    text-align: center;
+    display:flex;
+    transition: all 0.5s ease; /* Animación suave */
+    z-index: 10; /* Coloca el menú por encima de la imagen */
+    flex-direction: column; /* Asegura que los li se alineen en columna */
+}
+
+/* Mostrar el menú cuando el checkbox está activado (se despliega hacia abajo desde la derecha) */
+#check:checked ~ ul {
+  top: 80px; /* Menú visible, desplegándose desde arriba */
+  right: 0; /* Mantenerlo en el lado derecho */
+}
+
+  /* Los enlaces en formato de bloque */
+  nav ul li {
+    margin: 20px 0;
+    flex-direction: column;
+  }
+
+  /* Ajustar el tamaño de los enlaces en pantallas pequeñas */
+  nav ul li a {
+    font-size: 20px;
+    color: #f2f3f2;
+  }
+  .active{
+    color: #c7e4f3;
+  }
+
+  /*ahi termina el bendito menu hamburguesa*/
+ 
+.div1-contenedor-c{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+
+.div1-contenedor-a h1{
+  font-size: 300%;
+}
+
+.contenedor-d-span{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+
+
+.texto-contenedor-d p{
+  margin-inline: 1em;
+}
+.div1-contenedor-c {
+  display: flex;
+  flex-direction: column; /* Asegura que los elementos estén uno debajo del otro */
+  align-items: center; /* Opcional: centra los elementos horizontalmente */
+}
+
+#bidones2 {
+  width: 80%;
+  height: auto;
+}
+.texto-div1-contenedor-c p{
+  padding: 1em;
+}
+
+
+
+
+/*calculadoras*/
+.contenedor-6{
+
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+
+.card-info2 h3{
+  font-size: 140%;
+}
+
+.card2 img {
+  width: 70%;
+}
+
+.contenedor-7{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content:center;
+}
+
+.titulo-contenedor-7{
+  font-size: 100%;
+  margin-left: -1%;
+}
+.parrafo-contenedor-7 pre { 
+  font-size: 90%; /* Reduce un poco el tamaño de la fuente en pantallas pequeñas */
+    padding: 10px; /* Ajusta el padding para que el texto tenga más espacio */
+    line-height: 1.4; /* Ajusta el espacio entre líneas para mejorar la legibilidad */
+    white-space: normal; /* Asegura que el texto se ajuste dentro del contenedor */
+    text-align: center;
+}
+
+.btn-contenedor-7{
+  transform: scale(0.9); /* Reduce el tamaño del botón un 20% */
+  margin-left: 13%;
+}
+
+.img-niños img{
+  margin-left: 3%;
+}
+
+.footer-izquierdo{
+  margin-top: 5%;
+  font-size: 50%;
+ 
+}
+.logosFC{
+  transform: scale(0.8);
+}
+
+.imagenGigante, .div1-contenedor-a{
+  height: 16em;
+  margin-block: 2em;
+}
+  
+  }
+

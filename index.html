@@ -7,12 +7,15 @@
     <link rel="icon" type="image/png" href="./asset/favicon1.png">
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&display=swap"
+        rel="stylesheet">
     <link rel="stylesheet" href="styles.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@100..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css">
     <title>CLEANPOOL</title>
 </head>
 
@@ -20,9 +23,16 @@
 
     <header class="contenedor-nav">
         <nav>
-            <img src="./asset/cleanpool_original_color.jpg" alt="logo cleanpool">
+            <input type="checkbox" id="check">
+            <label for="check" class="checkbtn">
+                <i class="fas fa-bars" ></i>
+            </label>
+            
+            <a href="index.html" class="enlace" >
+                <img src="./asset/cleanpool_original_color.jpg" alt="logo cleanpool" class="logoCleanpoolNav">
+            </a>
             <ul>
-                <li><a style="color:#52B69A;" href="index.html">Inicio</a></li>
+                <li><a href="index.html" class="active" >Inicio</a></li>
                 <li><a href="cleanpool.html">Cleanpool</a></li>
                 <li><a href="productos.html">Productos</a></li>
                 <li><a href="galeria.html">Galería</a></li>
@@ -34,29 +44,28 @@
     </header>
 
     <section class="contenedor-1">
-
         <div class="div1-contenedor-1">
-
             <div>
                 <img src="./asset/flotante.png" alt="bidones de productos">
             </div>
-
+    
             <div class="div2-contenedor-1">
-                <p style="font-size: 25px;">Productos de la mejor calidad</h3>
-                <h2 style="font-size: 45px;" >Cleanpool. Productos para piscinas.</h2>
-                <h3 style="font-size: 20px" >Cleanpool es una empresa familiar que se dedica al tratamiento de espejos de agua.</h3>
-
-                <div class="button-CentradoV" >
-                    <button type="button"> » Calculadora</button>
-
+                <h2>Cleanpool. Productos para piscinas.</h2>  
+                <h3>De la mejor calidad</h3>
+                    
+                <p>Cleanpool es una empresa familiar que se dedica al tratamiento de espejos de agua.</p>
+    
+                <div class="button-CentradoV">
+                    <a href="Calculadora.html"><button type="button">» Calculadora</button></a>
                 </div>
             </div>
-
-
         </div>
-
-
     </section>
+
+    <div class="button-CentradoV2">
+        <a href="Calculadora.html"><button type="button"> » Calculadora</button></a>
+
+    </div>
 
 
     <section class="contenedor-2">
@@ -73,7 +82,7 @@
     <section class="contenedor-3">
 
         <div class="card">
-            <img class="loguitos-cards" src="./asset/estrella.png"  alt="Imagen 1">
+            <img class="loguitos-cards" src="./asset/estrella.png" alt="Imagen 1">
             <div class="card-info">
                 <h3>AMPLIA CAPACIDAD</h3>
                 <p>Soluciones para cualquier escenario (tipo de agua, uso, etc).</p>
@@ -94,7 +103,7 @@
                 <h3>MAYOR COMODIDAD</h3>
                 <p>Dosis bajas y semanales, para un agua sin tantos químicos.</p>
             </div>
-        </div  >
+        </div>
 
         <div class="card">
             <img class="loguitos-cards" src="./asset/economico.png" alt="Imagen 4">
@@ -120,6 +129,11 @@
 
         </div>
     </section>
+    <section class="contenedor-4">
+        <h1>___________</h1>
+
+    </section>
+    
 
     <section class="contenedor-6">
         <div class="card2">
@@ -127,8 +141,11 @@
             <div class="card-info2">
                 <h3>Arranque</h3>
                 <p>Como empiezo la temporada</p>
-                <button class="btn2">Calculadora</button>
-               
+                <a href="Calculadora.html">
+                    <button class="btn2">Calculadora</button>
+                </a>
+
+
             </div>
             <img src="./asset/gota1.png" alt="Descripción Imagen 1">
         </div>
@@ -137,8 +154,9 @@
             <div class="card-info2">
                 <h3>Mantenimiento</h3>
                 <p>Cuanto me sale mantener</p>
-                <button class="btn2">Calculadora</button>
-               
+                <a href="Calculadora.html">
+                    <button class="btn2">Calculadora</button>
+                </a>
             </div>
             <img src="./asset/gota2.png" alt="Descripción Imagen 2">
         </div>
@@ -147,13 +165,14 @@
             <div class="card-info2">
                 <h3>Recuperación</h3>
                 <p>Como hago para recuperar</p>
-                <button class="btn2">Calculadora</button>
-               
+                <a href="Calculadora.html">
+                    <button class="btn2">Calculadora</button>
+                </a>
             </div>
             <img src="./asset/gota3.png" alt="Descripción Imagen 3">
         </div>
     </section><br>
-    
+
 
     <section class="contenedor-4">
         <h1>___________</h1>
@@ -163,60 +182,63 @@
 
     <section class="contenedor-7">
 
-        <div class="texto-niños" >
-        <div class="titulo-contenedor-7">
-            <h2>¿Necesitás ayuda?</h2>
+        <div class="texto-niños">
+            <div class="titulo-contenedor-7">
+                <h2>¿Necesitás ayuda?</h2>
 
-        </div>
+            </div>
 
-        <div class="parrafo-contenedor-7">
-            <pre>
+            <div class="parrafo-contenedor-7">
+                <pre>
                 Nuestra empresa brinda asesoramiento para clientes finales, 
                 clubes, emprendimientos privados y particulares con piscinas.
             </pre>
 
+            </div>
+
+            <div>
+                <a href="contacto.html">
+                    <button class="btn-contenedor-7">Dejanos tu mensaje</button>
+                </a>
+
+
+            </div>
+
         </div>
 
-        <div>
-            <button class="btn-contenedor-7">Dejanos tu mensaje</button>
-
-        </div>
-       
-        </div>
-   
-        <div class="img-niños" style="margin-left: 5%;" >
-         <img src="./asset/niños.png" alt="niños en la pileta">
+        <div class="img-niños" style="margin-left: 5%;">
+            <img src="./asset/clean-villa-sport-outdoors-beautiful.jpg" alt="piscina">
         </div>
     </section>
 
 
     <footer class="footer">
-<br>
+        <br>
         <span class="footer-conteiner">
 
-            <span class="footer-izquierdo"  >
-                <pre>Copyright © 2024 | cleanpoolsrl</pre>
+            <span class="footer-izquierdo">
+                <pre>Copyright © 2024 | cleanpool</pre>
             </span>
 
 
-            
-                <span class="logosFC">
-                    <a href="" class="loguitosF" >
-                        <img src="./asset/facebook.png" alt="Facebook" srcset="">
-                    </a>
-                        
-                    <a href="" class="loguitosF" >
-                        <img src="./asset/twitter.png" alt="Twitter" srcset="">
-                    </a>
 
-                    <a href="" class="loguitosF" >
-                        <img src="./asset/whatsapp.png" alt="Whattsapp" srcset="">
-                    </a>
-                    
-                </span>
-            
+            <span class="logosFC">
+                <a href="https://www.facebook.com/cleanpoolsrl/" target="_blank" class="loguitosF">
+                    <img src="./asset/facebook.png" alt="Facebook" srcset="">
+                </a>
+
+                <a href="https://www.instagram.com/cleanpool.live/" target="_blank" class="loguitosF">
+                    <img src="./asset/favicon111.png" alt="Instagram" srcset="">
+                </a>
+
+                <a class="loguitosF" href="http://wa.me/5493425284902" target="_blank">
+                    <img src="./asset/whatsapp.png" alt="Whattsapp" srcset="">
+                </a>
+
             </span>
-            
+
+        </span>
+
     </footer>
 
 </body>
