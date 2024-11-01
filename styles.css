@@ -482,6 +482,8 @@ nav ul {
   display: flex;
   justify-content: center; /* Ajusta según sea necesario */
 }
+#check {display: none important!;
+}
 
 /*ACA EMPIEZAN LAS MEDIAQUERYS
 VOY A ESCRIBIR MUCHO
