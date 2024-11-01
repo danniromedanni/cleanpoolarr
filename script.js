@@ -186,19 +186,22 @@ function calcularMantenimiento() {
         };
 
         // Seleccionar resultado según el tipo de agua
-        let data = tabla[tipoAgua].find(item => item.volumen === volumen);
-        if (data) {
-            const total = (data.cloro * preciosQuimicos.cloro) + 
-                          (data.sssAlum * preciosQuimicos.sssAlum) + 
-                          (data.bp65 * preciosQuimicos.bp65) + 
-                          (data.bs77 * preciosQuimicos.bs77);
+        
+
+
+            let data = tabla[tipoAgua].find(item => item.volumen === volumen);
+            if (data) {
+                const total = (data.cloro * preciosQuimicos.cloro)*4+ 
+                              (data.sssAlum * preciosQuimicos.sssAlum)*4 + 
+                              (data.bp65 * preciosQuimicos.bp65) *4+ 
+                              (data.bs77 * preciosQuimicos.bs77) *4;
 
             productos = `
                 <strong>Cloro:</strong> ${data.cloro} Lts<br>
                 <strong>SSS Alum:</strong> ${data.sssAlum} Lts<br>
                 <strong>BP65:</strong> ${data.bp65} Lts<br>
                 <strong>BS77:</strong> ${data.bs77} Lts<br>
-                <strong>Precio estimado total:</strong> $${total.toFixed(2)}
+                <strong>Precio estimado MENSUAL:</strong> $${total.toFixed(2)}
             `;
         } else {
             productos = 'No se encontraron datos para el volumen especificado.';
