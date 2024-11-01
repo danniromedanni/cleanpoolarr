@@ -1,0 +1,572 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/png" href="./asset/favicon1.png">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="Calculadora.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@100..900&display=swap" rel="stylesheet">
+    <title>CLEANPOOL</title>
+</head>
+
+<body>
+
+
+    <header class="contenedor-nav">
+        <nav>
+            <input type="checkbox" id="check">
+            <label for="check" class="checkbtn">
+                <i class="fas fa-bars"></i>
+            </label>
+
+            <a href="index.html" class="enlace">
+                <img src="./asset/cleanpool_original_color.jpg" alt="logo cleanpool" class="logoCleanpoolNav">
+            </a>
+            <ul>
+                <li><a href="index.html" class="active">Inicio</a></li>
+                <li><a href="cleanpool.html">Cleanpool</a></li>
+                <li><a href="productos.html">Productos</a></li>
+                <li><a href="galeria.html">Galería</a></li>
+                <li><a href="preguntas.html">Preguntas</a></li>
+                <li><a href="contacto.html">Contacto</a></li>
+            </ul>
+
+        </nav>
+    </header>
+
+    <section class="contenedor-1a"  >
+        
+       
+        <div class="div1-contenedor-1a">
+
+
+            <div class="div2-contenedor-1">
+
+                <p class="cal11">Bienvenido a la calculadora Cleanpool</p>
+
+
+                <p class="subCal11">Productos de la mejor calidad</p>
+                <h2 class="subCal112">Productos para piscinas.</h2>
+
+
+                <section class="contenedor-4">
+                    <h1>___________</h1>
+
+                </section>
+
+
+                <section class="contenedor-5">
+
+                    <div class="titulo-cards">
+                        <h2>Calcula que cantidad de productos lleva
+                            tu pileta</h2>
+
+
+
+                    </div>
+                </section>
+
+
+                <!-- Calculadoras de químicos -->
+                <section id="contenedoresDeCalculadoras">
+                    <div class="contenedor-calculadoras">
+                        <!-- Calculadora Arranque -->
+                        <div class="calculadoraArranque">
+                            <h1>Calculadora de Arranque de Agua</h1>
+                            <form id="calcFormArranque">
+                                <label for="tipoAguaArranque">Selecciona el tipo de agua:</label>
+                                <select id="tipoAguaArranque">
+                                    <option value="aguaRed">Agua de Red (Potable)</option>
+                                    <option value="aguaPozo1">Agua de Pozo 1</option>
+                                    <option value="aguaPozo2">Agua de Pozo 2</option>
+                                </select>
+
+                                <label for="volumenArranque">Volumen de la pileta (en m³):</label>
+                                <select id="volumenArranque">
+                                    <option value="5">5 m³</option>
+                                    <option value="10">10 m³</option>
+                                    <option value="20">20 m³</option>
+                                    <option value="30">30 m³</option>
+                                    <option value="40">40 m³</option>
+                                    <option value="50">50 m³</option>
+                                    <option value="60">60 m³</option>
+                                    <option value="70">70 m³</option>
+                                    <option value="80">80 m³</option>
+                                    <option value="90">90 m³</option>
+                                    <option value="100">100 m³</option>
+                                </select>
+
+
+                                <button type="button" onclick="calcularArranque()">Calcular</button>
+                            </form>
+
+                            <div class="result">
+                                <h2>Resultados</h2>
+                                <p id="resultadoArranque"></p>
+                            </div>
+                        </div>
+
+                        <!-- Calculadora Mantenimiento -->
+                        <div class="calculadoraMantenimiento">
+                            <h1>Calculadora de Mantenimiento de Agua</h1>
+                            <form id="calcFormMantenimiento">
+                                <label for="tipoAguaMantenimiento">Selecciona el tipo de agua:</label>
+                                <select id="tipoAguaMantenimiento">
+                                    <option value="aguaRed">Agua de Red (Potable)</option>
+                                    <option value="aguaPozo1">Agua de Pozo 1</option>
+                                    <option value="aguaPozo2">Agua de Pozo 2</option>
+                                </select>
+
+                                <label for="volumenMantenimiento">Volumen de la pileta (en m³):</label>
+                                <select id="volumenMantenimiento">
+                                    <option value="5">5 m³</option>
+                                    <option value="10">10 m³</option>
+                                    <option value="20">20 m³</option>
+                                    <option value="30">30 m³</option>
+                                    <option value="40">40 m³</option>
+                                    <option value="50">50 m³</option>
+                                    <option value="60">60 m³</option>
+                                    <option value="70">70 m³</option>
+                                    <option value="80">80 m³</option>
+                                    <option value="90">90 m³</option>
+                                    <option value="100">100 m³</option>
+                                </select>
+
+                                <button type="button" onclick="calcularMantenimiento()">Calcular</button>
+                            </form>
+
+                            <div class="result">
+                                <h2>Resultados</h2>
+                                <p id="resultadoMantenimiento"></p>
+                            </div>
+                        </div>
+
+                        <!-- Calculadora Recuperación -->
+                        <div class="calculadoraRecuperacion">
+                            <h1>Calculadora de Recuperación de Agua</h1>
+                            <form id="calcFormRecuperacion">
+                                <label for="tipoAguaRecuperacion">Selecciona el tipo de agua:</label>
+                                <select id="tipoAguaRecuperacion">
+                                    <option value="aguaRed">Agua poco turbia</option>
+                                    <option value="aguaPozo1">Agua turbia</option>
+                                    <option value="aguaPozo2">Agua muy turbia</option>
+                                </select>
+
+                                <label for="volumenRecuperacion">Volumen de la pileta (en m³):</label>
+                                <select id="volumenRecuperacion">
+                                    <option value="5">5 m³</option>
+                                    <option value="10">10 m³</option>
+                                    <option value="20">20 m³</option>
+                                    <option value="30">30 m³</option>
+                                    <option value="40">40 m³</option>
+                                    <option value="50">50 m³</option>
+                                    <option value="60">60 m³</option>
+                                    <option value="70">70 m³</option>
+                                    <option value="80">80 m³</option>
+                                    <option value="90">90 m³</option>
+                                    <option value="100">100 m³</option>
+                                </select>
+
+                                <button type="button" onclick="calcularRecuperacion()">Calcular</button>
+                            </form>
+
+                            <div class="result">
+                                <h2>Resultados</h2>
+                                <p id="resultadoRecuperacion"></p>
+                            </div>
+                        </div>
+                    </div>
+
+                </section>
+
+                <section class="contenedor-4">
+                    <h1>___________</h1>
+
+                </section>
+
+
+
+            </div>
+
+
+        </div>
+
+    </section>
+
+
+    
+
+    <!-- Aca comienzan las consideraciones -->
+    <!--consideraciones calculadora de arranque-->
+    <h2 class="titulo-consideraciones">CONSIDERACIONES</h2>
+    <div class="consideracionesTOTAL">
+
+        <section class="considearcionesArranque">
+            <!-- consideraciones agua de red -->
+            <div class="consideracionTitulo">
+                <h2> * Consideraciones arranque agua de red <span class="flecha">&#9662;</span> </h2>
+                <div class="cuerpoConsideracion" style="display: none;">
+                    <p>
+                        *Tabla de dosificacion para instalaciones convencionales (filtro de arena con bomba de
+                        filtrado).
+                        *Antes del inicio de temporada se recomienda hacerle un lavado interior al filtro, consultar
+                        instrucciones.
+                        *Secuencia de arranque: 1 – Encender el filtro (limpio), 2 - Cloro (esperar 30 minutos), 3 –
+                        SssAlum
+                        (esperar 30
+                        minutos) 4 – BP65 en caso de ser posible filtrar toda la noche para mejor rendimiento de
+                        productos y
+                        realizarle
+                        prueba hidraulica al motor de la bomba. Al otro dia, realizarle un barrefondo (en funcion
+                        FILTRADO), un
+                        retrolavado (aprox. 1 minuto) y colocar la dosis inicial de BS77 (según tabla).
+                        *Para mas informacion Ver FOLLETO ARRANQUE RED.
+                        *Para tamaños mayores a 100.000 litros consultar por dosificacion especial.
+                    </p>
+                </div>
+            </div>
+
+            <!-- consideraciones de pozo (poco hierro) -->
+            <div class="consideracionTitulo">
+                <h2>* Consieracion arranque agua con sales de pozo (poco hierro) <span class="flecha">&#9662;</span>
+                </h2>
+                <div class="cuerpoConsideracion" style="display: none;">
+                    <p>
+                        *Tabla de dosificacion para instalaciones convencionales (filtro de arena con bomba de
+                        filtrado).
+                        *Secuencia de arranque: 1 – Encender el filtro (limpio), 2 - Cloro (esperar 30 minutos), 3 –
+                        SssAlum
+                        (esperar 30
+                        minutos) 4 – BP65 en caso de ser posible filtrar toda la noche para mejor rendimiento de
+                        productos y
+                        realizarle
+                        prueba hidraulica al motor de la bomba. Al otro dia, realizarle un barrefondo (en funcion
+                        FILTRADO), un
+                        retrolavado (aprox. 1 minuto) y colocar la dosis inicial de BS77 (según tabla).
+                        Antes del inicio de temporada se recomienda hacerle un lavado interior al filtro, consultar
+                        instrucciones.
+                        Antes
+                        del inicio de temporada se recomienda hacerle un lavado interior al filtro, consultar
+                        instrucciones.
+                        *Para mas informacion Ver FOLLETO ARRANQUE POZO.
+                        *Para tamaños mayores a 100.000 litros consultar por dosificacion especial.
+                    </p>
+                </div>
+            </div>
+
+            <!-- consideraciones que deben ir con el result si eligen agua de pozo (mucho hierro) -->
+            <div class="consideracionTitulo">
+                <h2>* Consideracion arranque agua con sales de pozo (mucho hierro) <span class="flecha">&#9662;</span>
+                </h2>
+                <div class="cuerpoConsideracion" style="display: none;">
+                    <p>
+                        *Tabla de dosificacion para instalaciones convencionales (filtro de arena con bomba de
+                        filtrado).
+                        *Antes del inicio de temporada se recomienda hacerle un lavado interior al filtro, consultar
+                        instrucciones.
+                        *Para secuencia de arranque Ver FOLLETO ARRANQUE POZO.
+                        *Se recomienda llenar el nivel de la pile HASTA ARRIBA (para tener margen de purga).
+                        *Dependiendo de la cantidad de hierro que tenga el agua, no se descarta que el proceso dure + de
+                        1 dia
+                        (varias
+                        pasadas de barrefondo).
+                        *Se recomienda filtrado continuo hasta formacion de colchon sedimentado, realizando retrolavados
+                        (de 3
+                        minutos)
+                        cada 8 hs
+                        *Se recomienda NO colocar la dosis inicial de BS77 hasta haber conseguido transparencia en el
+                        agua.
+                        *En caso de no obtener resultados, comunicarse con un instalador para chequeo de instalaciones
+                        (arena de
+                        filtro,
+                        bomba, etc) y secuencia de colocacion de productos.
+                        *Para tamaños mayores a 100.000 litros consultar por dosificacion especial.
+                    </p>
+                </div>
+
+            </div>
+        </section>
+
+        <!--consideraciones que deben ir con el result si eligen calculadora de mantenimiento-->
+        <section class="considearcionesMantenimiento">
+            <!-- consideraciones que deben ir con el result si eligen agua de red -->
+            <div class="consideracionTitulo">
+                <h2>* Consideraciones mantenimiento agua dulce de red <span class="flecha">&#9662;</span> </h2>
+                <div class="cuerpoConsideracion" style="display: none;">
+                    <p>
+                        *Dosificaciones semanales (1 vez por semana) e instalaciones convencionales (filtro de arena con
+                        bomba de
+                        filtrado).
+                        *Se recomienda colocar el cloro de noche y el BS77 luego del barrefondo.
+                        *Conjunto de precipitantes (BP65 y SSSAlum), se consideran OPCIONALES.
+                        *Se recomienda en temporada alta (Verano) 4 horas de filtrado, según su uso (de ser posible
+                        instalar un
+                        reloj
+                        timer para mejorar rendimiento).
+                        *Se recomienda realizarle el barrefondo en funcion FILTRADO.
+                        *Se recomienda realizarle un RETROLAVADO al filtro al menos 1 (una vez) a la semana de 2 (dos)
+                        minutos,
+                        según
+                        la cantidad de horas de filtrado.
+                        *No se requiere sobredosificar en dias de lluvias.
+                        *En caso de uso intensivo reforzar la dosificacion de cloro hasta 2 o 3 veces por semana.
+                        *En caso de uso excesivo de barrefondo (DESAGOTE), se recomienda sobredosificar un 30%.
+                        *Para casos especiales y piletas mayores a 100.000 litros, comunicarse con algun vendedor de la
+                        zona.
+                    </p>
+                </div>
+            </div>
+
+            <!-- consideraciones que deben ir con el result si eligen agua de pozo (poco hierro) -->
+            <div class="consideracionTitulo">
+                <h2>* Consideracion mantenimiento agua con sales de pozo (poco hierro) <span
+                        class="flecha">&#9662;</span> </h2>
+                <div class="cuerpoConsideracion" style="display: none;">
+                    <p>
+                        *Dosificaciones semanales (1 vez por semana) e instalaciones convencionales (filtro de arena con
+                        bomba de
+                        filtrado).
+                        *Secuencia de productos: De noche: 1 – Cloro (esperar 30 minutos) 2 – SssAlum (esperar 30
+                        minutos) 3 – BP65.
+                        De dia: BS77 (luego del barrefondo).
+                        *Se recomienda en temporada alta (Verano) 4/6 horas de filtrado, según su uso (de ser posible
+                        instalar un
+                        reloj timer para mejorar rendimiento).
+                        *Se recomienda realizarle el barrefondo en funcion FILTRADO.
+                        *Se recomienda en temporada alta realizarle el RETROLAVADO al filtro al menos 2 (dos) veces a la
+                        semana de 2
+                        (dos) minutos, según la cantidad de horas de filtrado.
+                        *No se requiere sobredosificar en dias de lluvias.
+                        *En caso de uso intensivo reforzar la dosificacion de cloro hasta 2 o 3 veces por semana.
+                        *En caso de uso excesivo de barrefondo (DESAGOTE), se recomienda sobredosificar un 30%.
+                        *Para casos especiales y piletas mayores a 100.000 litros, comunicarse con algun vendedor de la
+                        zona.
+                    </p>
+                </div>
+            </div>
+
+            <!-- consideraciones que deben ir con el result si eligen agua de pozo (mucho hierro) -->
+            <div class="consideracionTitulo">
+                <h2>* Consideraciones mantenimiento agua de pozo con sales (mucho hierro) <span
+                        class="flecha">&#9662;</span> </h2>
+                <div class="cuerpoConsideracion" style="display: none;">
+                    <p>
+                        *Dosificaciones semanales (1 vez por semana) e instalaciones convencionales (filtro de arena con
+                        bomba de
+                        filtrado).
+                        *Secuencia de productos: De noche: 1 – Cloro (esperar 30 minutos) 2 – SssAlum (esperar 30
+                        minutos) 3 – BP65.
+                        De dia: BS77 (luego del barrefondo).
+                        *Se recomienda en temporada alta (Verano) 6/8 horas de filtrado, según su uso y cantidad de
+                        sales que tenga
+                        el agua.(de ser posible instalar un reloj timer para mejorar rendimiento).
+                        *Se recomienda realizarle el barrefondo en funcion FILTRADO.
+                        *Se recomienda en temporada alta realizarle el RETROLAVADO al filtro al menos 2 (dos) veces a la
+                        semana de 2
+                        (dos) minutos, según la cantidad de horas de filtrado.
+                        *No se requiere sobredosificar en dias de lluvias.
+                        *En caso de uso intensivo reforzar la dosificacion de cloro hasta 2 o 3 veces por semana.
+                        *En caso de uso excesivo de barrefondo (DESAGOTE), se recomienda sobredosificar un 30%.
+                        *Para casos especiales y piscinas mayores a 100.000 litros, comunicarse con algun vendedor de la
+                        zona.
+                    </p>
+                </div>
+            </div>
+        </section>
+
+        <!--consideraciones que deben ir con el result si eligen calculadora de Recuperacion-->
+        <section class="considearcionesRecuperacion">
+            <!-- consideraciones que deben ir con el result si eligen agua de red -->
+            <div class="consideracionTitulo">
+                <h2>* Consideracion recuperación agua poco turbia <span class="flecha">&#9662;</span> </h2>
+                <div class="cuerpoConsideracion" style="display: none;">
+                    <p>
+                        *Tabla de dosificacion para instalaciones convencionales (filtro de arena con bomba de
+                        filtrado).
+                        *Secuencia de recuperación: 1 – Lavar filtro - 2 – Cepillar paredes y pisos – 3 - Encender el
+                        filtro
+                        (limpio), 4 - Cloro (esperar 30 minutos), 5 – SssAlum (esperar 30 minutos) 6 – BP65 – 7 - Dejar
+                        filtrando
+                        toda la noche (minimo 8 hs).
+                        *En caso de tener agua de reposicion dura (agua de pozo) y turbidez considerable se recomienda
+                        llenar hasta
+                        arriba para tener margen de desagote.
+                        *En caso de no obtener resultados comunicarse con un instalador para chequeo de arena de filtro
+                        y bomba de
+                        filtrado.
+                        *Para tamaños mayores a 100.000 litros consultar por dosificacion especial.
+                    </p>
+                </div>
+            </div>
+
+            <!-- consideraciones que deben ir con el result si eligen agua de pozo (poco hierro) -->
+            <div class="consideracionTitulo">
+                <h2>* Consideracion recuperación agua turbia <span class="flecha">&#9662;</span> </h2>
+                <div class="cuerpoConsideracion" style="display: none;">
+                    <p>
+                        *Tabla de dosificacion para instalaciones convencionales (filtro de arena con bomba de
+                        filtrado). <br>
+                        *Secuencia de recuperación: 1 – Lavar filtro - 2 – Cepillar paredes y pisos – 3 - Encender el
+                        filtro
+                        (limpio), 4 - Cloro (esperar 30 minutos), 5 – SssAlum (esperar 30 minutos) 6 – BP65 – 7 - Dejar
+                        filtrando
+                        toda la noche (minimo 8 hs). <br>
+                        *En caso de tener agua de reposicion dura (agua de pozo) y turbidez considerable se recomienda
+                        llenar hasta
+                        arriba para tener margen de desagote. <br>
+                        *En caso de no obtener resultados comunicarse con un instalador para chequeo de arena de filtro
+                        y bomba de
+                        filtrado. <br>
+                        *Para tamaños mayores a 100.000 litros consultar por dosificacion especial.
+                    </p>
+                </div>
+            </div>
+
+            <!-- consideraciones que deben ir con el result si eligen agua de pozo (mucho hierro) -->
+            <div class="consideracionTitulo">
+                <h2>* Consideracion recuperación agua muy turbia <span class="flecha">&#9662;</span> </h2>
+                <div class="cuerpoConsideracion" style="display: none;">
+                    <p>
+                        * Tabla de dosificacion para instalaciones convencionales (filtro de arena con bomba de
+                        filtrado). <br>
+                        * Secuencia de recuperación: 1 – Lavar filtro - 2 – Cepillar paredes y pisos – 3 - Encender el
+                        filtro
+                        (limpio), 4 - Cloro (esperar 30 minutos), 5 – SssAlum (esperar 30 minutos) 6 – BP65 – 7 - Dejar
+                        filtrando <br>
+                        toda la noche (minimo 8 hs).
+                        * En caso de tener agua de reposicion dura (agua de pozo) y turbidez considerable se recomienda
+                        llenar hasta
+                        arriba para tener margen de desagote. <br>
+                        * En caso de no obtener resultados comunicarse con un instalador para chequeo de arena de filtro
+                        y bomba de
+                        filtrado. <br>
+                        * Para tamaños mayores a 100.000 litros consultar por dosificacion especial.
+                    </p>
+                </div>
+            </div>
+        </section>
+    </div>
+
+
+    <section class="contenedor-2">
+
+        <div>
+            <p> <b> CLEANPOOL</b>, <br> es una empresa dedicada al tratamiento de agua de
+                piscinas de gran tamaño, ofreciendo una linea de
+                productos orgánicos para su procedimiento.</p>
+        </div>
+
+    </section>
+
+
+    <section class="contenedor-3">
+
+        <div class="card">
+            <img class="loguitos-cards" src="./asset/estrella.png" alt="Imagen 1">
+            <div class="card-info">
+                <h3>AMPLIA CAPACIDAD</h3>
+                <p>Soluciones para cualquier escenario (tipo de agua, uso, etc).</p>
+            </div>
+        </div>
+
+        <div class="card">
+            <img class="loguitos-cards" src="./asset/gente.png" alt="Imagen 2">
+            <div class="card-info">
+                <h3>POST-VENTA</h3>
+                <p>Servicio de asesoramiento integro.</p>
+            </div>
+        </div>
+
+        <div class="card">
+            <img class="loguitos-cards" src="./asset/trofeo.png" alt="Imagen 3">
+            <div class="card-info">
+                <h3>MAYOR COMODIDAD</h3>
+                <p>Dosis bajas y semanales, para un agua sin tantos químicos.</p>
+            </div>
+        </div>
+
+        <div class="card">
+            <img class="loguitos-cards" src="./asset/economico.png" alt="Imagen 4">
+            <div class="card-info">
+                <h3>MISMO COSTO</h3>
+                <p>No hay que creer que tratamientos más modernos son más costosos.</p>
+            </div>
+        </div>
+    </section>
+
+
+
+
+
+    <section class="contenedor-7">
+
+        <div class="texto-niños">
+            <div class="titulo-contenedor-7">
+                <h2>¿Necesitás ayuda?</h2>
+
+            </div>
+
+            <div class="parrafo-contenedor-7">
+                <pre>
+                Nuestra empresa brinda asesoramiento para clientes finales, 
+                clubes, emprendimientos privados y particulares con piscinas.
+            </pre>
+
+            </div>
+
+            <div>
+                <a href="contacto.html">
+                    <button class="btn-contenedor-7">Dejanos tu mensaje</button>
+                </a>
+            </div>
+
+        </div>
+
+        <div class="img-niños" style="margin-left: 5%;">
+            <img src="./asset/clean-villa-sport-outdoors-beautiful.jpg" alt="piscina">
+        </div>
+    </section>
+
+
+    <footer class="footer">
+        <br>
+        <span class="footer-conteiner">
+
+            <span class="footer-izquierdo">
+                <pre>Copyright © 2024 | cleanpool</pre>
+            </span>
+
+
+
+            <span class="logosFC">
+                <a href="https://www.facebook.com/cleanpoolsrl/" target="_blank" class="loguitosF">
+                    <img src="./asset/facebook.png" alt="Facebook" srcset="">
+                </a>
+
+                <a href="https://www.instagram.com/cleanpool.live/" target="_blank" class="loguitosF">
+                    <img src="./asset/favicon111.png" alt="Instagram" srcset="">
+                </a>
+
+                <a class="loguitosF" href="http://wa.me/5493425284902" target="_blank">
+                    <img src="./asset/whatsapp.png" alt="Whattsapp" srcset="">
+                </a>
+            </span>
+
+        </span>
+
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+
+</html>

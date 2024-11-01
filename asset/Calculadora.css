@@ -1,0 +1,918 @@
+/* Establece el color de fondo de todo el cuerpo de la página a blanco */
+body {
+    background-color: white;
+    margin: 0; /* Elimina el margen por defecto */
+    font-family: Arial, sans-serif; /* Establece la fuente predeterminada */
+  }
+  
+  /* Estilo general del div contenedor */
+  .contenedor-nav {
+    width: 100%;
+    background-color: white; /* Un ligero gris para distinguir la barra de navegación */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Sombra sutil para dar profundidad */
+    padding: 10px 0; /* Espacio superior e inferior dentro del div */
+  }
+  
+  nav {
+    
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0; /* Elimina padding */
+    margin: 0; /* Elimina margin */
+  }
+  
+  
+  /* Estilo del logo */
+  nav img {
+    height: 55px; /* Altura del logo */
+    margin-right: -5px; /* Espacio a la derecha del logo */
+    margin-left: 10px;
+  }
+  
+  nav ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: center; /* Ajusta según sea necesario */
+  }
+  
+  /* Estilo de los items de la lista */
+  nav ul li {
+    margin-right: 23px; /* Espacio entre los ítems */
+  }
+  
+  
+  /* Estilo de los enlaces de la lista */
+  nav ul li a {
+    text-decoration: none; /* Elimina el subrayado de los enlaces */
+    color: #8d99ae; /* Color del texto de los enlaces */
+    font-weight: bold; /* Negrita para los textos de los enlaces */
+  }
+  
+  /* Añade un efecto al pasar el ratón sobre los enlaces */
+  nav ul li a:hover {
+    color: #5ab3df; /* Cambia el color al pasar el ratón */
+  }
+  
+  .contenedor-1a {
+    display: flex;
+    background-color: #f2f3f4; /* Color de fondo por defecto en caso de que la imagen no cargue */
+    background-image: url("./asset/bidones2.jpg"); /* Ruta a la imagen de fondo */
+    background-size: cover; /* Asegura que la imagen cubra todo el div */
+    background-position: top; /* Fija la imagen en la parte superior */
+    background-repeat: no-repeat; /* Evita que la imagen se repita */
+    background-size: 100%;
+    width: 100%;
+  }
+  
+
+  
+ 
+  
+  
+  
+  .div1-contenedor-1a{
+    width: 100%; /* Asegura que ambas secciones ocupen todo el ancho disponible */
+    display: flex; /* Esto garantiza que se comporten como bloques, aunque <section> ya lo hace por defecto */
+    margin-top: 1em;
+    font-family: "Noto Sans JP", sans-serif;
+    text-shadow: 2px 2px 4px #001524;
+  }
+  .div2-contenedor-1 {
+    color: #f2f3f4;
+    width: 100%; /* Asegura que ambas secciones ocupen todo el ancho disponible */
+    display: block; /* Esto garantiza que se comporten como bloques, aunque <section> ya lo hace por defecto */
+
+    text-shadow: 3px 3px 5px rgba(0, 0, 0, 1);
+   }
+  
+  
+  
+
+  
+  
+  button {
+    background-color: #168AAD; /* Color celeste */
+    border: none; /* No border */
+    color: white; /* Texto blanco */
+    padding: 10px 20px; /* Padding alrededor del texto */
+    text-align: center; /* Texto centrado */
+    text-decoration: none; /* Sin decoración de texto */
+    font-size: 26px; /* Tamaño del texto */
+    margin: 4px 2px; /* Margen alrededor del botón */
+    cursor: pointer; /* Cursor de mano al pasar el mouse */
+    border-radius: 12px; /* Bordes redondeados */
+    transition: all 0.3s ease; /* Transición suave para hover */
+  }
+  
+  
+  
+
+  .contenedor-2 {
+    display: flex;
+    gap: 20px; /* Espacio entre las cards */
+    justify-content: center; /* Centra las cards en el contenedor si no ocupan todo el ancho */
+    padding: 20px; 
+    margin-inline: 20%;
+    font-size: 30px;
+    text-align: center;
+    color: #037971;
+    opacity: 80%;
+    background-color: aliceblue;
+  
+  }
+  
+  .contenedor-3 {
+    background-color: #f2f3f4;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px; /* Espacio entre las cards */
+    justify-content: center; /* Centra las cards en el contenedor si no ocupan todo el ancho */
+    padding: 20px; /* Espacio alrededor del contenido dentro del contenedor-2 */
+    margin-inline: 100px;
+  }
+
+  
+  .card:hover {
+    transform: scale(1.05); /* Ajusta la escala si es necesario */
+    box-shadow: 0 0px 8px #99D98C;
+  }
+  
+  
+  
+  .card-info {
+    padding: 15px; /* Espacio interior alrededor del texto dentro de la card-info */
+    text-align: center; /* Centra el texto horizontalmente */
+    
+  }
+  
+  .card h3 {
+    margin: 10px 0; /* Espacio vertical arriba y abajo del título */
+    color: #333; /* Color oscuro para el texto del título */
+  }
+  
+  .card p {
+    font-size: 14px; /* Tamaño de fuente para la descripción */
+    color: #666; /* Color gris para el texto descriptivo */
+    line-height: 1.5; /* Espaciado de línea para mejorar la legibilidad */
+  }
+  
+  .loguitos-cards {
+    width: 50px;
+    margin-top: 20px;
+}
+
+.card {
+  flex: 1 1 180px;
+  display: flex;
+  flex-direction: column; /* Para alinear los elementos verticalmente */
+  align-items: center; /* Centra los elementos horizontalmente */
+  justify-content: center; /* Centra los elementos verticalmente */
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0 6px 8px rgba(0, 0, 0, 0.1);
+  background-color: #f2f3f2;
+  font-family: "Nunito Sans", sans-serif;
+  font-optical-sizing: auto;
+  transition: transform 0.5s ease;  
+}
+  .contenedor-1,
+  .contenedor-2,
+  .contenedor-3,
+  .contenedor-a,
+  .contenedor-b,
+  .contenedor-c {
+    background-color: #f8f9fa;
+    margin-top: 20px; /* Espacio en la parte superior */
+    margin-bottom: 20px; /* Espacio en la parte inferior */
+    padding: 20px; /* Espacio alrededor del contenido */
+  }
+  
+  .contenedor-4{
+    display: flex;
+    justify-content: center;
+    color: #1E6091;
+  
+  }
+  .contenedor-5{
+  display: flex;
+  justify-content: center; /* Centra las cards en el contenedor si no ocupan todo el ancho */
+  padding: 20px; 
+  margin-inline: 20%;
+  font-size: 30px;
+  text-align: center;
+  opacity: 80%;
+  color:#001524;
+  background-color: rgb(251, 253, 255);}
+  
+  .contenedor-6{
+    margin-top: 100px;
+    display: flex;
+    justify-content: center;
+    position: relative; 
+   
+    }
+  
+  .card2{
+    width: 300px;
+    text-align: center;
+    margin-top: 20px;
+    box-shadow: 0 6px 8px rgba(0, 0, 0, 0.1); /* Sombra ligera para 3D efecto */
+    border-radius: 5%;
+    margin-left: 1%;
+    transition: transform 0.3s; /* Agrega una transición suave al cambio de escala */
+  }
+  .card2:hover {
+    transform: scale(1.05); /* Agrandar al 105% del tamaño original */
+  }
+  
+  .card2 img {
+    width: 100%; /* La imagen ocupará el 100% del ancho del contenedor */
+    border-radius: 5%;
+  }
+  
+  
+  .card-info2{
+   margin-left: 3%;
+  }
+  .card-info2:hover{
+    transform: scale(1.05); /* Agrandar al 105% del tamaño original */
+    text-align: center;
+  }
+  
+  .card-info2 h3 {
+    color: #0c837b;
+    font-family: "Noto Sans JP", sans-serif;
+  }
+  
+  
+  .btn2{
+      margin-left: 5%;
+    }
+  
+  .contenedor-7 {
+   display: flex;
+   background-color: #f2f3f2;
+   width: 100%;
+  }
+  .texto-niños{
+    justify-content: center;
+    margin-top: 7%;
+   }
+   
+   .img-niños img{
+    margin-left: 10%;
+    width: 85%;
+   }
+  
+   .parrafo-contenedor-7 pre{
+    font-family: "Noto Sans JP", sans-serif;
+    font-size: large;
+   }
+  
+   .titulo-contenedor-7{
+    font-family: "Noto Sans JP", sans-serif;
+    font-size: 25px;
+    text-align: center;
+    color: #1E6091;
+    margin-left: -20%;
+    
+   }
+  
+   .btn-contenedor-7{
+    margin-left: 11%;
+   }
+  
+   
+  
+  .contenedor-4-bis {
+    justify-content: left;
+  }
+  .parrafo-contenedor-4 {
+    justify-content: left;
+  }
+  
+  .titulo-contenedor-4 {
+    justify-content: left;
+    font-size: 25px;
+  }
+  
+  .btn-contenedor-4 {
+    justify-content: left;
+  }
+  
+  .contenedor-5 {
+    background-color: #f2f3f4;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px; /* Espacio entre las cards */
+    justify-content: center; /* Centra las cards en el contenedor si no ocupan todo el ancho */
+    padding: 20px; /* Espacio alrededor del contenido dentro del contenedor-2 */
+  }
+  
+  .cabecera-div2-contenedor-d {
+      display: flex;
+      align-items: center;
+      padding: 10px;
+  }
+  .img-cabecera-div2-contenedor-d img {
+      width: 100px;
+      height: auto;
+      margin-right: 20px;
+  }
+  .texto-cabecera-div2-contenedor-d h1 {
+      margin: 0;
+      padding: 0;
+  }
+  
+  .carrousel-contenedor-d {
+    width: 50%;  /* Asegura que el contenedor ocupe todo el ancho disponible */
+    height: 100%; /* Puede definir una altura específica si es necesario */
+    overflow: hidden; /* Oculta cualquier parte de la imagen que sobresalga */
+  }
+  
+  .carrousel-contenedor-d img {
+    width: 100%;  /* Hace que la imagen sea tan ancha como el contenedor */
+    height: 100%; /* Hace que la imagen sea tan alta como el contenedor */
+    object-fit: cover; /* Asegura que la imagen cubra todo el espacio sin deformarse */
+  }
+  
+  .loguito-div1-contenedor-d img {
+    width: 100px;
+    height: auto;
+    margin-right: 20px;
+  }
+  
+  .contenedor-nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .contenedor-nav nav ul {
+   list-style-type: none;
+   margin-left: 450px;
+  }
+  
+  .contenedor-nav nav ul li {
+    display: inline;
+    margin-left: 20px; /
+    
+  }
+  
+  .div1-contenedor-1 img{
+    width: 600px;
+    margin-top: 10%;
+    margin-left: 20px;
+    
+  }
+  
+  .div2-contenedor-1{
+    display: flexbox;
+    align-items: center;
+  }
+  
+  
+  .footer{
+  background-color: #001524;
+   width: 100%;
+   height: 90px;
+  }
+  
+  .footer-conteiner{
+    display: flex;
+    justify-content: space-between;
+  }
+  .logosFC {
+    display: flex; /* Utiliza flexbox para los logos */
+    align-items: center; /* Centra verticalmente los logos */
+    margin-left: 5%;
+  }
+  
+  .loguitosF {
+    margin-right: 20px; /* Ajusta el espacio entre los logos */
+  }
+  
+  .footer-izquierdo pre {
+    color: #f2f3f2;
+    font-family: "Nunito Sans", sans-serif;
+    margin-left: 9%; 
+    align-self: center; /* Centra verticalmente el texto izquierdo */
+  }
+  
+  .cal11{
+    
+    display: flex;
+    justify-content: center;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    margin-left: 3%;
+  }
+
+  .subCal11{
+    display: flex;
+    justify-content: center;
+    color:#000000;
+    margin-top: -5%;
+  }
+  .subCal112{
+    display: flex;
+    justify-content: center;
+    color:#e6eaee;
+  }
+
+
+
+ /* Estilo para el contenedor principal de las calculadoras */
+.contenedor-calculadoras {
+  display: flex; /* Activa Flexbox */
+  justify-content: center; /* Centra horizontalmente las calculadoras */
+  align-items: flex-start; /* Alinea las calculadoras en la parte superior */
+  gap: 30px; /* Espacio entre cada calculadora */
+  padding: 20px; /* Espacio interno del contenedor */
+  margin: 20px 0; /* Margen externo para separar del resto del contenido */
+}
+
+/* Estilo para cada calculadora */
+.contenedor-calculadoras > div {
+  display: flex; /* Flexbox para alinear el contenido de cada calculadora */
+  flex-direction: column; /* Alinea el contenido de forma vertical */
+  justify-content: flex-start; /* Empieza desde arriba */
+  align-items: center; /* Centra el contenido de cada calculadora */
+  padding: 15px; /* Espaciado interno */
+  background-color: #f0f0f0; /* Fondo para distinguirlas */
+  border: 1px solid #ddd; /* Bordes para separar cada calculadora */
+  border-radius: 10px; /* Bordes redondeados */
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1); /* Sombra para darle profundidad */
+  width: 300px; /* Ancho fijo para cada calculadora */
+  color:#0b0224;
+}
+
+/* Títulos dentro de cada calculadora */
+.contenedor-calculadoras h1 {
+  font-size: 20px;
+  margin-bottom: 20px;
+}
+
+/* Estilo para los formularios dentro de cada calculadora */
+.contenedor-calculadoras form {
+  display: flex;
+  flex-direction: column; /* Ordena los elementos de forma vertical */
+  align-items: flex-start; /* Alinea a la izquierda */
+  gap: 15px; /* Espacio entre cada elemento del formulario */
+  width: 100%; /* Usa todo el ancho disponible */
+}
+
+/* Estilo de los campos de formulario */
+.contenedor-calculadoras input,
+.contenedor-calculadoras select {
+  width: 100%; /* Campo completo dentro de la calculadora */
+  padding: 10px;
+  margin: 5px 0;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  box-sizing: border-box; /* Incluye padding en el ancho total */
+}
+
+/* Botones dentro de cada calculadora */
+.contenedor-calculadoras button {
+  padding: 10px 20px;
+  background-color: #168AAD; /* Color de fondo del botón */
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  margin-top: 10px; /* Separación del botón respecto a los campos */
+}
+
+/* Resultados dentro de cada calculadora */
+.contenedor-calculadoras .result {
+  margin-top: 20px; /* Separación respecto al formulario */
+  background: #e0f7fa; /* Color de fondo para resultados */
+  padding: 15px;
+  border-radius: 5px;
+  width: 100%;
+}
+
+/* Estilo de texto para resultados */
+.contenedor-calculadoras .result h2 {
+  font-size: 18px;
+  margin-bottom: 10px;
+}
+
+.contenedor-calculadoras .result p {
+  font-size: 16px;
+  color: #00796b; /* Color del texto de resultado */
+}
+
+/* Otras secciones del contenedor, puedes adaptarlas según necesites */
+.contenedor-4 h1,
+.contenedor-5 h2 {
+  text-align: center;
+  
+}
+
+
+
+.consideracionesTOTAL{
+    background-color:#a5d2e9;
+    margin-inline: 5em;
+}
+
+.titulo-consideraciones{
+  text-align: center;
+}
+
+
+#check{
+  display: none;
+}
+
+.active{
+  color:#52B69A;
+}
+.checkbtn{
+  display: none;
+}
+
+.consideracionTitulo{
+  cursor: pointer;
+}
+.consideracionTitulo:hover{
+  color:#037971;
+}
+
+.cal11{
+  font-size: 4em;
+  text-align: center;
+}
+
+.subCal11{
+  font-size: 2em;
+  text-align: center;
+}
+.subCal112{
+  font-size: 1.5em 
+}
+
+
+#contenedoresDeCalculadoras2{
+  display: none;
+}
+
+#contenedoresDeCalculadoras{
+  text-shadow: none;
+  
+}
+
+/*INICIO DE MEDIA QUERYS*/
+
+/* Media Query para pantallas pequeñas */
+
+/* HAGO ESPACIO PARA QUE 
+SEA MAS FACIL ENCONTRARLO POR LA MINIATURA DE 
+LA DERECHA */
+
+@media (max-width: 730px) {
+  /* Mostrar el botón de hamburguesa en pantallas pequeñas */
+  .checkbtn {
+   display: block;
+   position: absolute;
+   right: 20px;
+  
+   color:#001524;
+ }
+
+ .titulo-cards{
+  text-shadow: none;
+ }
+
+ /* Esconder el menú inicialmente (movido hacia arriba) */
+ nav ul {
+   position: absolute;
+   width: 50%;
+   height: auto;
+   background: #168AAD;
+   top: -100%; /* Menú está oculto fuera de la vista, en la parte superior */
+   right: 0; /* Mover el menú al lado derecho */
+   text-align: center;
+   display:flex;
+   transition: all 0.5s ease; /* Animación suave */
+   z-index: 2; /* Coloca el menú por encima de la imagen */
+   flex-direction: column; /* Asegura que los li se alineen en columna */
+}
+
+/* Mostrar el menú cuando el checkbox está activado (se despliega hacia abajo desde la derecha) */
+#check:checked ~ ul {
+ top: 80px; /* Menú visible, desplegándose desde arriba */
+ right: 0; /* Mantenerlo en el lado derecho */
+}
+
+ /* Los enlaces en formato de bloque */
+ nav ul li {
+   margin: 20px 0;
+   flex-direction: column;
+ }
+
+ /* Ajustar el tamaño de los enlaces en pantallas pequeñas */
+ nav ul li a {
+   font-size: 20px;
+   color: #f2f3f2;
+ }
+ .active{
+   color: #c7e4f3;
+ }
+
+ /*ahi termina el bendito menu hamburguesa*/
+
+ .div2-contenedor-1 {
+   color: #f2f3f4;
+   width: 100%; /* Asegura que ambas secciones ocupen todo el ancho disponible */
+   display: block; /* Esto garantiza que se comporten como bloques, aunque <section> ya lo hace por defecto */
+   margin-top: 5%; 
+   
+   text-shadow: 3px 3px 5px rgba(0, 0, 0, 1);
+  }
+
+ .div1-contenedor-1 div img{
+   width: 80%;  /* Ajusta el ancho de la imagen al 100% del contenedor o pantalla */
+   height: auto; /* Mantiene la proporción original de la imagen */
+   object-fit: contain; /* Asegura que toda la imagen sea visible dentro del contenedor */
+   margin-left: 10%;
+ }
+
+ .div1-contenedor-1 div{
+   margin-top: -2em;
+     max-height: 200px;  /* Ajusta este valor según tu diseño */
+     
+   
+ }
+ .div2-contenedor-1{
+ display: block;
+ align-items: center;
+ }
+
+ .div2-contenedor-1 h3 {
+  font-size: 100%;
+  
+ }
+ .div2-contenedor-1 h2 {
+   display: none;
+  }
+  .div2-contenedor-1 p {
+   font-size: 65%;
+  }
+
+  .button-CentradoV  {
+  display: none;
+}
+
+.button-CentradoV2{
+ display: flex;
+   justify-content: center; /* Centra el div horizontalmente */
+   align-items: center; /* (Opcional) Si también deseas centrar verticalmente */
+ 
+}
+
+
+
+.contenedor-2{
+ background-color: white;
+ 
+}
+.contenedor-2 div p{
+ font-size: 70%;
+}
+
+/*loguitos raros*/
+.contenedor-3 {
+ display: flex;
+ flex-wrap: wrap;
+ justify-content: space-around;
+ width: 65%;
+ margin-left: 20%;
+}
+
+.card {
+ background-color: #d5dff1;
+ margin-bottom: 20px;
+ padding: 2px; /* Ajusta el espacio interno para hacerlo más compacto */
+}
+
+.loguitos-cards {
+ width: 19%; /* Ajusta el tamaño de las imágenes */
+ height: 16%; /* Asegúrate de que las imágenes sean cuadradas */
+}
+
+.card-info h3 {
+ font-size: 1.2rem; /* Ajusta el tamaño del texto del título */
+}
+
+.card-info p {
+ font-size: 1rem; /* Ajusta el tamaño del texto del párrafo */
+}
+
+.titulo-cards{
+ font-size: 60%;
+ margin-bottom: -7%;
+}
+
+
+.contenedor-5{
+ margin-top: 5%;
+}
+
+/*calculadoras*/
+.contenedor-6{
+
+ display: flex;
+ flex-wrap: wrap;
+ justify-content: space-around;
+}
+
+.card-info2 h3{
+ font-size: 140%;
+}
+
+.card2 img {
+ width: 70%;
+}
+
+.contenedor-7{
+ display: flex;
+ flex-wrap: wrap;
+ justify-content:center;
+
+}
+
+.titulo-contenedor-7{
+ font-size: 100%;
+ margin-left: -1%;
+}
+.parrafo-contenedor-7 pre { 
+ font-size: 90%; /* Reduce un poco el tamaño de la fuente en pantallas pequeñas */
+   padding: 10px; /* Ajusta el padding para que el texto tenga más espacio */
+   line-height: 1.4; /* Ajusta el espacio entre líneas para mejorar la legibilidad */
+   white-space: normal; /* Asegura que el texto se ajuste dentro del contenedor */
+   text-align: center;
+}
+
+.btn-contenedor-7{
+  transform: scale(0.9); /* Reduce el tamaño del botón un 20% */
+  margin-left: 13%;
+ 
+}
+
+.img-niños img{
+ margin-left: 3%;
+}
+
+.footer-izquierdo{
+ margin-top: 5%;
+ font-size: 50%;
+
+}
+.logosFC{
+ transform: scale(0.8);
+}
+
+.contenedor-4{
+  display: none;
+}
+
+
+
+
+/*ACA EMPIEZAN CALCULADORAS 2"
+
+
+/* Estilo para el contenedor principal de las calculadoras */
+#contenedoresDeCalculadoras{
+  display: flex;
+  flex-direction: column; /* Alinea las calculadoras una encima de otra */
+  justify-content: center;
+  align-items: center; /* Centra los elementos en el eje horizontal */
+  padding: 20px;
+  gap: 30px; /* Espacio entre cada calculadora */
+  width: 90%;
+}
+
+.contenedor-calculadoras {
+  display: flex; /* Activa Flexbox */
+  flex-direction: column; /* Asegura que las calculadoras estén una debajo de otra */
+  align-items: center; /* Centra horizontalmente las calculadoras */
+  gap: 30px; /* Espacio entre cada calculadora */
+  width: 90%; /* Hacer que ocupen todo el ancho disponible */
+  padding: 20px; /* Espaciado interno */
+}
+
+
+
+.contenedor-calculadoras > div {
+  width: 100%; /* Ancho completo */
+  max-width: 400px; /* Ancho máximo para evitar que se extienda demasiado en pantallas grandes */
+  padding: 15px;
+  background-color: #f0f0f0;
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+  color: #0b0224;
+}
+
+.contenedor-calculadoras h1 {
+  font-size: 20px;
+  margin-bottom: 20px;
+}
+
+.contenedor-calculadoras form {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 15px;
+  width: 100%;
+}
+
+.contenedor-calculadoras input,
+.contenedor-calculadoras select {
+  width: 100%;
+  padding: 10px;
+  margin: 5px 0;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  box-sizing: border-box;
+}
+
+.contenedor-calculadoras button {
+  padding: 10px 20px;
+  background-color: #168AAD;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  margin-top: 10px;
+}
+.contenedor-calculadoras .result {
+  margin-top: 20px;
+  background: #e0f7fa;
+  padding: 15px;
+  border-radius: 5px;
+  width: 100%;
+}
+
+
+/* Estilo de texto para resultados */
+.contenedor-calculadoras .result h2 {
+  font-size: 18px;
+  margin-bottom: 10px;
+}
+
+.contenedor-calculadoras .result p {
+  font-size: 16px;
+  color: #00796b;
+}
+
+
+
+
+
+
+
+.div1-contenedor-1a .div2-contenedor-1 .cal11 {
+  font-size: 1.5em;
+  margin-top: -1em;
+}
+.div1-contenedor-1a .div2-contenedor-1 .subCal11{
+  font-size: 1em;
+ color:#f3f2f2;
+ text-shadow: rgb(0, 0, 0);
+}
+
+
+
+
+.contenedor-5{
+  width: 70%;
+  display: flex;
+  align-items: center;
+  margin-left: 9%;
+}
+
+.contenedor-5 .titulo-cards h2{
+  font-size: 1.3em;
+  display: block;
+  margin-top: -8px;
+  opacity: 150%;
+  text-shadow: none;
+}
+
+.consideracionesTOTAL{
+  margin-inline: 2em;
+} 
+.contenedor-3{
+  width: 55%; 
+  margin: 0 auto;
+}
+
+
+}
