@@ -43,7 +43,7 @@ const preciosQuimicos = {
     cloro: 1100, // Precio por litro de cloro
     bs77: 6600, // Precio por litro de BS77
     bp65: 3300, // Precio por litro de BP65
-    sssAlum: 1300 // Precio por litro de SSS Alum
+    sssAlum: 1500 // Precio por litro de SSS Alum
 };
 //ACA ARRIBA ESTAN LOS PRECIOS DONDES E TIENE QUE MODIFICAR
 //ACA ARRIBA SOLAMENTE HAY QUE MODIFICAR
@@ -118,8 +118,9 @@ function calcularArranque() {
                 <strong>Cloro:</strong> ${data.cloro} Lts<br>
                 <strong>SSS Alum:</strong> ${data.sssAlum} Lts<br>
                 <strong>BP65:</strong> ${data.bp65} Lts<br>
-                <strong>BS77:</strong> ${data.bs77} Lts<br>
-                <strong>Precio estimado total:</strong> $${total.toFixed(2)}
+                <strong>BS77:</strong> ${data.bs77} Lts<br><br>
+                <strong>Precio estimado total: $${total.toFixed(2)}<br>
+                </strong><span style="font-size: 0.7em;">UAF: 01/11/2024<span></span> 
             `;
         } else {
             productos = 'No se encontraron datos para el volumen especificado.';
@@ -200,8 +201,9 @@ function calcularMantenimiento() {
                 <strong>Cloro:</strong> ${data.cloro} Lts<br>
                 <strong>SSS Alum:</strong> ${data.sssAlum} Lts<br>
                 <strong>BP65:</strong> ${data.bp65} Lts<br>
-                <strong>BS77:</strong> ${data.bs77} Lts<br>
-                <strong>Precio estimado MENSUAL:</strong> $${total.toFixed(2)}
+                <strong>BS77:</strong> ${data.bs77} Lts<br><br>
+                 <strong>Precio estimado MENSUAL: $${total.toFixed(2)}<br>
+                </strong><span style="font-size: 0.7em;">UAF: 01/11/2024<span></span> 
             `;
         } else {
             productos = 'No se encontraron datos para el volumen especificado.';
@@ -282,8 +284,10 @@ function calcularRecuperacion() {
             productos = `
                 <strong>Cloro:</strong> ${data.cloro} Lts<br>
                 <strong>SSS Alum:</strong> ${data.sssAlum} Lts<br>
-                <strong>BP65:</strong> ${data.bp65} Lts<br>
-                <strong>Precio estimado total:</strong> $${total.toFixed(2)}
+                <strong>BP65:</strong> ${data.bp65} Lts<br><br><br>
+                <strong>Precio estimado total:</strong>
+                $${total.toFixed(2)}<br>
+                </strong><span style="font-size: 0.7em;">UAF: 01/11/2024</span>
             `;
         } else {
             productos = 'No se encontraron datos para el volumen especificado.';
