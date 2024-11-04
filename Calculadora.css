@@ -914,5 +914,25 @@ LA DERECHA */
   margin: 0 auto;
 }
 
+/* Estilos para las consideraciones */
+#consideracionesArranque {
+  margin-top: 20px;
+  padding: 15px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  background-color: #e7f3fe;
+}
+
+#consideracionesArranque h3 {
+  font-size: 1.2em;
+  color: #0056b3;
+  margin-bottom: 10px;
+}
+
+#textoConsideraciones {
+  font-size: 0.9em;
+  color: #333;
+  line-height: 1.5;
+}
 
 }
