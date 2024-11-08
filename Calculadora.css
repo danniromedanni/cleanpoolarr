@@ -565,6 +565,47 @@ body {
   text-shadow: none;
   
 }
+/* Estilos para el contenedor principal */
+/* Estilos para el contenedor de las tarjetas */
+.tarjetas-container {
+  display: flex;
+  justify-content: space-between; /* Espacio uniforme entre tarjetas */
+  gap: 20px; /* Espacio entre cada tarjeta */
+  margin-top: 20px; /* Margen superior para separar las tarjetas del contenido anterior */
+}
+
+/* Estilos para cada tarjeta */
+.tarjeta {
+  width: 30%; /* Cada tarjeta ocupa el 30% del ancho del contenedor */
+  background-color: #f9f9f9;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  padding: 15px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Estilo para los títulos de las tarjetas */
+.tarjeta h3 {
+  text-align: center;
+  font-size: 20px;
+  margin-bottom: 10px;
+}
+
+/* Título de cada sección dentro de la tarjeta */
+.consideracionTitulo h2 {
+  font-size: 16px;
+  font-weight: bold;
+  cursor: pointer;
+  padding: 10px;
+  background-color: #e0e0e0;
+  border-radius: 5px;
+  margin: 10px 0;
+}
+.cuerpoConsideracion p{
+  display: none; /* Por defecto, el contenido está oculto */
+  margin-top: 10px;
+}
+
 
 /*INICIO DE MEDIA QUERYS*/
 
@@ -934,5 +975,6 @@ LA DERECHA */
   color: #333;
   line-height: 1.5;
 }
+
 
 }

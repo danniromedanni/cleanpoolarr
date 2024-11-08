@@ -80,6 +80,7 @@
                 <!-- Calculadoras de químicos -->
                 <section id="contenedoresDeCalculadoras">
                     <div class="contenedor-calculadoras">
+
                         <!-- Calculadora Arranque -->
                         <div class="calculadoraArranque">
                             <h1>Calculadora de Arranque de Agua</h1>
@@ -113,16 +114,11 @@
                             <div class="result">
                                 <h2>PRODUCTOS</h2>
                                 <p id="resultadoArranque"></p>
+                               
                             </div>
-
-                            <!-- Resultado de productos -->
-    <div id="resultadoArranque"></div>
-
-    <!-- Bloque de consideraciones dentro de la tarjeta de arranque -->
-    <div id="consideracionesArranque" style="display: none;">
-        <h3>Consideraciones</h3>
-        <p id="textoConsideraciones"></p>
-    </div>
+                         
+        
+   
                         </div>
 
                         <!-- Calculadora Mantenimiento -->
@@ -198,6 +194,8 @@
 
                 </section>
 
+
+
                 <section class="contenedor-4">
                     <h1>___________</h1>
 
@@ -216,8 +214,166 @@
     
 
     <!-- Aca comienzan las consideraciones -->
-   
+
+    
+
+
+
+        <!--consideraciones que deben ir con el result si eligen calculadora de Recuperacion-->
+        <h2 class="titulo-consideraciones">CONSIDERACIONES</h2>
+
+        <div class="tarjetas-container">
+
+    <!-- Tarjeta: Consideraciones de Arranque -->
+    <div class="tarjeta">
+        <h3>Consideraciones de Arranque</h3>
+
+        <section class="consideracionesArranque">
+
+            <!-- Consideración: Arranque Agua de Red -->
+            <div class="consideracionTitulo">
+                <h2> * Consideraciones arranque agua de red <span class="flecha">&#9662;</span> </h2>
+                <div class="cuerpoConsideracion" style="display: none;">
+                    <p>
+                        * Tabla de dosificación para instalaciones convencionales (filtro de arena con bomba de
+                        filtrado).<br>
+                        * Antes del inicio de temporada se recomienda hacerle un lavado interior al filtro, consultar
+                        instrucciones.<br>
+                        * Secuencia de arranque: 1 – Encender el filtro (limpio), 2 - Cloro (esperar 30 minutos), 
+                          3 – SssAlum (esperar 30 minutos), 4 – BP65. En caso de ser posible, filtrar toda la noche para mejor rendimiento
+                          de productos y realizarle prueba hidráulica al motor de la bomba.<br>
+                        * Para más información, ver FOLLETO ARRANQUE RED.<br>
+                        * Para tamaños mayores a 100.000 litros, consultar por dosificación especial.
+                    </p>
+                </div>
+            </div>
+
+            <!-- Consideración: Arranque Agua de Pozo (Poco Hierro) -->
+            <div class="consideracionTitulo">
+                <h2> * Consieracion arranque agua con sales de pozo (poco hierro) <span class="flecha">&#9662;</span></h2>
+                <div class="cuerpoConsideracion" style="display: none;">
+                    <p>
+                        * Tabla de dosificación para instalaciones convencionales (filtro de arena con bomba de
+                        filtrado).<br>
+                        * Secuencia de arranque: 1 – Encender el filtro (limpio), 2 - Cloro (esperar 30 minutos), 
+                          3 – SssAlum (esperar 30 minutos), 4 – BP65.<br>
+                        * Para más información, ver FOLLETO ARRANQUE POZO.<br>
+                        * Para tamaños mayores a 100.000 litros, consultar por dosificación especial.
+                    </p>
+                </div>
+            </div>
+
+            <!-- Consideración: Arranque Agua de Pozo (Mucho Hierro) -->
+            <div class="consideracionTitulo">
+                <h2> * Consideracion arranque agua con sales de pozo (mucho hierro) <span class="flecha">&#9662;</span></h2>
+                <div class="cuerpoConsideracion" style="display: none;">
+                    <p>
+                        * Tabla de dosificación para instalaciones convencionales (filtro de arena con bomba de
+                        filtrado).<br>
+                        * En caso de no obtener resultados, comunicarse con un instalador para chequeo de instalaciones.<br>
+                        * Para tamaños mayores a 100.000 litros, consultar por dosificación especial.
+                    </p>
+                </div>
+            </div>
+
+        </section>
     </div>
+
+    <!-- Tarjeta: Consideraciones de Mantenimiento -->
+    <div class="tarjeta">
+        <h3>Consideraciones de Mantenimiento</h3>
+
+        <section class="consideracionesMantenimiento">
+
+            <!-- Consideración: Mantenimiento Agua Dulce de Red -->
+            <div class="consideracionTitulo">
+                <h2> * Consideraciones mantenimiento agua dulce de red <span class="flecha">&#9662;</span> </h2>
+                <div class="cuerpoConsideracion" style="display: none;">
+                    <p>
+                        * Dosificaciones semanales (1 vez por semana) e instalaciones convencionales.<br>
+                        * Se recomienda colocar el cloro de noche y el BS77 luego del barrefondo.<br>
+                        * Para casos especiales y piletas mayores a 100.000 litros, comunicarse con algún vendedor de la zona.
+                    </p>
+                </div>
+            </div>
+
+            <!-- Consideración: Mantenimiento Agua de Pozo (Poco Hierro) -->
+            <div class="consideracionTitulo">
+                <h2> * Consideracion mantenimiento agua con sales de pozo (poco hierro) <span class="flecha">&#9662;</span></h2>
+                <div class="cuerpoConsideracion" style="display: none;">
+                    <p>
+                        * Dosificaciones semanales y secuencia de productos específica.<br>
+                        * Se recomienda en temporada alta realizarle el RETROLAVADO al filtro al menos 2 veces a la semana.<br>
+                        * Para casos especiales y piletas mayores a 100.000 litros, comunicarse con algún vendedor de la zona.
+                    </p>
+                </div>
+            </div>
+
+            <!-- Consideración: Mantenimiento Agua de Pozo (Mucho Hierro) -->
+            <div class="consideracionTitulo">
+                <h2> * Consideraciones mantenimiento agua de pozo con sales (mucho hierro) <span class="flecha">&#9662;</span></h2>
+                <div class="cuerpoConsideracion" style="display: none;">
+                    <p>
+                        * Dosificaciones semanales y secuencia de productos específica.<br>
+                        * En caso de uso intensivo reforzar la dosificación de cloro hasta 2 o 3 veces por semana.<br>
+                        * Para casos especiales y piletas mayores a 100.000 litros, comunicarse con algún vendedor de la zona.
+                    </p>
+                </div>
+            </div>
+
+        </section>
+    </div>
+
+    <!-- Tarjeta: Consideraciones de Recuperación -->
+    <div class="tarjeta">
+        <h3>Consideraciones de Recuperación</h3>
+
+        <section class="consideracionesRecuperacion">
+
+            <!-- Consideración: Recuperación Agua Poco Turbia -->
+            <div class="consideracionTitulo">
+                <h2> * Consideracion recuperación agua poco turbia <span class="flecha">&#9662;</span> </h2>
+                <div class="cuerpoConsideracion">
+                    <p>
+                        * Tabla de dosificación para instalaciones convencionales.<br>
+                        * Secuencia de recuperación: 1 – Lavar filtro, 2 – Cepillar paredes y pisos, 3 - Encender el
+                          filtro (limpio).<br>
+                        * Para tamaños mayores a 100.000 litros, consultar por dosificación especial.
+                    </p>
+                </div>
+            </div>
+
+            <!-- Consideración: Recuperación Agua Turbia -->
+            <div class="consideracionTitulo">
+                <h2> * Consideracion recuperación agua turbia <span class="flecha">&#9662;</span> </h2>
+                <div class="cuerpoConsideracion">
+                    <p>
+                        * Tabla de dosificación para instalaciones convencionales.<br>
+                        * Secuencia de recuperación y recomendaciones específicas.<br>
+                        * Para tamaños mayores a 100.000 litros, consultar por dosificación especial.
+                    </p>
+                </div>
+            </div>
+
+            <!-- Consideración: Recuperación Agua Muy Turbia -->
+            <div class="consideracionTitulo">
+                <h2> * Consideracion recuperación agua muy turbia <span class="flecha">&#9662;</span> </h2>
+                <div class="cuerpoConsideracion">
+                    <p>
+                        * Tabla de dosificación para instalaciones convencionales.<br>
+                        * Secuencia de recuperación y recomendaciones específicas.<br>
+                        * Para tamaños mayores a 100.000 litros, consultar por dosificación especial.
+                    </p>
+                </div>
+            </div>
+
+        </section>
+    </div>
+
+</div>
+
+   
+    
 
 
     <section class="contenedor-2">

@@ -55,6 +55,12 @@ function calcularArranque() {
     const tipoAgua = document.getElementById('tipoAguaArranque').value;
     const volumen = parseInt(document.getElementById('volumenArranque').value);
     let productos = '';
+
+
+
+
+    ///NUEVOOOO// Variable para las consideraciones////////////
+    let consideraciones = '';
     
 
 
@@ -122,15 +128,56 @@ function calcularArranque() {
                 <strong>Precio estimado total: $${total.toFixed(2)}<br>
                 </strong><span style="font-size: 0.7em;">UAF: 01/11/2024<span></span> 
             `;
+
+///NUEVOOOOOO// Añadir consideraciones según el tipo de agua
+// Añadir consideraciones detalladas según el tipo de agua
+if (tipoAgua === "aguaRed") {
+    consideraciones = `
+        * Consideraciones arranque agua de red ▴<br>
+        * Tabla de dosificación para instalaciones convencionales (filtro de arena con bomba de filtrado).<br>
+        * Antes del inicio de temporada se recomienda hacerle un lavado interior al filtro, consultar instrucciones.<br>
+        * Secuencia de arranque: 1 – Encender el filtro (limpio), 2 - Cloro (esperar 30 minutos), 3 – SssAlum (esperar 30 minutos) 4 – BP65 en caso de ser posible filtrar toda la noche para mejor rendimiento de productos y realizarle prueba hidráulica al motor de la bomba.<br>
+        Al otro día, realizarle un barrefondo (en función FILTRADO), un retrolavado (aprox. 1 minuto) y colocar la dosis inicial de BS77 (según tabla).<br>
+        * Para más información Ver FOLLETO ARRANQUE RED.<br>
+        * Para tamaños mayores a 100.000 litros consultar por dosificación especial.
+    `;
+} else if (tipoAgua === "aguaPozo1") {
+    consideraciones = `
+        * Consideración arranque agua con sales de pozo (poco hierro) ▴<br>
+        * Tabla de dosificación para instalaciones convencionales (filtro de arena con bomba de filtrado).<br>
+        * Secuencia de arranque: 1 – Encender el filtro (limpio), 2 - Cloro (esperar 30 minutos), 3 – SssAlum (esperar 30 minutos) 4 – BP65 en caso de ser posible filtrar toda la noche para mejor rendimiento de productos y realizarle prueba hidráulica al motor de la bomba.<br>
+        Al otro día, realizarle un barrefondo (en función FILTRADO), un retrolavado (aprox. 1 minuto) y colocar la dosis inicial de BS77 (según tabla).<br>
+        * Para más información Ver FOLLETO ARRANQUE POZO.<br>
+        * Para tamaños mayores a 100.000 litros consultar por dosificación especial.
+    `;
+} else if (tipoAgua === "aguaPozo2") {
+    consideraciones = `
+        * Consideración arranque agua con sales de pozo (mucho hierro) ▴<br>
+        * Tabla de dosificación para instalaciones convencionales (filtro de arena con bomba de filtrado).<br>
+        * Antes del inicio de temporada se recomienda hacerle un lavado interior al filtro, consultar instrucciones.<br>
+        * Para secuencia de arranque Ver FOLLETO ARRANQUE POZO.<br>
+        * Se recomienda llenar el nivel de la pileta HASTA ARRIBA (para tener margen de purga).<br>
+        * Dependiendo de la cantidad de hierro que tenga el agua, no se descarta que el proceso dure + de 1 día (varias pasadas de barrefondo).<br>
+        * Se recomienda filtrado continuo hasta formación de colchón sedimentado, realizando retrolavados (de 3 minutos) cada 8 hs.<br>
+        * Se recomienda NO colocar la dosis inicial de BS77 hasta haber conseguido transparencia en el agua.<br>
+        * En caso de no obtener resultados, comunicarse con un instalador para chequeo de instalaciones (arena de filtro, bomba, etc) y secuencia de colocación de productos.<br>
+        * Para tamaños mayores a 100.000 litros consultar por dosificación especial.
+    `;
+}
+           
+
         } else {
             productos = 'No se encontraron datos para el volumen especificado.';
+            consideraciones = '';
         }
     } else {
         productos = 'Por favor, ingresa un volumen válido.';
+        consideraciones = '';
     }
-
+///mostrar el resultado en la calculadora/////
     document.getElementById('resultadoArranque').innerHTML = productos;
 }
+
 
 
 //calculadora mantenimiento
@@ -300,23 +347,30 @@ function calcularRecuperacion() {
 }
 
 
-// Manejar consideraciones
-const consideraciones = document.querySelectorAll('.consideracionTitulo');
+document.addEventListener("DOMContentLoaded", function() {
+    const consideraciones = document.querySelectorAll('.consideracionTitulo');
+    console.log(consideraciones); // Esto debería mostrarte una lista de los elementos encontrados
 
-consideraciones.forEach(consideracion => {
-    consideracion.addEventListener('click', function() {
-        const contenedorConsideracion = this;
-        contenedorConsideracion.classList.toggle('pregunta-activa');
-        
-        // Selecciona el cuerpo correspondiente de la consideracion
-        const respuesta = contenedorConsideracion.querySelector('.cuerpoConsideracion');
-        respuesta.style.display = respuesta.style.display === 'block' ? 'none' : 'block';
-        
-        // Selecciona la flecha dentro del h2 y cambia su símbolo
-        const flecha = contenedorConsideracion.querySelector('.flecha');
-        flecha.innerHTML = respuesta.style.display === 'block' ? '&#9652;' : '&#9662;';
+    if (consideraciones.length === 0) {
+        console.error("No se encontraron elementos con la clase 'consideracionTitulo'.");
+    }
+
+    consideraciones.forEach(consideracion => {
+        consideracion.addEventListener('click', function() {
+            const cuerpo = this.nextElementSibling;
+            if (cuerpo && cuerpo.classList.contains('cuerpoConsideracion')) {
+                cuerpo.style.display = (cuerpo.style.display === 'block') ? 'none' : 'block';
+                const flecha = this.querySelector('.flecha');
+                flecha.innerHTML = cuerpo.style.display === 'block' ? '&#9652;' : '&#9662;';
+            }
+        });
     });
 });
+
+
+
+
+
 
 // Selecciona el ícono y el menú
 const menuIcon = document.querySelector('.menu-icon');
