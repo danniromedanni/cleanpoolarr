@@ -520,10 +520,28 @@ body {
     margin-inline: 5em;
 }
 
-.titulo-consideraciones{
-  text-align: center;
+.titulo-consideraciones {
+  background-color: #e0f7fa; /* Fondo de color suave */
+  color: #168AAD;
+   /* Color del texto */
+    padding: 10px 15px; /* Espacio alrededor del texto */
+    border-radius: 5px; /* Bordes redondeados */
+    text-align: center; /* Centrar el texto */
+    font-size: 50px;
+    font-weight: bold; /* Hacer el texto más grueso */
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2); /* Sombra para resaltar */
 }
-
+.titulo-clic{
+  background-color: #e0f7fa; /* Fondo de color suave */
+  color: #168AAD;
+   /* Color del texto */
+    padding: 10px 15px; /* Espacio alrededor del texto */
+    border-radius: 5px; /* Bordes redondeados */
+    text-align: center; /* Centrar el texto */
+    font-size: 30px;
+    font-weight: bold; /* Hacer el texto más grueso */
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2); /* Sombra para resaltar */
+}
 
 #check{
   display: none;
@@ -604,6 +622,42 @@ body {
 .cuerpoConsideracion p{
   display: none; /* Por defecto, el contenido está oculto */
   margin-top: 10px;
+}
+/* Estilos para el contenedor */
+.linkdescargas {
+  background-color: #168AAD; /* Color de fondo del botón */
+   /* Fondo de color suave */
+  padding: 20px;
+  border-radius: 8px;
+  max-width: 400px;
+  margin: auto;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2); /* Sombra para darle profundidad */
+}
+
+/* Estilos para los enlaces */
+.linkdescargas ul {
+  list-style-type: none; /* Quita los puntos de la lista */
+  padding: 0;
+}
+
+.linkdescargas li {
+  margin-bottom: 10px; /* Espacio entre los enlaces */
+}
+
+.linkdescargas a {
+  font-size: 20px; /* Tamaño más grande para el texto */
+    color: #00796b; /* Color del texto */
+  text-decoration-line: underline; /* Quita el subrayado */
+  background-color: #e6f2ff; /* Fondo suave para el enlace */
+  padding: 10px 15px;
+  border-radius: 5px;
+  display: block;
+  transition: background-color 0.3s ease; /* Efecto de transición */
+}
+
+.linkdescargas a:hover {
+   background: #e6f2ff;
+    /* Fondo diferente al pasar el mouse */
 }
 
 
@@ -799,6 +853,31 @@ LA DERECHA */
    text-align: center;
 }
 
+.titulo-consideraciones  {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 15px;
+  width: 100%;
+  font-size: 90%; /* Reduce un poco el tamaño de la fuente en pantallas pequeñas */
+   padding: 10px , 15px; /* Ajusta el padding para que el texto tenga más espacio */
+   margin: 30px, 0px;
+   line-height: 1.4; /* Ajusta el espacio entre líneas para mejorar la legibilidad */
+   white-space: normal; /* Asegura que el texto se ajuste dentro del contenedor */
+   text-align: center;
+}
+.titulo-clic p{
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 15px;
+  width: 100%;
+  font-size: 90%; /* Reduce un poco el tamaño de la fuente en pantallas pequeñas */
+   padding: 10px; /* Ajusta el padding para que el texto tenga más espacio */
+   line-height: 1.4; /* Ajusta el espacio entre líneas para mejorar la legibilidad */
+   white-space: normal; /* Asegura que el texto se ajuste dentro del contenedor */
+   text-align: center;
+}
 .btn-contenedor-7{
   transform: scale(0.9); /* Reduce el tamaño del botón un 20% */
   margin-left: 13%;

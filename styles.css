@@ -485,6 +485,17 @@ nav ul {
 #check {display: none important!;
 }
 
+.titulo-consideraciones {
+  background-color: #e0f7fa; /* Fondo de color suave */
+  color: #168AAD;
+   /* Color del texto */
+    padding: 10px 15px; /* Espacio alrededor del texto */
+    border-radius: 5px; /* Bordes redondeados */
+    text-align: center; /* Centrar el texto */
+    font-size: 50px;
+    font-weight: bold; /* Hacer el texto más grueso */
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2); /* Sombra para resaltar */
+}
 /*ACA EMPIEZAN LAS MEDIAQUERYS
 VOY A ESCRIBIR MUCHO
 PARA QUE SE ENCUENTRE MAS FACIL 
